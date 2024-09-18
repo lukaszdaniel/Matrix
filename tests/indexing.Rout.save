@@ -150,11 +150,11 @@ Time (user system elapsed): 0.164 0.007 0.171
 > assert.EQ(as(mn[,iN4],"matrix"), a.m[,iN4]) # (incl. dimnames)
 > ##assert.EQ(as.matrix(ms[,iN4]), a.m[,iN4]) # ms[, <with_NA>]  fails still : _FIXME_
 > try(ms[,iN4])
-Error in ..subscript.2ary(x, l[[1L]], l[[2L]], drop = drop[1L]) : 
+Error in '..subscript.2ary(x, l[[1L]], l[[2L]], drop = drop[1L])': 
   NA subscripts in x[i,j] not supported for 'x' inheriting from sparseMatrix
 > try(ms[,iN4] <- 100) ## <- segfaulted in Matrix <= 1.2-8  (!)
 replCmat[x,i,j,..,val] : nargs()=4; missing (i,j) = (1,0)
-Error in intI(i, n = di[margin], dn = dn[[margin]], give.dn = FALSE) : 
+Error in 'intI(i, n = di[margin], dn = dn[[margin]], give.dn = FALSE)': 
   'NA' indices are not (yet?) supported for sparse Matrices
 > 
 > ## R-forge Matrix bug #2556: Subsetting a sparse matrix did remove  names(dimnames(.)) :
