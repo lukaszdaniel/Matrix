@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Matrix 1.1-2-2\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2024-09-15 20:23\n"
-"PO-Revision-Date: 2014-03-27 14:47+0100\n"
+"PO-Revision-Date: 2024-09-17 17:44+0200\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language: pl_PL\n"
@@ -11,17 +11,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-SourceCharset: iso-8859-1\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.2\n"
 
 # Matrix/R/diagMatrix.R: 528
 # stop("chol() is undefined for diagonal matrix with negative entries")
 #. R/Cholesky.R: gettextf("%1$s(%2$s) is undefined: '%2$s' is not positive semidefinite",     "chol", "x")
 #. R/Cholesky.R: gettextf("%1$s(%2$s) is undefined: '%2$s' is not positive semidefinite",     "Cholesky", "x")
 #: R/Cholesky.R:0
-#, fuzzy
 msgid "%1$s(%2$s) is undefined: '%2$s' is not positive semidefinite"
-msgstr "'chol()' jest nieokreślona dla macierzy diagonalnych z ujemnymi wpisami"
+msgstr "%1$s(%2$s) jest niezdefiniowane: '%2$s' nie jest dodatnio określone"
 
 #. R/coerce.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
 #. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
@@ -29,7 +28,7 @@ msgstr "'chol()' jest nieokreślona dla macierzy diagonalnych z ujemnymi wpisami
 #. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
 #: R/coerce.R:0 R/vector.R:0
 msgid "%s length cannot exceed %s"
-msgstr ""
+msgstr "długość %s nie może przekroczyć %s"
 
 # Matrix/R/sparseVector.R: 278
 # stop(gettextf("Class %s is not yet implemented", dQuote(cNam)), domain = "R-Matrix")
@@ -42,13 +41,13 @@ msgstr "Klasa %s nie jest jeszcze zaimplementowana"
 #. R/Auxiliaries.R: gettextf("%s(<%s>, <%s>) is not yet implemented; ask maintainer(\"%s\") to implement the missing method",     name, cl1[1L], cl2[1L], "Matrix")
 #: R/Auxiliaries.R:0
 msgid "%s(<%s>, <%s>) is not yet implemented; ask maintainer(\"%s\") to implement the missing method"
-msgstr ""
+msgstr "funkcja %s(<%s>, <%s>) nie jest jeszcze zaimplementowana; poproś opiekuna pakietu (\"%s\") o implementację brakującej metody"
 
 #. R/BunchKaufman.R: gettextf("%s=\"%s\" invalid for %s@uplo=\"%s\"", "which", which,     "x", x@uplo)
 #. R/BunchKaufman.R: gettextf("%s=\"%s\" invalid for %s@uplo=\"%s\"", "which", which,     "x", x@uplo)
 #: R/BunchKaufman.R:0
 msgid "%s=\"%s\" invalid for %s@uplo=\"%s\""
-msgstr ""
+msgstr "%s=\"%s\" jest niepoprawna dla %s@uplo=\"%s\""
 
 #. R/solve.R: gettextf("'%1$s' is computationally singular, rcond(%1$s)=%2$g",     "a", rcond.a)
 #: R/solve.R:0
@@ -58,7 +57,7 @@ msgstr ""
 #. R/Schur.R: gettextf("'%1$s' is not \"%2$s\", \"%3$s\", or \"%2$s.\"", "which",     "Q", "T")
 #: R/Schur.R:0
 msgid "'%1$s' is not \"%2$s\", \"%3$s\", or \"%2$s.\""
-msgstr ""
+msgstr "'%1$s' nie jest \"%2$s\", \"%3$s\", lub \"%2$s.\""
 
 #. R/qr.R: gettextf("'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%2$s2\", \"%2$s2.\", \"%3$s\", \"%3$s1\", \"%4$s\", or \"%4$s1\"",     "which", "P", "Q", "R")
 #: R/qr.R:0
@@ -75,7 +74,7 @@ msgstr ""
 #. R/Cholesky.R: gettextf("'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", or \"%4$s\"",     "which", "P", "L", "D")
 #: R/Cholesky.R:0
 msgid "'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", or \"%4$s\""
-msgstr ""
+msgstr "'%1$s' nie jest \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", lub \"%4$s\""
 
 #. R/lu.R: gettextf("'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", or \"%4$s\"",     "which", "P", "L", "U")
 #: R/lu.R:0
@@ -85,7 +84,7 @@ msgstr ""
 #. R/Cholesky.R: gettextf("'%1$s' is not formally symmetric; factorizing tcrossprod(%1$s)",     "parent")
 #: R/Cholesky.R:0
 msgid "'%1$s' is not formally symmetric; factorizing tcrossprod(%1$s)"
-msgstr ""
+msgstr "'%1$s' nie jest formalnie symetryczny; Faktoryzacja TcrossProd(%1$s)"
 
 # Matrix/R/abIndex.R: 177
 # stop("length must be non-negative number")
@@ -106,9 +105,8 @@ msgstr ""
 # stop("'x' must inherit from \"sparseVector\"")
 #. R/Cholesky.R: gettextf("'%s' does not inherit from virtual class %s", "x",     "CHMfactor")
 #: R/Cholesky.R:0
-#, fuzzy
 msgid "'%s' does not inherit from virtual class %s"
-msgstr "argument 'x' musi być obiektem klasy \"sparseVector\""
+msgstr "'%s' nie dziedziczy z klasy wirtualnej %s"
 
 #. R/index.R: gettextf("'%s' has elements exceeding '%s'", "perm", "n")
 #: R/index.R:0
@@ -131,7 +129,7 @@ msgstr ""
 #. R/Schur.R: gettextf("'%s' has non-finite values", "x")
 #: R/Schur.R:0
 msgid "'%s' has non-finite values"
-msgstr ""
+msgstr "'%s' ma wartości nieskończone"
 
 #. R/qr.R: gettextf("'%s' has the wrong length", "Dvec")
 #: R/qr.R:0
@@ -156,7 +154,7 @@ msgstr ""
 #. R/BunchKaufman.R: gettextf("'%s' is not \"%1$s\", \"D%1$s\", or \"%1$s.\"", "which",     x@uplo)
 #: R/BunchKaufman.R:0
 msgid "'%s' is not \"%1$s\", \"D%1$s\", or \"%1$s.\""
-msgstr ""
+msgstr "'%s' nie jest \"%1$s\", \"D%1$s\", lub \"%1$s.\""
 
 #. R/index.R: gettextf("'%s' is not %d or %d", "margin", 1L, 2L)
 #: R/index.R:0
@@ -198,9 +196,8 @@ msgstr ""
 # stop("'V' is not a square matrix")
 #. R/solve.R: gettextf("'%s' is not square", "a")
 #: R/solve.R:0
-#, fuzzy
 msgid "'%s' is not square"
-msgstr "'V' nie jest macierzą kwadratową"
+msgstr "'%s' nie jest macierzą kwadratową"
 
 # Matrix/R/indMatrix.R: 133
 # stop("kronecker method must use default 'FUN'")
@@ -355,7 +352,7 @@ msgstr ""
 #. R/construct.R: warning("'giveCsparse' is deprecated; using 'repr' instead")
 #: R/construct.R:0
 msgid "'giveCsparse' is deprecated; using 'repr' instead"
-msgstr ""
+msgstr "'giveCsparse' jest przestarzałe; zamiast tego przy użyciu 'repr'"
 
 #. R/construct.R: stop("'i' and 'j' must be ", if (index1) "positive" else "non-negative")
 #: R/construct.R:0
@@ -547,13 +544,13 @@ msgstr "'Cmp.Mat.atomic()' nie powinien być wywołany dla 'diagonalMatrix'"
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(L.ii)))
 #: R/Cholesky.R:0
 msgid "D[i,i] is NA, i=%d"
-msgstr ""
+msgstr "D[i,i] ma wartość NA, i=%d"
 
 #. R/Cholesky.R: gettextf("D[i,i] is negative, i=%d", which.max(r.ii < 0))
 #. R/Cholesky.R: gettextf("D[i,i] is negative, i=%d", which.max(L.ii < 0))
 #: R/Cholesky.R:0
 msgid "D[i,i] is negative, i=%d"
-msgstr ""
+msgstr "D[i,i] jest ujemne, i=%d"
 
 # Matrix/R/diagMatrix.R: 418
 # stop(gettextf("Internal bug: nargs()=%d; please report", na), domain = "R-Matrix")
@@ -749,9 +746,8 @@ msgstr ""
 # stop("cannot coerce 'NA's to \"nsparseMatrix\"")
 #. R/Auxiliaries.R: gettextf("cannot coerce matrix of type \"%s\" to %s", typeof(y),     "diagonalMatrix")
 #: R/Auxiliaries.R:0
-#, fuzzy
 msgid "cannot coerce matrix of type \"%s\" to %s"
-msgstr "nie można przekształcić wartości 'NA' na 'nsparseMatrix'"
+msgstr "nie można przekształcić macierzy typu \"%s\" w %s"
 
 # Matrix/R/Tsparse.R: 670
 # stop(gettextf("column indices must be <= ncol(.) which is %d", nc), domain = "R-Matrix")
@@ -764,22 +760,21 @@ msgstr "indeksy kolumn muszą być <= 'ncol(.)' który wynosi %d"
 # stop(gettextf("Class %s is not yet implemented", dQuote(cNam)), domain = "R-Matrix")
 #. R/Auxiliaries.R: gettextf("complex %s not yet implemented", "diagonalMatrix")
 #: R/Auxiliaries.R:0
-#, fuzzy
 msgid "complex %s not yet implemented"
-msgstr "Klasa %s nie jest jeszcze zaimplementowana"
+msgstr "zespolone %s jeszcze nie zaimplementowane"
 
 #. R/construct.R: stop("data is too long")
 #. R/construct.R: stop("data is too long")
 #: R/construct.R:0
 msgid "data is too long"
-msgstr ""
+msgstr "dane są za długie"
 
 #. R/determinant.R: stop("determinant of non-square matrix is undefined")
 #. R/determinant.R: stop("determinant of non-square matrix is undefined")
 #. R/determinant.R: stop("determinant of non-square matrix is undefined")
 #: R/determinant.R:0
 msgid "determinant of non-square matrix is undefined"
-msgstr ""
+msgstr "wyznacznik macierzy niekwadratowej jest niezdefiniowany"
 
 # Matrix/R/Matrix.R: 94
 # warning("diag(.) had 0 or NA entries; non-finite result is doubtful")
@@ -834,7 +829,7 @@ msgstr "wymiar [produkt %d] nie zgadza się z długością obiektu [%d]"
 #: R/coerce.R:0 R/index.R:0 R/kronecker.R:0 R/solve.R:0 R/subscript.R:0
 #: R/vector.R:0
 msgid "dimensions cannot exceed %s"
-msgstr ""
+msgstr "wymiary nie mogą przekroczyć %s"
 
 #. R/construct.R: stop("dimensions cannot exceed 2^31-1")
 #. R/construct.R: stop("dimensions cannot exceed 2^31-1")
@@ -846,7 +841,7 @@ msgstr ""
 #. R/solve.R: gettextf("dimensions of '%s' and '%s' are inconsistent", "a",     "b")
 #: R/solve.R:0
 msgid "dimensions of '%s' and '%s' are inconsistent"
-msgstr ""
+msgstr "wymiary '%s' oraz '%s' są niespójne"
 
 # Matrix/R/Auxiliaries.R: 292
 # warning(gettextf("dimnames [%d] mismatch in %s", j, deparse(sys.call(sys.parent()))), call. = FALSE, domain = "R-Matrix")
@@ -998,7 +993,7 @@ msgstr "błąd wewnętrzny w metodzie 'Compare' (Cmp.Mat.atomic); proszę zgłos
 #. R/Ops.R: stop("internal bug in \"Logic\" method (Logic.Mat.atomic); please report")
 #: R/Ops.R:0
 msgid "internal bug in \"Logic\" method (Logic.Mat.atomic); please report"
-msgstr "błąd wewnętrzny w metodzie 'Logic' (.Logic.Mat.atomic); proszę zgłosić raport"
+msgstr "błąd wewnętrzny w metodzie 'Logic' (t.j. .Logic.Mat.atomic); proszę zgłosić raport"
 
 # Matrix/R/Tsparse.R: 313
 # stop("internal bug: matrix 'i' in replTmat(): please report")
@@ -1035,9 +1030,8 @@ msgstr "niepoprawne nargs()=%d"
 #. R/coerce.R: gettextf("invalid %s=\"%s\" to '%s'", "kind", kind, ".m2dense.checking")
 #. R/coerce.R: gettextf("invalid %s=\"%s\" to '%s'", "kind", kind, ".m2sparse.checking")
 #: R/coerce.R:0
-#, fuzzy
 msgid "invalid %s=\"%s\" to '%s'"
-msgstr "Niepoprawny typ przechowywania: %s"
+msgstr "niepoprawna wartość %s=\"%s\" przekazana do '%s'"
 
 # Matrix/R/Matrix.R: 206
 # stop("invalid 'data'")
@@ -1045,9 +1039,8 @@ msgstr "Niepoprawny typ przechowywania: %s"
 #. R/vector.R: gettextf("invalid '%s' argument", "times")
 #. R/vector.R: gettextf("invalid '%s' argument", "length.out")
 #: R/vector.R:0
-#, fuzzy
 msgid "invalid '%s' argument"
-msgstr "niepoprawne 'data'"
+msgstr "niepoprawny argument '%s'"
 
 # Matrix/R/sparseMatrix.R: 372
 # stop(gettextf("invalid 'col.names' string: %s", cn), domain = "R-Matrix")
@@ -1115,26 +1108,23 @@ msgstr "niepoprawne tekstowe indeksowanie"
 # stop(gettextf("invalid 'col.names' string: %s", cn), domain = "R-Matrix")
 #. R/coerce.R: gettextf("invalid class \"%s\" in '%s'", class(from)[1L], ".M2V")
 #: R/coerce.R:0
-#, fuzzy
 msgid "invalid class \"%s\" in '%s'"
-msgstr "niepoprawny łańcuch 'col.names': %s"
+msgstr "niepoprawna klasa \"%s\" w '%s'"
 
 # Matrix/R/sparseMatrix.R: 372
 # stop(gettextf("invalid 'col.names' string: %s", cn), domain = "R-Matrix")
 #. R/Ops.R: gettextf("invalid class \"%s\" in '%s' method", class(x)[1L],     "Ops")
 #: R/Ops.R:0
-#, fuzzy
 msgid "invalid class \"%s\" in '%s' method"
-msgstr "niepoprawny łańcuch 'col.names': %s"
+msgstr "niepoprawna klasa \"%s\" w metodzie '%s'"
 
 # Matrix/R/sparseMatrix.R: 372
 # stop(gettextf("invalid 'col.names' string: %s", cn), domain = "R-Matrix")
 #. R/Ops.R: gettextf("invalid class \"%s\" object in '%s' method", data.class(e2),     "Ops")
 #. R/Ops.R: gettextf("invalid class \"%s\" object in '%s' method", data.class(e1),     "Ops")
 #: R/Ops.R:0
-#, fuzzy
 msgid "invalid class \"%s\" object in '%s' method"
-msgstr "niepoprawny łańcuch 'col.names': %s"
+msgstr "niepoprawna klasa \"%s\" obiektu w metodzie '%s'"
 
 # Matrix/R/Auxiliaries.R: 23
 # stop(gettextf("invalid 'mod': %s", mod), domain = "R-Matrix")
@@ -1143,9 +1133,8 @@ msgstr "niepoprawny łańcuch 'col.names': %s"
 #. R/Auxiliaries.R: gettextf("invalid mode \"%s\"", mode.)
 #. R/Auxiliaries.R: gettextf("invalid mode \"%s\"", mode.)
 #: R/Auxiliaries.R:0
-#, fuzzy
 msgid "invalid mode \"%s\""
-msgstr "niepoprawne 'mod': %s"
+msgstr "niepoprawny tryb \"%s\""
 
 # Matrix/R/denseMatrix.R: 101
 # stop(gettextf("invalid nargs()= %d", na), domain = "R-Matrix")
@@ -1198,14 +1187,13 @@ msgstr "Niepoprawny typ przechowywania: %s"
 #. R/coerce.R: gettextf("invalid type \"%s\" in '%s'", typeof(from), ".m2sparse.checking")
 #. R/coerce.R: gettextf("invalid type \"%s\" in '%s'", typeof(from), ".M2V")
 #: R/coerce.R:0
-#, fuzzy
 msgid "invalid type \"%s\" in '%s'"
-msgstr "niepoprawny 'type'"
+msgstr "niepoprawny typ \"%s\" w '%s'"
 
 #. R/Ops.R: gettextf("invalid type \"%s\" in '%s' method", typeof(x), "Ops")
 #: R/Ops.R:0
 msgid "invalid type \"%s\" in '%s' method"
-msgstr ""
+msgstr "niepoprawny typ \"%s\" w metodzie '%s'"
 
 # Matrix/R/sparseMatrix.R: 79
 # warning("length(i) is not a multiple of length(x)")
@@ -1358,7 +1346,7 @@ msgstr ""
 #. R/coerce.R: stop("matrix is not diagonal; consider Diagonal(x=diag(.))")
 #: R/coerce.R:0
 msgid "matrix is not diagonal; consider Diagonal(x=diag(.))"
-msgstr ""
+msgstr "macierz nie jest diagonalna; rozważ 'Diagonal(x=diag(.))'"
 
 # Matrix/R/diagMatrix.R: 358
 # stop("matrix is not diagonal")
@@ -1367,9 +1355,8 @@ msgstr ""
 #. R/expm.R: stop("matrix is not square")
 #. R/expm.R: stop("matrix is not square")
 #: R/Cholesky.R:0 R/expm.R:0
-#, fuzzy
 msgid "matrix is not square"
-msgstr "macierz nie jest diagonalna"
+msgstr "macierz nie jest kwadratowa"
 
 # Matrix/R/dgTMatrix.R: 44
 # stop("the matrix is not triangular")
@@ -1400,9 +1387,8 @@ msgstr "'x' nie jest macierzą symetryczną ani trójkątną"
 #. R/coerce.R: stop("matrix is not symmetric; consider forceSymmetric(.) or symmpart(.)")
 #. R/coerce.R: stop("matrix is not symmetric; consider forceSymmetric(.) or symmpart(.)")
 #: R/coerce.R:0
-#, fuzzy
 msgid "matrix is not symmetric; consider forceSymmetric(.) or symmpart(.)"
-msgstr "to nie jest macierz symetryczna; rozważ 'forceSymmetric()' lub 'symmpart()'"
+msgstr "macierz nie jest symetryczna; rozważ 'forceSymmetric(.)' lub 'symmpart(.)'"
 
 # Matrix/R/symmetricMatrix.R: 114
 # stop("'x' is not symmetric nor triangular")
@@ -1416,9 +1402,8 @@ msgstr "'x' nie jest macierzą symetryczną ani trójkątną"
 # stop("the matrix is not triangular")
 #. R/coerce.R: stop("matrix is not triangular; consider triu(.) or tril(.)")
 #: R/coerce.R:0
-#, fuzzy
 msgid "matrix is not triangular; consider triu(.) or tril(.)"
-msgstr "macierz nie jest trójkątna"
+msgstr "macierz nie jest trójkątna; rozważ 'triu(.)' lub 'tril(.)'"
 
 #. R/qr.R: gettextf("matrix is structurally rank deficient; using augmented matrix with additional %d row(s) of zeros",     m0)
 #: R/qr.R:0
@@ -1550,9 +1535,8 @@ msgstr "brak 'dimnames[[.]]': nie można używać indeksowania tekstowego"
 #. R/matmult.R: stop("non-conformable arguments")
 #. R/matmult.R: stop("non-conformable arguments")
 #: R/matmult.R:0
-#, fuzzy
 msgid "non-conformable arguments"
-msgstr "niezgodne wymiary macierzy w %s"
+msgstr "niezgodne argumenty"
 
 # Matrix/R/Auxiliaries.R: 273
 # stop(gettextf("non-conformable matrix dimensions in %s", deparse(sys.call(sys.parent()))), call. = FALSE, domain = "R-Matrix")
@@ -1578,9 +1562,8 @@ msgstr ""
 # stop(gettextf("not yet implemented for class %s", dQuote(class.x)), domain = "R-Matrix")
 #. R/Auxiliaries.R: gettextf("non0.i() not yet implemented for class %s", dQuote(cM))
 #: R/Auxiliaries.R:0
-#, fuzzy
 msgid "non0.i() not yet implemented for class %s"
-msgstr "jeszcze niezaimplementowane dla klasy %s"
+msgstr "funkcja 'non0.i()' nie jest jeszcze zaimplementowana dla klasy %s"
 
 #. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
 #. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
@@ -1693,9 +1676,8 @@ msgstr "liczba wierszy nie jest zgodna dla %s"
 # stop("only square matrices can be used as incidence matrices for graphs")
 #. R/coerce-graph.R: stop("only square matrices can be used as graph incidence matrices")
 #: R/coerce-graph.R:0
-#, fuzzy
 msgid "only square matrices can be used as graph incidence matrices"
-msgstr "jedynie kwadratowe macierze mogą zostać użyte jako macierz incydencji dla grafów"
+msgstr "tylko kwadratowe macierze mogą zostać użyte jako macierz incydencji dla grafów"
 
 #. R/subscript.R: stop("only zeros may be mixed with negative subscripts")
 #. R/subscript.R: stop("only zeros may be mixed with negative subscripts")
@@ -1746,20 +1728,18 @@ msgstr "rankMatrix(x, method='qr'): obliczanie t(x) jako nrow(x) < ncol(x)"
 # stop("readMM(): column values 'j' are not in 1:nc", call.=FALSE)
 #. R/HBMM.R: gettextf("readMM(): column indices 'j' are not in 1:ncol[=%d]",     nc)
 #: R/HBMM.R:0
-#, fuzzy
 msgid "readMM(): column indices 'j' are not in 1:ncol[=%d]"
-msgstr "readMM(): wartości kolumny 'j' nie są w przedziale 1:nc"
+msgstr "readMM(): indeksy kolumny 'j' nie są w przedziale 1:ncol[=%d]"
 
 #. R/HBMM.R: gettextf("readMM(): expected %d entries but found only %d", nz,     nz.)
 #: R/HBMM.R:0
 msgid "readMM(): expected %d entries but found only %d"
-msgstr ""
+msgstr "readMM(): oczekiwano %d wpisów, ale znaleziono tylko %d"
 
 #. R/HBMM.R: gettextf("readMM(): row indices 'i' are not in 1:nrow[=%d]",     nr)
 #: R/HBMM.R:0
-#, fuzzy
 msgid "readMM(): row indices 'i' are not in 1:nrow[=%d]"
-msgstr "readMM(): wartości wiersza 'i' nie są w przedziale 1:nr"
+msgstr "readMM(): indeksy wiersza 'i' nie są w przedziale 1:nrow[=%d]"
 
 #. R/subscript.R: gettextf("recycled %s would have maximal index exceeding %s",     "[nl]sparseVector", "2^53")
 #: R/subscript.R:0
@@ -1770,12 +1750,12 @@ msgstr ""
 #. R/diagonal.R: gettextf("replacement diagonal has incompatible type \"%s\"",     typeof(value))
 #: R/diagonal.R:0
 msgid "replacement diagonal has incompatible type \"%s\""
-msgstr ""
+msgstr "przekątna zastępująca ma niezgodny typ \"%s\""
 
 #. R/diagonal.R: stop("replacement diagonal has wrong length")
 #: R/diagonal.R:0
 msgid "replacement diagonal has wrong length"
-msgstr ""
+msgstr "przekątna zastępująca ma niepoprawną długość"
 
 #. R/subassign.R: stop("replacement has length zero")
 #: R/subassign.R:0
@@ -1799,7 +1779,7 @@ msgstr "indeksy wiersza muszą być <= 'nrow(.)' który wynosi %d"
 #. R/vector.R: stop("should never happen ...")
 #: R/vector.R:0
 msgid "should never happen ..."
-msgstr ""
+msgstr "to nie powinno się nigdy zdarzyć..."
 
 #. R/subscript.R: stop("subscript out of bounds")
 #. R/subscript.R: stop("subscript out of bounds")
@@ -2020,7 +2000,9 @@ msgstr "niepoprawny znak w argumencie 'by'"
 msgid ""
 "x / 0 for an <abIndex> x with sign-change\n"
 " no longer representable as 'rleDiff'"
-msgstr "x / 0 dla '<abIndex> x' ze zmianą znaku nie jest dłużej reprezentowalne jako 'rleDiff'"
+msgstr ""
+"x / 0 dla '<abIndex> x' ze zmianą znaku\n"
+"nie jest dłużej reprezentowalne jako 'rleDiff'"
 
 # Matrix/R/Tsparse.R: 529
 # message(gettextf("x[.,.] <- val : x being coerced from Tsparse* to CsparseMatrix"), domain = "R-Matrix")
@@ -2080,6 +2062,9 @@ msgstr "x[.] <- wartość: 'x' to %s, wartość nie w zakresie {TRUE, FALSE} zos
 #: R/subassign.R:0
 msgid "you cannot mix negative and positive indices"
 msgstr "nie można mieszać ujemnych oraz dodatnich indeksów"
+
+#~ msgid "unexpected %s=\"%s\" in '%s' method"
+#~ msgstr "nieoczekiwany %s=\"%s\" w metodzie '%s'"
 
 # Matrix/R/abIndex.R: 165
 # stop("wrong sign in 'by' argument")
