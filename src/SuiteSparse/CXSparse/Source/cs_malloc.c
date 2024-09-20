@@ -33,6 +33,11 @@ void *cs_realloc (void *p, CS_INT n, size_t size, CS_INT *ok)
 {
     void *pnew ;
     pnew = realloc (p, CS_MAX (n,1) * size) ; /* realloc the block */
-    *ok = (pnew != NULL) ;                  /* realloc fails if pnew is NULL */
-    return ((*ok) ? pnew : p) ;             /* return original p if failure */
+    if (pnew != NULL) { /* realloc fails if pnew is NULL */
+        *ok = 1;
+        return pnew;
+    } else {
+        *ok = 0;
+        return p; // Return the original pointer if reallocation failed
+    }
 }
