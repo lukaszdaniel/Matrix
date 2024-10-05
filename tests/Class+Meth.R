@@ -118,7 +118,7 @@ for(cln in allCl) {
     showClass(cln)
 }
 
-cat("\n\n")
+cat("\n\n")
 
 ## One could extend the `display' by using (something smarter than)
 ## are the "coerce" methods showing more than the 'Extends' output above?
@@ -145,7 +145,7 @@ stopifnot(identical(as(mT,"CsparseMatrix"), mC))
 as(mlC, "triangularMatrix")
 
 if(!doExtras && !interactive()) q("no") ## (saving testing time)
-
+
 ### Test all classes:  validObject(new( * )) should be fulfilled -----------
 
 ## need stoplist for now:

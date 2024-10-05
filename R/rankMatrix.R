@@ -110,10 +110,9 @@ rankMatrix <- function(x, tol = NULL,
 	    if(is.null(tol)) {
 		if(!x.dense && missing(sval) && prod(d) >= 100000L)
 		    warning(gettextf(
- "rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix.
- Probably should rather use method = 'qr' !?",
+ "rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?",
 				     method),
-			    immediate.=TRUE, domain=NA)
+			    immediate.=TRUE, domain="R-Matrix")
                 ## the "Matlab" default:
                 if(p > 1) stopifnot(diff(sval) <= 0) #=> sval[1]= max(sval)
                 tol <- max(d) * .Machine$double.eps

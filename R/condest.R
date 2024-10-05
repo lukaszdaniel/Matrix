@@ -169,7 +169,7 @@ condest <- function(A, t = min (n, 5), normA = norm(A, "1"),
 ## %!  x = A*v;
 ## %!  assert (norm(x, inf), 0, eps);
 
-
+
 ##------------ onenormest ------------------------------------------
 
 onenormest <- function(A, t = min(n, 5),
@@ -232,7 +232,7 @@ onenormest <- function(A, t = min(n, 5),
         if (iter > iter.max) {
             ## Gone too far.  Stop.
             if(!silent) warning(gettextf("not converged in %d iterations",
-					 iter.max), domain = NA)
+					 iter.max), domain = "R-Matrix")
             break
         }
 

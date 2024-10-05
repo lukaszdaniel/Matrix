@@ -44,13 +44,13 @@ readHB <- function(file)
     valln <- as.integer(substr(hdr[2], 43, 56))
     rhsln <- as.integer(substr(hdr[2], 57, 70))
     if (!(t1 <- substr(hdr[3], 1, 1)) %in% c('C', 'R', 'P'))
-        stop(gettextf("Invalid storage type: %s", t1), domain=NA)
+        stop(gettextf("Invalid storage type: %s", t1), domain="R-Matrix")
     if (t1 != 'R') stop("Only numeric sparse matrices allowed")
     ## _FIXME: Patterns should also be allowed
     if (!(t2 <- substr(hdr[3], 2, 2)) %in% c('H', 'R', 'S', 'U', 'Z'))
-        stop(gettextf("Invalid storage format: %s", t2), domain=NA)
+        stop(gettextf("Invalid storage format: %s", t2), domain="R-Matrix")
     if (!(t3 <- substr(hdr[3], 3, 3)) %in% c('A', 'E'))
-        stop(gettextf("Invalid assembled indicator: %s", t3), domain=NA)
+        stop(gettextf("Invalid assembled indicator: %s", t3), domain="R-Matrix")
     nr <- as.integer(substr(hdr[3], 15, 28))
     nc <- as.integer(substr(hdr[3], 29, 42))
     nz <- as.integer(substr(hdr[3], 43, 56))
@@ -88,29 +88,29 @@ readMM <- function(file)
     if (scan1(character()) != "%%MatrixMarket")# hdr
         stop("file is not a MatrixMarket file")
     if (!(typ <- tolower(scan1(character()))) %in% "matrix")
-        stop(gettextf("type '%s' not recognized", typ), domain = NA)
+        stop(gettextf("type '%s' not recognized", typ), domain = "R-Matrix")
     if (!(repr <- tolower(scan1(character()))) %in% c("coordinate", "array"))
-        stop(gettextf("representation '%s' not recognized", repr), domain = NA)
+        stop(gettextf("representation '%s' not recognized", repr), domain = "R-Matrix")
     elt <- tolower(scan1(character()))
     if (!elt %in% c("real", "complex", "integer", "pattern"))
-        stop(gettextf("element type '%s' not recognized", elt), domain = NA)
+        stop(gettextf("element type '%s' not recognized", elt), domain = "R-Matrix")
 
     sym <- tolower(scan1(character()))
     if (!sym %in% c("general", "symmetric", "skew-symmetric", "hermitian"))
-        stop(gettextf("symmetry form '%s' not recognized", sym), domain = NA)
+        stop(gettextf("symmetry form '%s' not recognized", sym), domain = "R-Matrix")
     nr <- scan1(integer(), comment.char = "%")
     nc <- scan1(integer())
     nz <- scan1(integer())
     checkIJ <- function(els) {
         if((nz. <- length(els$i)) < nz)
             warning(gettextf("readMM(): expected %d entries but found only %d",
-                             nz, nz.), call. = FALSE, domain = NA)
+                             nz, nz.), call. = FALSE, domain = "R-Matrix")
         if(any(is.na(els$i) | els$i < 1L | els$i > nr))
             stop(gettextf("readMM(): row indices 'i' are not in 1:nrow[=%d]",
-                          nr), call. = FALSE, domain = NA)
+                          nr), call. = FALSE, domain = "R-Matrix")
         if(any(is.na(els$j) | els$j < 1L | els$j > nc))
             stop(gettextf("readMM(): column indices 'j' are not in 1:ncol[=%d]",
-                          nc), call. = FALSE, domain = NA)
+                          nc), call. = FALSE, domain = "R-Matrix")
     }
     if (repr == "coordinate") {
         switch(elt,
@@ -142,7 +142,7 @@ readMM <- function(file)
             },
             ## otherwise (not possible; just defensive programming):
             stop(gettextf("symmetry form '%s' is not yet implemented",
-                          sym), domain = NA)
+                          sym), domain = "R-Matrix")
             )
         },
         "pattern" = {
@@ -170,7 +170,7 @@ readMM <- function(file)
             },
             ## otherwise (not possible; just defensive programming):
             stop(gettextf("symmetry form '%s' is not yet implemented",
-                          sym), domain = NA)
+                          sym), domain = "R-Matrix")
             )
         },
         "complex" = {
@@ -178,11 +178,11 @@ readMM <- function(file)
         },
         ## otherwise (not possible currently):
         stop(gettextf("'%s()' is not yet implemented for element type '%s'",
-                      "readMM", elt), domain = NA))
+                      "readMM", elt), domain = "R-Matrix"))
     }
     else
-        stop(gettextf("'%s()' is not yet implemented for  representation '%s'",
-                      "readMM", repr), domain = NA)
+        stop(gettextf("'%s()' is not yet implemented for representation '%s'",
+                      "readMM", repr), domain = "R-Matrix")
 }
 
 setMethod("writeMM", c(obj = "CsparseMatrix"),

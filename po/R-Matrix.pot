@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.7-0\n"
-"POT-Creation-Date: 2024-09-15 20:23\n"
+"POT-Creation-Date: 2024-10-05 20:29\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,16 +266,16 @@ msgstr ""
 
 
 #: R/HBMM.R: 0
-#. R/HBMM.R: gettextf("'%s()' is not yet implemented for  representation '%s'",     "readMM", repr)
+#. R/HBMM.R: gettextf("'%s()' is not yet implemented for element type '%s'",     "readMM", elt)
 
-msgid "'%s()' is not yet implemented for  representation '%s'"
+msgid "'%s()' is not yet implemented for element type '%s'"
 msgstr ""
 
 
 #: R/HBMM.R: 0
-#. R/HBMM.R: gettextf("'%s()' is not yet implemented for element type '%s'",     "readMM", elt)
+#. R/HBMM.R: gettextf("'%s()' is not yet implemented for representation '%s'",     "readMM", repr)
 
-msgid "'%s()' is not yet implemented for element type '%s'"
+msgid "'%s()' is not yet implemented for representation '%s'"
 msgstr ""
 
 
@@ -586,6 +586,13 @@ msgid "Cmp.Mat.atomic() should not be called for diagonalMatrix"
 msgstr ""
 
 
+#: R/Ops.R: 0
+#. R/Ops.R: gettextf("Compare <Csparse> -- \"%s\" %s \"%s\" :\n", cD1@className,     .Generic, cD2@className)
+
+msgid "Compare <Csparse> -- \"%s\" %s \"%s\" :"
+msgstr ""
+
+
 #: R/Cholesky.R: 0
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(r.ii)))
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(L.ii)))
@@ -842,9 +849,9 @@ msgstr ""
 
 
 #: R/Ops.R: 0
-#. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, l2)
-#. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, le)
-#. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, l2)
+#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, l2)
+#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, le)
+#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, l2)
 #. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, n2)
 #. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n2, n1)
 
@@ -1748,9 +1755,9 @@ msgstr ""
 
 
 #: R/rankMatrix.R: 0
-#. R/rankMatrix.R: gettextf("rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix.\n Probably should rather use method = 'qr' !?",     method)
+#. R/rankMatrix.R: gettextf("rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?",     method)
 
-msgid "rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix.\n Probably should rather use method = 'qr' !?"
+msgid "rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?"
 msgstr ""
 
 
@@ -1829,6 +1836,21 @@ msgstr ""
 #. R/vector.R: stop("should never happen ...")
 
 msgid "should never happen ..."
+msgstr ""
+
+
+#: R/Ops.R: 0
+#. R/Ops.R: gettextf("sparse to dense (%s) coercion in '%s' -> %s", lClass,     .Generic, "Cmp.Mat.atomic")
+#. R/Ops.R: gettextf("sparse to dense (%s) coercion in '%s' -> %s", lClass,     .Generic, "Logic.Mat.atomic")
+
+msgid "sparse to dense (%s) coercion in '%s' -> %s"
+msgstr ""
+
+
+#: R/Ops.R: 0
+#. R/Ops.R: gettext("suboptimal 'Arith' implementation of  'dsC*  o  dsC*'")
+
+msgid "suboptimal 'Arith' implementation of  'dsC*  o  dsC*'"
 msgstr ""
 
 

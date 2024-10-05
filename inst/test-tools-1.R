@@ -51,7 +51,7 @@ isValid <- function(x, class) isTRUE(validObject(x, test=TRUE)) && is(x, class)
 ##' @author Martin Maechler, March 2015
 stopifnotValid <- function(x, class) {
     if(!is(x, class))
-	stop(sprintf("%s is not of class \"%s\"",
+	stop(gettextf("%s is not of class \"%s\"",
 		     deparse(substitute(x)), class), call. = FALSE)
     invisible(validObject(x))
 }
@@ -214,7 +214,7 @@ assert.EQ. <- function(target, current,
     assert.EQ(target, current, tol=tol, giveRE=giveRE, showOnly=showOnly,
 	      check.attributes=FALSE, ...)
 }
-
+
 ### ------- Part II  -- related to matrices, but *not* "Matrix" -----------
 
 add.simpleDimnames <- function(m, named=FALSE) {

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 4.0.0 / matrix 1.3-0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
-"POT-Creation-Date: 2024-09-15 20:23\n"
+"POT-Creation-Date: 2024-10-05 20:29\n"
 "PO-Revision-Date: 2020-04-01 16:01+0200\n"
 "Last-Translator: Detlef Steuer <steuer@hsu-hh.de>\n"
 "Language-Team: R-Core <r-core@r-project.org>\n"
@@ -213,15 +213,16 @@ msgstr "kronecker-Methode muss Standard 'FUN' benutzen"
 msgid "'%s' via sparse -> dense coercion"
 msgstr "rcond(.) über Umwandlung dünn besetzt -> dicht besetzt"
 
-#. R/HBMM.R: gettextf("'%s()' is not yet implemented for  representation '%s'",     "readMM", repr)
-#: R/HBMM.R:0
-msgid "'%s()' is not yet implemented for  representation '%s'"
-msgstr "'%s()' ist noch nicht implementiert für Darstellung '%s'"
-
 #. R/HBMM.R: gettextf("'%s()' is not yet implemented for element type '%s'",     "readMM", elt)
 #: R/HBMM.R:0
 msgid "'%s()' is not yet implemented for element type '%s'"
 msgstr "'%s()' ist noch nicht für Elementtyp '%s' implementiert"
+
+#. R/HBMM.R: gettextf("'%s()' is not yet implemented for representation '%s'",     "readMM", repr)
+#: R/HBMM.R:0
+#, fuzzy
+msgid "'%s()' is not yet implemented for representation '%s'"
+msgstr "'%s()' ist noch nicht implementiert für Darstellung '%s'"
 
 #. R/condest.R: stop("'A' must be a square matrix")
 #. R/condest.R: stop("'A' must be a square matrix")
@@ -455,6 +456,11 @@ msgstr "Klasse %s noch nicht implementiert"
 msgid "Cmp.Mat.atomic() should not be called for diagonalMatrix"
 msgstr "Cmp.Mat.atomic() sollte nicht für diagonalMatrix aufgerufen werden"
 
+#. R/Ops.R: gettextf("Compare <Csparse> -- \"%s\" %s \"%s\" :\n", cD1@className,     .Generic, cD2@className)
+#: R/Ops.R:0
+msgid "Compare <Csparse> -- \"%s\" %s \"%s\" :"
+msgstr ""
+
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(r.ii)))
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(L.ii)))
 #: R/Cholesky.R:0
@@ -647,9 +653,9 @@ msgstr ""
 msgid "diag(%s) has non-positive or non-finite entries; finite result is doubtful"
 msgstr "diag(.) hatte 0 oder NA Einträge. Nicht-endliches Ergebnis ist zweifelhaft"
 
-#. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, l2)
-#. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, le)
-#. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, l2)
+#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, l2)
+#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, le)
+#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, l2)
 #. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, n2)
 #. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n2, n1)
 #: R/Ops.R:0
@@ -1348,11 +1354,10 @@ msgstr "prod(<abIndex>) ist noch nicht implementiert"
 msgid "qr2rankMatrix(.): QR with only %d out of %d finite diag(R) entries"
 msgstr "qr2rankMatrix(.): QR Zerlegung mit nur %d von %d endlichen diag(R) Werten"
 
-#. R/rankMatrix.R: gettextf("rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix.\n Probably should rather use method = 'qr' !?",     method)
+#. R/rankMatrix.R: gettextf("rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?",     method)
 #: R/rankMatrix.R:0
-msgid ""
-"rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix.\n"
-" Probably should rather use method = 'qr' !?"
+#, fuzzy
+msgid "rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?"
 msgstr ""
 "rankMatrix(<large sparse Matrix>, method = '%s') wird in dicht\n"
 "besetzte Matrix umgewandelt. Evtl. eher method = 'qr' nutzen? "
@@ -1415,6 +1420,17 @@ msgstr "Zeilenindizes müssen <= nrow(.) sein, das ist %d"
 #, fuzzy
 msgid "should never happen ..."
 msgstr "Sollte niemals vorkommen. Bitte berichten."
+
+#. R/Ops.R: gettextf("sparse to dense (%s) coercion in '%s' -> %s", lClass,     .Generic, "Cmp.Mat.atomic")
+#. R/Ops.R: gettextf("sparse to dense (%s) coercion in '%s' -> %s", lClass,     .Generic, "Logic.Mat.atomic")
+#: R/Ops.R:0
+msgid "sparse to dense (%s) coercion in '%s' -> %s"
+msgstr ""
+
+#. R/Ops.R: gettext("suboptimal 'Arith' implementation of  'dsC*  o  dsC*'")
+#: R/Ops.R:0
+msgid "suboptimal 'Arith' implementation of  'dsC*  o  dsC*'"
+msgstr ""
 
 #. R/subscript.R: stop("subscript out of bounds")
 #. R/subscript.R: stop("subscript out of bounds")

@@ -25,7 +25,7 @@ as1 <- function(x, mode. = mode(x))
            "double"  =     ,
            "numeric" =    1,
            "complex" = 1+0i,
-           stop(gettextf("invalid mode \"%s\"", mode.), domain = NA))
+           stop(gettextf("invalid mode \"%s\"", mode.), domain = "R-Matrix"))
 
 ## NB: change to using 'typeof' when we define iMatrix
 as0 <- function(x, mode. = mode(x))
@@ -35,12 +35,12 @@ as0 <- function(x, mode. = mode(x))
            "double"  =      ,
            "numeric" =     0,
            "complex" =  0+0i,
-           stop(gettextf("invalid mode \"%s\"", mode.), domain = NA))
+           stop(gettextf("invalid mode \"%s\"", mode.), domain = "R-Matrix"))
 
 .bail.out.2 <- function(name, cl1, cl2)
     stop(gettextf("%s(<%s>, <%s>) is not yet implemented; ask maintainer(\"%s\") to implement the missing method",
                   name, cl1[1L], cl2[1L], "Matrix"),
-         call. = FALSE, domain = NA)
+         call. = FALSE, domain = "R-Matrix")
 
 Matrix.verbose <- function()
     getOption("Matrix.verbose", .MatrixEnv[["verbose"]])
@@ -104,7 +104,7 @@ forceDiagonal <- function(x, diag = NA_character_) {
                  complex =
                      stop(gettextf("complex %s not yet implemented",
                                    "diagonalMatrix"),
-                          domain = NA),
+                          domain = "R-Matrix"),
               ## complex =
               ##     {
               ##         if(is.na(diag))
@@ -114,7 +114,7 @@ forceDiagonal <- function(x, diag = NA_character_) {
               ##     },
                  stop(gettextf("cannot coerce matrix of type \"%s\" to %s",
                                typeof(y), "diagonalMatrix"),
-                      domain = NA))
+                      domain = "R-Matrix"))
     n <- length(y)
     d <- dim(x)
     dn <- dimnames(x) %||% list(NULL, NULL)
@@ -192,7 +192,7 @@ non0.i <- function(M, cM = class(M), uniqT = TRUE) {
         else cbind(perm - 1L, i, deparse.level = 0L)
     } else
         stop(gettextf("non0.i() not yet implemented for class %s", dQuote(cM)),
-             domain = NA)
+             domain = "R-Matrix")
 }
 
 ##' the "more versatile / user" function (still not exported):

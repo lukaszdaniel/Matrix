@@ -64,7 +64,7 @@ rm(.cl)
     if(any(d.a != d.b))
         stop(gettextf("non-conformable matrix dimensions in %s",
                       deparse(sys.call(sys.parent()))),
-             call. = FALSE, domain = NA)
+             call. = FALSE, domain = "R-Matrix")
     d.a
 }
 
@@ -88,7 +88,7 @@ rm(.cl)
                         else if(check && !identical(r[[j]], dn))
                             warning(gettextf("dimnames [%d] mismatch in %s", j,
                                              deparse(sys.call(sys.parent()))),
-                                    call. = FALSE, domain = NA)
+                                    call. = FALSE, domain = "R-Matrix")
                     }
                 r
             }
@@ -224,7 +224,7 @@ Cmp.Mat.atomic <- function(e1, e2) { ## result will inherit from "lMatrix"
         return(if(n1 == 0) as(e1, "lMatrix") else as.logical(e2))
     ## else
     if(n1 && n1 < l2)
-        stop(sprintf("dim [product %d] do not match the length of object [%d]",
+        stop(gettextf("dim [product %d] do not match the length of object [%d]",
                      n1, l2))
     cl1 <- getClassDef(cl)
     slots1 <- names(cl1@slots)
@@ -335,7 +335,7 @@ Cmp.Mat.atomic <- function(e1, e2) { ## result will inherit from "lMatrix"
             lClass <- if(extends(cl1, "symmetricMatrix"))
                           "lsyMatrix"
                       else "lgeMatrix"
-            Matrix.message(sprintf("sparse to dense (%s) coercion in '%s' -> %s",
+            Matrix.message(gettextf("sparse to dense (%s) coercion in '%s' -> %s",
                                lClass, .Generic, "Cmp.Mat.atomic"),
                        .M.level = 2)
             rx <- rep_len(r0, n1)
@@ -573,7 +573,7 @@ setMethod("Arith", c(e1 = "dgeMatrix", e2 = "dgeMatrix"),
                       dn <- e1@Dimnames
                   } else
                       stop(gettextf("number of rows are not compatible for %s",
-                                    .Generic), domain = NA)
+                                    .Generic), domain = "R-Matrix")
               }
               new("dgeMatrix", Dim = d, Dimnames = dn, x = callGeneric(x1, x2))
           })
@@ -636,7 +636,7 @@ setMethod("Arith", c(e1 = "ddenseMatrix", e2 = "ddenseMatrix"),
     n1 <- prod(d <- e1@Dim)
     le <- length(e2 <- as.vector(e2))
     if(n1 && n1 < le)
-        stop(sprintf("dim [product %d] do not match the length of object [%d]",
+        stop(gettextf("dim [product %d] do not match the length of object [%d]",
                      n1, le))
     if(le == 0) {
         if(prod(d) == 0)
@@ -834,7 +834,7 @@ Logic.Mat.atomic <- function(e1, e2) { ## result will typically be "like" e1:
     l2 <- length(e2 <- as.logical(e2))
     n1 <- prod(d <- e1@Dim)
     if(n1 && n1 < l2)
-        stop(sprintf("dim [product %d] do not match the length of object [%d]",
+        stop(gettextf("dim [product %d] do not match the length of object [%d]",
                      n1, l2))
     if(.Generic == "&" && l2 && allTrue (e2)) return(as(e1, "lMatrix"))
     if(.Generic == "|" && l2 && allFalse(e2)) return(as(e1, "lMatrix"))
@@ -952,7 +952,7 @@ Logic.Mat.atomic <- function(e1, e2) { ## result will typically be "like" e1:
             ## non sparse result
             lClass <- if(extends(cl1, "symmetricMatrix"))
                 "lsyMatrix" else "lgeMatrix"
-            Matrix.message(sprintf("sparse to dense (%s) coercion in '%s' -> %s",
+            Matrix.message(gettextf("sparse to dense (%s) coercion in '%s' -> %s",
                                lClass, .Generic, "Logic.Mat.atomic"),
                        .M.level = 2)
             rx <- rep_len(r0, n1)
@@ -1192,7 +1192,7 @@ setMethod("Logic", c(e1="lsparseMatrix", e2="lsparseMatrix"),
 ## -----
 setMethod("Arith", c(e1 = "dsCMatrix", e2 = "dsCMatrix"),
           function(e1, e2) {
-              Matrix.message("suboptimal 'Arith' implementation of  'dsC*  o  dsC*'")
+              Matrix.message(gettext("suboptimal 'Arith' implementation of  'dsC*  o  dsC*'"))
               forceSymmetric(callGeneric(.M2gen(e1), .M2gen(e2)))
           })
 
@@ -1501,7 +1501,7 @@ setMethod("Compare", c(e1 = "CsparseMatrix", e2 = "CsparseMatrix"),
 
               cD1 <- getClassDef(class(e1))
               cD2 <- getClassDef(class(e2))
-              Matrix.message(sprintf("Compare <Csparse> -- \"%s\" %s \"%s\" :\n",
+              Matrix.message(gettextf("Compare <Csparse> -- \"%s\" %s \"%s\" :\n",
                                  cD1@className, .Generic, cD2@className),
                          .M.level = 2)
 
@@ -1705,7 +1705,7 @@ setMethod("Ops", c(e1 = "sparseVector", e2 = "vector"),
               if(is.object(e2) || is.array(e2) || is.recursive(e2))
                   stop(gettextf("invalid class \"%s\" object in '%s' method",
                                 data.class(e2), "Ops"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(length(e2) == 1) { ## scalar ------ special case - "fast"
                   if(all0(callGeneric(FALSE, e2))) { # result remains sparse
                       if(is(e1, "nsparseVector")) { # no 'x' slot, i.e. all TRUE
@@ -1743,7 +1743,7 @@ setMethod("Ops", c(e1 = "vector", e2 = "sparseVector"),
               if(is.object(e1) || is.array(e1) || is.recursive(e1))
                   stop(gettextf("invalid class \"%s\" object in '%s' method",
                                 data.class(e1), "Ops"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(length(e1) == 1) { ## scalar ------ special case - "fast"
                   if(all0(callGeneric(e1, FALSE))) { # result remains sparse
                       if(is(e2, "nsparseVector")) { # no 'x' slot, i.e. all TRUE
@@ -1972,7 +1972,7 @@ diagOdiag <- function(e1,e2) {
         else if(is.logical(r))
             e1 <- .M2kind(e1, "l")
         else stop(gettextf("intermediate 'r' is of type %s",
-                           typeof(r)), domain=NA)
+                           typeof(r)), domain="R-Matrix")
         e1@x <- r
         e1@diag <- "N"
         e1

@@ -34,7 +34,7 @@ setMethod("kronecker", c(X = "diagonalMatrix", Y = "diagonalMatrix"),
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               r <- new("ddiMatrix")
               r@Dim <- dX * dY
               uX <- X@diag != "N"
@@ -75,7 +75,7 @@ setMethod("kronecker", c(X = "diagonalMatrix", Y = "denseMatrix"),
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- X@diag != "N"
               uY <- FALSE
               shape <- .M.shape(Y)
@@ -100,7 +100,7 @@ setMethod("kronecker", c(X = "diagonalMatrix", Y = "denseMatrix"),
                   }
                   if(as.double(nX) * nY > .Machine$integer.max)
                       stop(gettextf("number of nonzero entries cannot exceed %s", "2^31-1"),
-                           domain = NA)
+                           domain = "R-Matrix")
                   if(!uX && uY) {
                       diag(Y) <- TRUE
                       nY <- length(y <- Y@x)
@@ -152,11 +152,11 @@ setMethod("kronecker", c(X = "denseMatrix", Y = "diagonalMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               shape <- .M.shape(X)
               uX <- FALSE
               uY <- Y@diag != "N"
@@ -182,7 +182,7 @@ setMethod("kronecker", c(X = "denseMatrix", Y = "diagonalMatrix"),
                   }
                   if(as.double(nX) * nY > .Machine$integer.max)
                       stop(gettextf("number of nonzero entries cannot exceed %s", "2^31-1"),
-                           domain = NA)
+                           domain = "R-Matrix")
                   if(uX && !uY) {
                       diag(X) <- TRUE
                       nX <- length(x <- X@x)
@@ -261,11 +261,11 @@ setMethod("kronecker", c(X = "denseMatrix", Y = "denseMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               shape <- switch(.M.shape(X),
                               g = "g",
                               t = if(.M.shape(Y) == "t" && X@uplo == Y@uplo)
@@ -308,11 +308,11 @@ setMethod("kronecker", c(X = "diagonalMatrix", Y = "CsparseMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- X@diag != "N"
               uY <- FALSE
               shape <- .M.shape(Y)
@@ -332,7 +332,7 @@ setMethod("kronecker", c(X = "diagonalMatrix", Y = "CsparseMatrix"),
                       r@p <- integer(dr[2L] + 1)
                   else if(as.double(nX <- dX[1L]) * nY > .Machine$integer.max)
                       stop(gettextf("number of nonzero entries cannot exceed %s", "2^31-1"),
-                           domain = NA)
+                           domain = "R-Matrix")
                   else {
                       head. <-
                           if(length(Y@i) > nY)
@@ -373,11 +373,11 @@ setMethod("kronecker", c(X = "CsparseMatrix", Y = "diagonalMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- FALSE
               uY <- Y@diag != "N"
               shape <- .M.shape(X)
@@ -397,7 +397,7 @@ setMethod("kronecker", c(X = "CsparseMatrix", Y = "diagonalMatrix"),
                       r@p <- integer(dr[2L] + 1)
                   else if(as.double(nY <- dY[1L]) * nX > .Machine$integer.max)
                       stop(gettextf("number of nonzero entries cannot exceed %s", "2^31-1"),
-                           domain = NA)
+                           domain = "R-Matrix")
                   else {
                       dp <- p[-1L] - p[-length(p)]
                       j. <- which(dp > 0L)
@@ -443,11 +443,11 @@ setMethod("kronecker", c(X = "CsparseMatrix", Y = "CsparseMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- uY <- FALSE
               if((sX <- .M.shape(X)) == "t")
                   uX <- X@diag != "N"
@@ -486,7 +486,7 @@ setMethod("kronecker", c(X = "CsparseMatrix", Y = "CsparseMatrix"),
                       r@p <- integer(dr[2L] + 1)
                   else if(as.double(nX) * nY > .Machine$integer.max)
                       stop(gettextf("number of nonzero entries cannot exceed %s", "2^31-1"),
-                           domain = NA)
+                           domain = "R-Matrix")
                   else {
                       dpX <- pX[-1L] - (pX. <- pX[-length(pX)])
                       dpY <- pY[-1L] - (pY. <- pY[-length(pY)])
@@ -553,11 +553,11 @@ setMethod("kronecker", c(X = "diagonalMatrix", Y = "TsparseMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- X@diag != "N"
               uY <- FALSE
               shape <- .M.shape(Y)
@@ -611,11 +611,11 @@ setMethod("kronecker", c(X = "TsparseMatrix", Y = "diagonalMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- FALSE
               uY <- Y@diag != "N"
               shape <- .M.shape(X)
@@ -663,11 +663,11 @@ setMethod("kronecker", c(X = "TsparseMatrix", Y = "TsparseMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               uX <- uY <- FALSE
               if((sX <- .M.shape(X)) == "t")
                   uX <- X@diag != "N"
@@ -744,11 +744,11 @@ setMethod("kronecker", c(X = "indMatrix", Y = "indMatrix"),
               if(!(missing(FUN) || identical(FUN, "*")))
                   stop(gettextf("'%s' method must use default %s=\"%s\"",
                                 "kronecker", "FUN", "*"),
-                       domain = NA)
+                       domain = "R-Matrix")
               if(any(as.double(dX <- X@Dim) * (dY <- Y@Dim) >
                      .Machine$integer.max))
                   stop(gettextf("dimensions cannot exceed %s", "2^31-1"),
-                       domain = NA)
+                       domain = "R-Matrix")
               r <- new("indMatrix")
               r@Dim <- dX * dY
               r@perm <-

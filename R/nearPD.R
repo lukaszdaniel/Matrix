@@ -92,7 +92,7 @@ nearPD <-
 
     if(!converged)
 	warning(gettextf("'nearPD()' did not converge in %d iterations",
-			 iter), domain = NA)
+			 iter), domain = "R-Matrix")
 
     ## force symmetry is *NEVER* needed, we have symmetric X here!
     ## X <- (X + t(X))/2
