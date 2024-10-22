@@ -189,7 +189,7 @@ msgstr "slot '%s' nie może zawierać braków danych"
 msgid "'%s' slot is not nondecreasing"
 msgstr "gniazdo '%s' musi zawierać wartości, które są niemalejące"
 
-#: cholmod-common.c:29 validity.c:312 validity.c:363
+#: cholmod-common.c:29 validity.c:311 validity.c:362
 #, c-format
 msgid "first differences of '%s' slot exceed %s"
 msgstr "pierwsze różnica gniazda '%s' przekraczają %s"
@@ -243,7 +243,7 @@ msgstr "zły '%s'"
 msgid "'%s' would overflow type \"%s\""
 msgstr "'%s' spowoduje przepełnienie typu \"%s\""
 
-#: cholmod-common.c:615 cholmod-etc.c:190
+#: cholmod-common.c:613 cholmod-etc.c:190
 #, c-format
 msgid "n+1 would overflow type \"%s\""
 msgstr "n+1 przekroczy maksymalną dozwoloną wartość typu \"%s\""
@@ -270,11 +270,11 @@ msgstr "wiodący główny minor rzędu %d nie jest dodatnio określony"
 msgid "leading principal minor of order %d is zero"
 msgstr "wiodący główny minor rzędu %d wynosi zero"
 
-#: cholmod-common.c:973 cholmod-etc.c:328
+#: cholmod-common.c:971 cholmod-etc.c:328
 msgid "leading dimension not equal to number of rows"
 msgstr "wymiar wiodący nie jest równy liczbie wierszy"
 
-#: cholmod-common.c:1037
+#: cholmod-common.c:1035
 #, c-format
 msgid "invalid simplicial Cholesky factorization: structural zero on main diagonal in column %d"
 msgstr "nieprawidłowa uproszczona faktoryzacja Cholesky'ego: zero strukturalne na głównej przekątnej w kolumnie %d"
@@ -301,7 +301,7 @@ msgstr "Ostrzeżenie 'CHOLMOD' '%s' w pliku '%s', linia %d"
 msgid "attempt to construct non-square %s"
 msgstr "Wyznacznik wymaga aby %s była kwadratowa"
 
-#: coerce.c:186 coerce.c:476 coerce.c:1467 coerce.c:1622
+#: coerce.c:186 coerce.c:473 coerce.c:1464 coerce.c:1619
 #, c-format
 msgid "second argument of '%s' does not specify a subclass of %s"
 msgstr "drugi argument '%s' nie określa podklasy %s"
@@ -326,27 +326,27 @@ msgstr "'%s' musi być '%s' lub '%s'"
 msgid "nonempty vector supplied for empty matrix"
 msgstr "niepusty wektor dostarczony dla pustej macierzy"
 
-#: coerce.c:287 coerce.c:1570
+#: coerce.c:287 coerce.c:1567
 #, c-format
 msgid "vector length (%lld) exceeds matrix length (%d * %d)"
 msgstr "długość wektora (%lld) przekracza długość macierzy (%d * %d)"
 
-#: coerce.c:290 coerce.c:1573
+#: coerce.c:290 coerce.c:1570
 #, c-format
 msgid "matrix length (%d * %d) is not a multiple of vector length (%lld)"
 msgstr "długość macierzy (%d * %d) nie jest wielokrotnością długości wektora (%lld)"
 
-#: coerce.c:521
+#: coerce.c:518
 #, c-format
 msgid "coercing n-by-n %s to %s is not supported for n*n exceeding %s"
 msgstr "przekształcanie macierzy n x n %s do %s nie jest obsługiwane w przypadku gdy n*n przekracza %s"
 
-#: coerce.c:525 coerce.c:815 coerce.c:949
+#: coerce.c:522 coerce.c:812 coerce.c:946
 #, c-format
 msgid "sparse->dense coercion: allocating vector of size %0.1f GiB"
 msgstr "przekształcenie z rozsiane -> gęste: przydzielanie wektora o rozmiarze %0.1f GiB"
 
-#: coerce.c:1196 coerce.c:1941 coerce.c:2948 coerce.c:2954
+#: coerce.c:1193 coerce.c:1938 coerce.c:2945 coerce.c:2951
 #, c-format
 msgid "attempt to construct %s with more than %s nonzero entries"
 msgstr "próba utworzenia %s z więcej niż %s niezerowymi wpisami"
@@ -357,7 +357,7 @@ msgstr "próba utworzenia %s z więcej niż %s niezerowymi wpisami"
 msgid "attempt to pack non-square matrix"
 msgstr "próba spakowania macierzy innej niż kwadratowa"
 
-#: coerce.c:3420 coerce.c:3590
+#: coerce.c:3417 coerce.c:3587
 #, c-format
 msgid "unable to aggregate %s with '%s' and '%s' slots of length exceeding %s"
 msgstr "nie można zagregować %s z gniazdami '%s' oraz '%s' o długości przekraczającej %s"
@@ -390,12 +390,12 @@ msgstr "'%s' (%d) musi być liczbą całkowitą od %s (%d) do %s (%d)"
 msgid "'%s' (%d) must be less than or equal to '%s' (%d)"
 msgstr "'%s' (%d) musi być mniejsze lub równe '%s' (%d)"
 
-#: dense.c:428 sparse.c:1070
+#: dense.c:422 sparse.c:1070
 #, c-format
 msgid "replacement diagonal has incompatible type \"%s\""
 msgstr "przekątna zastępująca ma niezgodny typ \"%s\""
 
-#: dense.c:437 sparse.c:1079
+#: dense.c:431 sparse.c:1079
 msgid "replacement diagonal has wrong length"
 msgstr "przekątna zastępująca ma niepoprawną długość"
 
@@ -405,11 +405,11 @@ msgstr "przekątna zastępująca ma niepoprawną długość"
 msgid "attempt to symmetrize a non-square matrix"
 msgstr "próba symetryzacji macierzy niekwadratowej"
 
-#: dense.c:721 sparse.c:1653
+#: dense.c:715 sparse.c:1653
 msgid "attempt to get symmetric part of non-square matrix"
 msgstr "próba uzyskania części symetrycznej macierzy niekwadratowej"
 
-#: dense.c:873 sparse.c:2083
+#: dense.c:867 sparse.c:2083
 msgid "attempt to get skew-symmetric part of non-square matrix"
 msgstr "próba uzyskania skośno-symetrycznej części macierzy niekwadratowej"
 
@@ -422,21 +422,21 @@ msgstr "'%s' musi być %d lub %d"
 
 # Matrix/src/dense.c: 31
 # error(_("incorrect left cyclic shift, j (%d) < 0"), j, k)
-#: dense.c:2156
+#: dense.c:2150
 #, c-format
 msgid "incorrect left cyclic shift, j (%d) < 0"
 msgstr "niepoprawne lewe cykliczne przesunięcie, j (%d) < 0"
 
 # Matrix/src/dense.c: 29
 # error(_("incorrect left cyclic shift, j (%d) >= k (%d)"), j, k)
-#: dense.c:2159
+#: dense.c:2153
 #, c-format
 msgid "incorrect left cyclic shift, j (%d) >= k (%d)"
 msgstr "niepoprawne lewe cykliczne przesunięcie, j (%d) >= k (%d)"
 
 # Matrix/src/dense.c: 33
 # error(_("incorrect left cyclic shift, k (%d) > ldx (%d)"), k, ldx)
-#: dense.c:2162
+#: dense.c:2156
 #, c-format
 msgid "incorrect left cyclic shift, k (%d) > ldx (%d)"
 msgstr "niepoprawne lewe cykliczne przesunięcie, k (%d) > ldx (%d)"
@@ -453,7 +453,7 @@ msgstr "nieznany błąd w funkcji 'getGivens()'"
 # error(_("'X' argument must be a numeric (double precision) matrix"))
 # Matrix/src/dense.c: 137
 # error(_("'X' argument must be a numeric (double precision) matrix"))
-#: dense.c:2224 dense.c:2238 dense.c:2268
+#: dense.c:2218 dense.c:2232 dense.c:2262
 msgid "X must be a numeric (double precision) matrix"
 msgstr "'X' musi być macierzą liczbową (o podwójnej precyzji)"
 
@@ -461,7 +461,7 @@ msgstr "'X' musi być macierzą liczbową (o podwójnej precyzji)"
 # error(_("'y' argument must be a numeric (double precision) matrix"))
 # Matrix/src/dense.c: 142
 # error(_("'y' argument must be a numeric (double precision) matrix"))
-#: dense.c:2240 dense.c:2270
+#: dense.c:2234 dense.c:2264
 msgid "y must be a numeric (double precision) matrix"
 msgstr "'y' musi być macierzą liczbową (o podwójnej precyzji)"
 
@@ -469,7 +469,7 @@ msgstr "'y' musi być macierzą liczbową (o podwójnej precyzji)"
 # error(_("number of rows in 'y' (%d) does not match number of rows in 'X' (%d)"), ydims[0], n)
 # Matrix/src/dense.c: 145
 # error(_("number of rows in 'y' (%d) does not match number of rows in 'X' (%d)"), ydims[0], n)
-#: dense.c:2244 dense.c:2274
+#: dense.c:2238 dense.c:2268
 #, c-format
 msgid "number of rows in y (%d) does not match number of rows in X (%d)"
 msgstr "liczba wierszy w 'y' (%d) nie zgadza się z liczbą wierszy w 'X' (%d)"
@@ -496,7 +496,7 @@ msgstr "LAPACK dgels zwrócił kod błędu %d"
 
 # Matrix/src/dense.c: 173
 # error(_("'X' must be a real (numeric) matrix"))
-#: dense.c:2313
+#: dense.c:2307
 msgid "X must be a real (numeric) matrix"
 msgstr "'X' musi być rzeczywistą (liczbową) macierzą"
 
@@ -509,7 +509,7 @@ msgstr "argument 'tol', podany jako %g, musi być >= 0"
 
 # Matrix/src/dense.c: 175
 # error(_("'tol' argument, given as %g, must be less or equal to 1"), tol)
-#: dense.c:2318
+#: dense.c:2312
 #, c-format
 msgid "tol, given as %g, must be <= 1"
 msgstr "argument 'tol', podany jako %g, musi być mniejszy lub równy 1"
@@ -911,25 +911,25 @@ msgstr "określono zbyt dużo elementów"
 
 # Matrix/src/Mutils.c: 840
 # error(_("Argument 'ij' must be 2-column integer matrix"))
-#: utils-R.c:545
+#: utils-R.c:544
 msgid "Argument ij must be 2-column integer matrix"
 msgstr "Argument 'ij' musi być 2-kolumnową macierzą liczb całkowitych"
 
 # Matrix/src/Mutils.c: 856
 # error(_("subscript 'i' out of bounds in M[ij]"))
-#: utils-R.c:570
+#: utils-R.c:569
 msgid "subscript 'i' out of bounds in M[ij]"
 msgstr "indeks 'i' poza zakresem w 'M[ij]'"
 
 # Matrix/src/Mutils.c: 858
 # error(_("subscript 'j' out of bounds in M[ij]"))
-#: utils-R.c:572
+#: utils-R.c:571
 msgid "subscript 'j' out of bounds in M[ij]"
 msgstr "indeks 'j' poza zakresem w 'M[ij]'"
 
 # Matrix/src/Mutils.c: 897
 # error(_("'i' and 'j' arguments must be integer vectors of the same length"))
-#: utils-R.c:626
+#: utils-R.c:625
 msgid "i and j must be integer vectors of the same length"
 msgstr "'i' oraz 'j' muszą być wektorami liczb całkowitych o tej samej długości"
 
@@ -969,7 +969,7 @@ msgstr "%s [[%d]] nie jest wartością NULL ani wektorem"
 msgid "length of %s[[%d]] (%lld) is not equal to %s[%d] (%d)"
 msgstr "długość %s[[%d]] (%lld) nie jest równa %s[%d] (%d)"
 
-#: validity.c:170
+#: validity.c:169
 #, c-format
 msgid "'%s' slot has no '%s' attribute"
 msgstr "gniazdo '%s' nie ma atrybutu '%s'"
@@ -979,7 +979,7 @@ msgstr "gniazdo '%s' nie ma atrybutu '%s'"
 msgid "%s[1] != %s[2] (matrix is not square)"
 msgstr "%s [1] != %s[2] (macierz nie jest kwadratowa)"
 
-#: validity.c:206 validity.c:219
+#: validity.c:205 validity.c:218
 #, c-format
 msgid "%s[1] differs from %s[2]"
 msgstr "%s [1] różni się od %s[2]"
@@ -1012,7 +1012,7 @@ msgstr "gniazdo '%s' nie jest rosnące wewnątrz wierszy"
 msgid "'%s' and '%s' slots do not have equal length"
 msgstr "gniazda '%s' oraz '%s' nie mają jednakowej długości"
 
-#: validity.c:409
+#: validity.c:408
 #, c-format
 msgid "'%s' slot has nonzero length but %s is 0"
 msgstr "gniazdo '%s' ma niezerową długość, ale %s ma wartość 0"
@@ -1031,7 +1031,7 @@ msgstr "gniazdo '%s' to \"%s\", ale gniazdo '%s' nie ma długości %s"
 msgid "'%s' slot is not %d or %d"
 msgstr "gniazdo '%s' nie jest %d ani %d"
 
-#: validity.c:476 validity.c:479
+#: validity.c:475 validity.c:478
 #, c-format
 msgid "%s-by-%s %s invalid for positive '%s' when %s=%d"
 msgstr "%s x %s %s jest nieprawidłowa dla dodatniego '%s'', gdy %s=%d"
@@ -1074,11 +1074,11 @@ msgstr "%s=\"%s\" ale powyżej przekątnej znajdują się wpisy"
 msgid "%s=\"%s\" but there are entries on the diagonal"
 msgstr "%s=\"%s\" ale na przekątnej znajdują się wpisy"
 
-#: validity.c:878 validity.c:902 validity.c:906
+#: validity.c:877 validity.c:901 validity.c:905
 msgid "matrix has negative diagonal elements"
 msgstr "macierz ma ujemne elementy diagonalne"
 
-#: validity.c:922 validity.c:950 validity.c:954
+#: validity.c:921 validity.c:949 validity.c:953
 msgid "matrix has nonunit diagonal elements"
 msgstr "macierz ma niejednostkowe elementy diagonalne"
 
@@ -1155,17 +1155,17 @@ msgstr "gniazdo '%s' nie jest rosnące po obcięciu w kierunku zera"
 msgid "dimensions of '%s' slot are not identical to '%s'"
 msgstr "wymiary gniazda '%s' nie są identyczne z wymiarami gniazda '%s'"
 
-#: validity.c:1094
+#: validity.c:1093
 #, c-format
 msgid "'%s' slot is upper (not lower) triangular"
 msgstr "gniazdo '%s' jest górną (nie dolną) macierzą trójkątną"
 
-#: validity.c:1107
+#: validity.c:1106
 #, c-format
 msgid "'%s' slot has nonunit diagonal elements"
 msgstr "gniazdo '%s' ma niejednostkowe elementy diagonalne"
 
-#: validity.c:1121
+#: validity.c:1120
 #, c-format
 msgid "'%s' slot is lower (not upper) triangular"
 msgstr "gniazdo '%s' jest dolną (nie górną) macierzą trójkątną"
@@ -1177,7 +1177,7 @@ msgstr "gniazdo '%s' jest dolną (nie górną) macierzą trójkątną"
 msgid "'%s' slot does not have length %s or length %s"
 msgstr "gniazdo '%s' nie ma długości %s ani długości %s"
 
-#: validity.c:1173
+#: validity.c:1172
 msgid "matrix has more columns than rows"
 msgstr "macierz ma więcej kolumn niż wierszy"
 
@@ -1235,17 +1235,17 @@ msgstr "gniazdo '%s' nie ma wiersza %s"
 msgid "'%s' slot must be upper trapezoidal but has entries below the diagonal"
 msgstr "gniazdo '%s' musi być górnym trapezem, ale ma wpisy poniżej przekątnej"
 
-#: validity.c:1230
+#: validity.c:1229
 #, c-format
 msgid "'%s' slot has negative diagonal elements"
 msgstr "gniazdo '%s' ma ujemne elementy diagonalne"
 
-#: validity.c:1296
+#: validity.c:1295
 #, c-format
 msgid "'%s' slot has elements not in {%s}\\{%s}"
 msgstr "gniazdo '%s' zawiera elementy nienależące do {%s}\\{%s}"
 
-#: validity.c:1305
+#: validity.c:1304
 #, c-format
 msgid "'%s' slot has unpaired negative elements"
 msgstr "gniazdo '%s' ma niesparowane elementy ujemne"
@@ -1254,57 +1254,57 @@ msgstr "gniazdo '%s' ma niesparowane elementy ujemne"
 msgid "Cholesky factor has negative diagonal elements"
 msgstr "Czynnik Cholesky'ego ma ujemne elementy diagonalne"
 
-#: validity.c:1422
+#: validity.c:1421
 #, c-format
 msgid "%s[%d] (%s) is not in %s"
 msgstr "%s[%d] (%s) nie jest w %s"
 
-#: validity.c:1435 validity.c:1536
+#: validity.c:1434 validity.c:1535
 #, c-format
 msgid "%s is not in {%s}"
 msgstr "%s nie jest w {%s}"
 
-#: validity.c:1472
+#: validity.c:1471
 #, c-format
 msgid "%s is not representable as \"%s\""
 msgstr "%s nie jest reprezentowalne jako \"%s\""
 
-#: validity.c:1477 validity.c:1483
+#: validity.c:1476 validity.c:1482
 #, c-format
 msgid "%s[%d] (%s) is not %d or %d"
 msgstr "%s[%d] (%s) nie jest %d ani %d"
 
-#: validity.c:1480 validity.c:1596 validity.c:1599 validity.c:1602
+#: validity.c:1479 validity.c:1595 validity.c:1598 validity.c:1601
 #, c-format
 msgid "%s[%d] (%s) is not %d"
 msgstr "%s [%d] (%s) nie jest %d"
 
-#: validity.c:1505
+#: validity.c:1504
 #, c-format
 msgid "%s has elements not in {%s}"
 msgstr "%s ma elementy, nie w {%s}"
 
-#: validity.c:1508
+#: validity.c:1507
 #, c-format
 msgid "%s has elements not in {%s}\\{%s}"
 msgstr "%s ma elementy, nie w {%s}\\{%s}"
 
-#: validity.c:1511
+#: validity.c:1510
 #, c-format
 msgid "%s is %d but columns are not stored in increasing order"
 msgstr "%s wynosi %d, ale kolumny nie są przechowywane w kolejności rosnącej"
 
-#: validity.c:1514 validity.c:1517
+#: validity.c:1513 validity.c:1516
 #, c-format
 msgid "traversal of '%s' slot does not complete in exactly %s steps"
 msgstr "przechodzenie przez gniazdo '%s' nie kończy się dokładnie w %s krokach"
 
-#: validity.c:1523 validity.c:1525
+#: validity.c:1522 validity.c:1524
 #, c-format
 msgid "%s is not %d"
 msgstr "%s nie jest %d"
 
-#: validity.c:1546
+#: validity.c:1545
 #, c-format
 msgid "column '%s' is stored first but %s is not 0"
 msgstr "kolumna '%s' jest zapisana jako pierwsza, ale %s nie ma wartości 0"
@@ -1316,27 +1316,27 @@ msgstr "kolumna '%s' jest zapisana jako pierwsza, ale %s nie ma wartości 0"
 msgid "'%s' slot is not increasing when traversed in stored column order"
 msgstr "gniazdo '%s' nie jest rosnące podczas przechodzenia w zapisanej kolejności kolumn"
 
-#: validity.c:1554
+#: validity.c:1553
 #, c-format
 msgid "'%s' slot allocates fewer than %s elements for column '%s'"
 msgstr "gniazdo '%s' przydziela mniej niż %s elementów dla kolumny '%s'"
 
-#: validity.c:1557
+#: validity.c:1556
 #, c-format
 msgid "'%s' slot allocates more than %s elements for column '%s'"
 msgstr "gniazdo '%s' przydziela więcej niż %s elementów dla kolumny '%s'"
 
-#: validity.c:1571
+#: validity.c:1570
 #, c-format
 msgid "first entry in column '%s' does not have row index '%s'"
 msgstr "pierwszy wpis w kolumnie '%s' nie ma indeksu wiersza '%s'"
 
-#: validity.c:1605 validity.c:1608
+#: validity.c:1604 validity.c:1607
 #, c-format
 msgid "%s[%d] (%s) is negative"
 msgstr "%s [%d] (%s) jest ujemne"
 
-#: validity.c:1611
+#: validity.c:1610
 #, c-format
 msgid "%s[%d] (%s) is not less than %s"
 msgstr "%s [%d] (%s) jest nie mniejsze niż %s"
@@ -1366,22 +1366,22 @@ msgstr "gniazdo '%s'' ma długość większą niż %s"
 msgid "last element of '%s' slot is not %s"
 msgstr "ostatni element gniazda '%s' nie jest %s"
 
-#: validity.c:1669
+#: validity.c:1668
 #, c-format
 msgid "first differences of '%s' slot are less than those of '%s' slot"
 msgstr "pierwsze różnice między gniazdem '%s' są mniejsze niż te w gnieździe '%s'"
 
-#: validity.c:1672
+#: validity.c:1671
 #, c-format
 msgid "supernode lengths exceed %s"
 msgstr "długości superwęzłów przekraczają %s"
 
-#: validity.c:1674
+#: validity.c:1673
 #, c-format
 msgid "first differences of '%s' slot are not equal to supernode lengths"
 msgstr "pierwsze różnice w gnieździe '%s' nie są równe długościom superwęzłów"
 
-#: validity.c:1694
+#: validity.c:1693
 #, c-format
 msgid "'%s' slot is wrong within diagonal blocks (row and column indices do not coincide)"
 msgstr "gniazdo '%s' jest nieprawidłowe w blokach diagonalnych (indeksy wierszy i kolumn nie pokrywają się)"
