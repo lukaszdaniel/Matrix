@@ -241,7 +241,6 @@ msgstr "'%s()' nie jest jeszcze zaimplementowany dla typu '%s' elementu"
 # stop(sprintf(gettext("'%s()' is not yet implemented for representation '%s'", domain = "R-Matrix"), "readMM", repr), domain = NA)
 #. R/HBMM.R: gettextf("'%s()' is not yet implemented for representation '%s'",     "readMM", repr)
 #: R/HBMM.R:0
-#, fuzzy
 msgid "'%s()' is not yet implemented for representation '%s'"
 msgstr "'%s()' nie jest jeszcze zaimplementowane dla reprezentacji '%s'"
 
@@ -1716,11 +1715,9 @@ msgstr ""
 
 #. R/rankMatrix.R: gettextf("rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?",     method)
 #: R/rankMatrix.R:0
-#, fuzzy
 msgid "rankMatrix(<large sparse Matrix>, method = '%s') coerces to dense matrix. Probably should rather use method = 'qr' !?"
 msgstr ""
-"rankMatrix(<duża rzadka macierz>, method = '%s') przekształca macierz do gęstej macierzy.\n"
-" Prawdopodobnie należy użyć 'method = \"qr\"' !?"
+"rankMatrix(<duża rzadka macierz>, method = '%s') przekształca macierz do gęstej macierzy. Prawdopodobnie należy użyć 'method = \"qr\"' !?"
 
 # Matrix/R/rankMatrix.R: 73
 # warning(gettextf("rankMatrix(x, method='qrLINPACK'): computing t(x) as nrow(x) < ncol(x)"))
