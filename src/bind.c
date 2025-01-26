@@ -1,3 +1,4 @@
+#include <stdbool.h>
 #include "Mdefines.h"
 #include "coerce.h"
 #include "bind.h"
@@ -525,6 +526,7 @@ void bindArgs(SEXP args, int margin, SEXP res,
 		int k, m = rdim[0], n = rdim[1];
 		R_xlen_t mn = (R_xlen_t) m * n;
 		SEXP x = PROTECT(allocVector(kindToType(kind), mn)), tmp;
+		bool tmp_flag = false;
 		SET_SLOT(res, Matrix_xSym, x);
 
 #define BIND_E(_CTYPE_, _PTR_, _MASK_) \
@@ -534,16 +536,16 @@ void bindArgs(SEXP args, int margin, SEXP res,
 				s = CAR(a); \
 				if (s == R_NilValue) \
 					continue; \
-				if (TYPEOF(s) != S4SXP) \
-					tmp = getAttrib(s, R_DimSymbol); \
-				else { \
+				if (TYPEOF(s) != S4SXP) { \
+					tmp = getAttrib(s, R_DimSymbol); tmp_flag = true; \
+				} else { \
 					s = GET_SLOT(s, Matrix_xSym); \
-					tmp = NULL; \
+					tmp = NULL; tmp_flag = false; \
 				} \
 				mn = XLENGTH(s); \
 				ps = _PTR_(s); \
 				if (margin) { \
-				if (!tmp || (TYPEOF(tmp) == INTSXP && LENGTH(tmp) == 2)) { \
+				if (!tmp_flag || (TYPEOF(tmp) == INTSXP && LENGTH(tmp) == 2)) { \
 					Matrix_memcpy(px, ps, mn, sizeof(_CTYPE_)); \
 					px += mn; \
 				} else if (mn >= m) { \
@@ -560,7 +562,7 @@ void bindArgs(SEXP args, int margin, SEXP res,
 				} \
 				} else { \
 				_CTYPE_ *py = px; \
-				if (!tmp || (TYPEOF(tmp) == INTSXP && LENGTH(tmp) == 2)) { \
+				if (!tmp_flag || (TYPEOF(tmp) == INTSXP && LENGTH(tmp) == 2)) { \
 					m = (int) (mn / n); \
 					for (k = 0; k < n; ++k) { \
 						Matrix_memcpy(py, ps, m, sizeof(_CTYPE_)); \
