@@ -1,8 +1,8 @@
 253a8835d89c31946ba3410bd514b9df *inst/test-tools-Matrix.R
 d1092f2de709b554fb06b516ee00a885 *inst/doc/Comparisons.R
 3f87d045a10e0afc85a3385bab8f215b *inst/doc/Intro2Matrix.R
-ba16a7af91c52cb8a271405fb1cb6fdc *inst/doc/Comparisons.pdf
-28bda693bf714744c8b0ab621b378a1f *inst/doc/sparseModels.pdf
+88ef503604e2de0436aa540be31fd533 *inst/doc/Comparisons.pdf
+20c376c4f5666d07c75e045acd0f17b0 *inst/doc/sparseModels.pdf
 e4e486aee6a99cb21909bb6de32db68d *inst/doc/sparseModels.R
 e90084a2277e2862233005ded90492b1 *inst/doc/SuiteSparse/ChangeLog
 0a3d3e0ea1cdd23a0e1ba043d8f3e5b7 *inst/doc/SuiteSparse/CAMD/README.txt
@@ -29,13 +29,13 @@ aba05a2df94e2032b68cea74165a1366 *inst/doc/SuiteSparse/README.md
 05d6553f58ebd8ae67a7047978857232 *inst/doc/SuiteSparse/COLAMD/README.txt
 777b89adea789c692bd7a1991e2133f7 *inst/doc/SuiteSparse/COLAMD/Doc/ChangeLog
 93997dd55f2c98be2351a1e84f528ecc *inst/doc/SuiteSparse/COLAMD/Doc/License.txt
-5d4bb6b8c7867e72a90cb563b2a6e8c3 *inst/doc/Introduction.pdf
+8f56982213d1b61c26650bbb57ed6c68 *inst/doc/Introduction.pdf
 c39a26dfe7ccaafd044e88468155b153 *inst/doc/Introduction.Rnw
 2bd2896847fb11eaf102158b8696c884 *inst/doc/Design-issues.Rnw
 3f45bdb5515081392d14b87f4770cb2b *inst/doc/Design-issues.R
-dc1640e4ea424cec458befcb38664070 *inst/doc/Intro2Matrix.pdf
+c419dffff29195061c0dc8ec58e6f822 *inst/doc/Intro2Matrix.pdf
 813e0c8cc7a5f7ecff43e5882270a431 *inst/doc/sparseModels.Rnw
-209237652ed81ec4ab632c2e00e721ad *inst/doc/Design-issues.pdf
+3c64022786ea9e11ad3f07cc90003aa3 *inst/doc/Design-issues.pdf
 1a59a7d3257a30349a5e10285ea05a69 *inst/doc/Introduction.R
 f6c9e4986022f1db4c085b8429d06fca *inst/doc/Comparisons.Rnw
 448278dab638a78df6eb59270772cbe2 *inst/doc/Intro2Matrix.Rnw
@@ -48,7 +48,7 @@ a8f80507036f68ab0180c36e4d874abd *inst/include/Matrix/alloca.h
 6fdcd5a91d9555530f9f51c7a6ea0910 *inst/include/Matrix/cholmod.h
 c0f2e987fab19d1aa27b3694d1fd9ffa *inst/include/Matrix/stubs.c
 9453d69ed641a1842043a4b28b677784 *inst/include/Matrix/cholmod-utils.h
-0b1d231e3e100bc161940c79e39279b4 *inst/include/Matrix/version.h
+1d3e13135ea414dfb3add741fe592670 *inst/include/Matrix/version.h
 7d96680b80f7792dda638a3900abab51 *inst/include/Matrix_stubs.c
 c54af18acaf2a18fad0cfe5f4fe54e83 *inst/test-tools.R
 417a55a63ec24678a888fe778c4d4226 *inst/po/pl/LC_MESSAGES/Matrix.mo
@@ -65,7 +65,7 @@ dbae2622e58569a159d26e3dec1ee5cf *inst/po/en@quot/LC_MESSAGES/Matrix.mo
 4fe6b6d5ec7f8d1a7a63d5acd460c135 *inst/po/en@quot/LC_MESSAGES/R-Matrix.mo
 ba54cc41253905c19132e40cde3221ca *inst/po/it/LC_MESSAGES/Matrix.mo
 a1de1705c5ba834d5c6104f720a7ca21 *inst/po/it/LC_MESSAGES/R-Matrix.mo
-b84df9d1fbc7c25f77e268d02721fc74 *inst/NEWS.Rd
+fa6112534988eb4e0007611dec554936 *inst/NEWS.Rd
 fa9fae0e340fa99cf19638cafa6cc698 *inst/scripts/cholmod.h.patch
 bc9b68d5adc948870782ac172d02a2b9 *inst/scripts/SuiteSparse.patch
 f5ccc9054c07b238429f3e94f0682057 *inst/scripts/disclaimer.txt
@@ -839,7 +839,7 @@ fb5d6b8b559b3c6f369d335d7286afec *src/determinant.c
 c7e4d0db483efe92dc836aac9ec0e894 *src/solve.h
 849d61403c56c0b097ca069e6930c41e *src/sparse.c
 3dbc7f72c6ba0852474fb9547bf00489 *src/Csparse.h
-6873bf259b1c50d379a691b54efcc26c *src/utils-R.c
+5e903699e1a6737f2605abfa2040a510 *src/utils-R.c
 6204a5bcb90a0715baf19669ef9eb940 *src/kappa.h
 3b657b53e32d2704cf020faa8cff4958 *src/cholmod-etc.c
 2b6c0d590e8364a254f32d84c39a7a46 *src/attrib.c
@@ -850,13 +850,13 @@ cfacf242df315c0b82f77205af616830 *src/coerce.c
 0e9bf51fec95496208ee5bae0283f0ba *src/Mdefines.h
 f957aa1decb3ab62e5768873dacbd08d *src/attrib.h
 35fe8160e6a192ba8b4298cec956a687 *src/objects.c
-8243f2da5c81f6c2c7fe2dbefaa08cf4 *src/version.h
+0abfbb54b1f4da974067816689333324 *src/version.h
 15d79a179e59c135b44f5967efd8d90f *src/kappa.c
 c1c0f607981a86ffd6d48d4cbe958ccc *src/validity.c
 c7f467ed87d2f96f60dd6b8961a663ce *LICENCE
 2b2e3d2e0216de68d003f1cd6aa19393 *build/vignette.rds
 f574b7bc08229c73a354bb195d07c7f3 *build/partial.rdb
-02c069289788b819ff2b37ebe6cce535 *DESCRIPTION
+792a75115f4e6a5e8c642a19a71f0f5a *DESCRIPTION
 c7ce869602cbdbcd1ab36489ac6c383c *cleanup
 2b6cb5615438cdc36e89f5b96ff94baf *man/all.equal-methods.Rd
 88a8da5ec55171d282a0ca47e0951a51 *man/wrld_1deg.Rd
@@ -880,7 +880,7 @@ cc6c44c14a8392071abe325799cc90c2 *man/nearPD.Rd
 59db1566e0cf830e4198c57f977feeb2 *man/fastMisc.Rd
 d9c43ef03b0db490d2548c4889c0ce1b *man/boolmatmult-methods.Rd
 a65c8694c345ab574ddd7ca26ab9b986 *man/dtpMatrix-class.Rd
-7fc275d08b1b5122cf363ba3b047b78c *man/ldenseMatrix-class.Rd
+05a823555a401577dd7837b18f11a46d *man/ldenseMatrix-class.Rd
 ae7ee7c0dd1c9f4181623dae808f4fe8 *man/chol-methods.Rd
 9ae810a456018192a784228abcececd9 *man/norm-methods.Rd
 6e3a120611604781386e5186158b0873 *man/rankMatrix.Rd
@@ -934,7 +934,7 @@ d7da791c3f651790bd3762ceb2426c3c *man/coerce-methods-SparseM.Rd
 0a71443575762f0c15fed79a880e117a *man/bdiag.Rd
 3185e295c17031665892edfcaad5fed6 *man/denseMatrix-class.Rd
 673d3bd30c6c5855e5ec845950ee8fdc *man/updown-methods.Rd
-abde048d69d2eda6825150f87cedf2a1 *man/lsparseMatrix-class.Rd
+dd351e36d35bb42b3092563c4ff1d8ce *man/lsparseMatrix-class.Rd
 97d2afdab45dca3b2818620845225870 *man/dgCMatrix-class.Rd
 b3a0c135476b28bf7569e96174bbeb8e *man/forceSymmetric-methods.Rd
 a4109e704374bad3ef6aab75ccb8f8d9 *man/rleDiff-class.Rd
@@ -975,7 +975,7 @@ f0407dddde00f3e54ca4d4b656a3c079 *man/dgeMatrix-class.Rd
 35673a6311eb2119721fa1fdf91515a6 *man/indMatrix-class.Rd
 af2b6fa724abf84be877a4552095e067 *man/ddenseMatrix-class.Rd
 544ea441f152320cf9a6e94c11ff84c0 *man/formatSparseM.Rd
-04f82b969b3d8aabe18bc566d29817c8 *man/sparseVector-class.Rd
+89eb2850b5e4b9a01b314d9c03bf03ed *man/sparseVector-class.Rd
 6648de3757eb262eb643c87f2d1945bd *man/band-methods.Rd
 64047cfd57b039ebfe665176bbd6556e *man/Schur-class.Rd
 1b4b6104d111472373cfe1acdc605085 *man/drop0.Rd
@@ -998,7 +998,7 @@ fc506ccab4036af8ad69cc1dd0b3e987 *tests/Simple.R
 5e53e6b4552a116eb3a0d6d2feff0105 *tests/abIndex-tsts.R
 08ff41927038ab7031ebaa90f2e3f8d8 *tests/indexing.R
 950b988777a313a0ddb2618c00b8c7be *tests/matprod.R
-58db5af64179692469bceceebe17c8e9 *tests/group-methods.R
+781a1f13330f8a34275e49cf1ea91f1f *tests/group-methods.R
 35fb410d771d7bd3bf4d819d2b2688ab *tests/Class+Meth.R
 ffe85c58a3ff60c53ae1d66b4720764e *tests/bind.R
 33d98d8dcdbe8a42f6ee2b28b97a774a *tests/matr-exp.R
@@ -1039,7 +1039,7 @@ a58a091de2e94b45c0138bde737d538b *R/00_Class.R
 ab5cc27deac115816214f76aa0ec9bdd *R/coerce-graph.R
 1874278a72159af59fec5c30b9a04458 *R/expm.R
 e62f89c5bcce206ee1b30382abaa6501 *R/posdef.R
-caf72c5d2ec9b2b06faf8176c44f599a *R/Ops.R
+9f01dde96f61afde4ddb8f0ddb582023 *R/Ops.R
 84321c0b552dda474de19ca8b48157c9 *R/nnzero.R
 31b8d3853f6bed848a0714af7e9f94df *R/models.R
 5a0adf98b12ada98ec094687e2831075 *R/kronecker.R
