@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.3-3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-17 13:22-0400\n"
+"POT-Creation-Date: 2025-05-18 13:38+0200\n"
 "PO-Revision-Date: 2021-02-25 14:30+0200\n"
 "Last-Translator: Gabrielė Stupurienė <gabriele.stupuriene@mif.vu.lt>\n"
 "Language-Team: none\n"
@@ -15,8 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : "
-"n%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : n%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
 "X-Generator: Poedit 2.4.2\n"
 
 #: Csparse.c:26 Csparse.c:61 Csparse.c:86 Csparse.c:113 Csparse.c:127
@@ -75,15 +74,15 @@ msgstr "netinkamas argumentas '%s'"
 msgid "attempt to set factor on %s without '%s' slot"
 msgstr ""
 
-#: bind.c:46 bind.c:153
+#: bind.c:47 bind.c:154
 msgid "number of rows of matrices must match"
 msgstr ""
 
-#: bind.c:48 bind.c:155
+#: bind.c:49 bind.c:156
 msgid "number of columns of matrices must match"
 msgstr ""
 
-#: bind.c:51 bind.c:158 bind.c:182 bind.c:206 cholmod-common.c:606
+#: bind.c:52 bind.c:159 bind.c:183 bind.c:207 cholmod-common.c:606
 #: cholmod-common.c:757 cholmod-common.c:872 cholmod-common.c:973
 #: cholmod-etc.c:183 cholmod-etc.c:283 cholmod-etc.c:330 coerce.c:215
 #: coerce.c:235 coerce.c:260 coerce.c:268 coerce.c:276 coerce.c:341
@@ -93,20 +92,20 @@ msgstr ""
 msgid "dimensions cannot exceed %s"
 msgstr ""
 
-#: bind.c:210
+#: bind.c:211
 msgid "number of rows of result is not a multiple of vector length"
 msgstr ""
 
-#: bind.c:212
+#: bind.c:213
 msgid "number of columns of result is not a multiple of vector length"
 msgstr ""
 
-#: bind.c:626 bind.c:691 sparse.c:913 sparse.c:994
+#: bind.c:628 bind.c:693 sparse.c:913 sparse.c:994
 #, c-format
 msgid "%s cannot exceed %s"
 msgstr ""
 
-#: bind.c:756 bind.c:853 cholmod-common.c:976 cholmod-etc.c:333 coerce.c:29
+#: bind.c:758 bind.c:855 cholmod-common.c:976 cholmod-etc.c:333 coerce.c:29
 #: coerce.c:515 coerce.c:808 coerce.c:942 coerce.c:2769 coerce.c:3038
 #: coerce.c:3143 dense.c:913 matmult.c:151 matmult.c:212 matmult.c:291
 #: matmult.c:379 matmult.c:456 matmult.c:550 matmult.c:868 subscript.c:1232
@@ -115,7 +114,7 @@ msgstr ""
 msgid "attempt to allocate vector of length exceeding %s"
 msgstr ""
 
-#: bind.c:858 matmult.c:1357
+#: bind.c:860 matmult.c:1357
 msgid "should never happen ..."
 msgstr ""
 
@@ -231,9 +230,7 @@ msgstr ""
 
 #: cholmod-common.c:1035
 #, c-format
-msgid ""
-"invalid simplicial Cholesky factorization: structural zero on main diagonal "
-"in column %d"
+msgid "invalid simplicial Cholesky factorization: structural zero on main diagonal in column %d"
 msgstr ""
 
 #: cholmod-common.c:1095
@@ -389,8 +386,7 @@ msgstr "y turi būti skaitinė (dvigubo tikslumo) matrica"
 #: dense.c:2238 dense.c:2268
 #, c-format
 msgid "number of rows in y (%d) does not match number of rows in X (%d)"
-msgstr ""
-"eilučių skaičius, esantis y (%d) neatitinka eilučių skaičiaus, esančio X (%d)"
+msgstr "eilučių skaičius, esantis y (%d) neatitinka eilučių skaičiaus, esančio X (%d)"
 
 #: dense.c:2254
 #, fuzzy, c-format
@@ -520,9 +516,7 @@ msgstr "'%s' eilutės ilgis turi būti 1"
 
 #: kappa.c:41
 #, c-format
-msgid ""
-"argument '%s' (\"%s\") is not \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", or "
-"\"%s\""
+msgid "argument '%s' (\"%s\") is not \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", or \"%s\""
 msgstr ""
 
 #: kappa.c:75
@@ -648,12 +642,8 @@ msgstr "x[] <- val: val yra paverstas į loginį \"%s\" x"
 
 #: t_subassign.c:191
 #, c-format
-msgid ""
-"x[] <- val: val should be integer or logical, is coerced to integer, for "
-"\"%s\" x"
-msgstr ""
-"x[] <- val: val turėtų būti sveikasis skaičius arba loginis, yra pakeistas į "
-"sveikąjį skaičių dėl \"%s\" x"
+msgid "x[] <- val: val should be integer or logical, is coerced to integer, for \"%s\" x"
+msgstr "x[] <- val: val turėtų būti sveikasis skaičius arba loginis, yra pakeistas į sveikąjį skaičių dėl \"%s\" x"
 
 #: t_subassign.c:198
 msgid "programming error in Csparse_subassign() should never happen"
@@ -699,18 +689,13 @@ msgstr "neleistina 'ncol' reikšmė (< 0)"
 
 #: utils-R.c:390
 #, fuzzy, c-format
-msgid ""
-"data length [%lld] is not a sub-multiple or multiple of the number of rows "
-"[%d]"
+msgid "data length [%lld] is not a sub-multiple or multiple of the number of rows [%d]"
 msgstr "duomenų ilgis [%d] nėra eilučių skaičiaus pogrupis ar kartotinis [%d]"
 
 #: utils-R.c:395
 #, fuzzy, c-format
-msgid ""
-"data length [%lld] is not a sub-multiple or multiple of the number of "
-"columns [%d]"
-msgstr ""
-"duomenų ilgis [%d] nėra stulpelių skaičiaus pogrupis ar kartotinis [%d]"
+msgid "data length [%lld] is not a sub-multiple or multiple of the number of columns [%d]"
+msgstr "duomenų ilgis [%d] nėra stulpelių skaičiaus pogrupis ar kartotinis [%d]"
 
 #: utils-R.c:399
 msgid "data length exceeds size of matrix"
@@ -1087,9 +1072,7 @@ msgstr ""
 
 #: validity.c:1693
 #, c-format
-msgid ""
-"'%s' slot is wrong within diagonal blocks (row and column indices do not "
-"coincide)"
+msgid "'%s' slot is wrong within diagonal blocks (row and column indices do not coincide)"
 msgstr ""
 
 #: validity.c:1696
@@ -1152,9 +1135,7 @@ msgstr ""
 #~ msgstr "cholmod_sort grąžino klaidos kodą"
 
 #~ msgid "chm_sparse_to_SEXP(<real>, *): invalid 'Rkind' (real kind code)"
-#~ msgstr ""
-#~ "chm_sparse_to_SEXP (<real>, *): neteisingas 'Rkind' (tikrasis rūšies "
-#~ "kodas)"
+#~ msgstr "chm_sparse_to_SEXP (<real>, *): neteisingas 'Rkind' (tikrasis rūšies kodas)"
 
 #~ msgid "unknown xtype in cholmod_sparse object"
 #~ msgstr "nežinomas xtype cholmod_sparse objekte"
@@ -1178,10 +1159,8 @@ msgstr ""
 #~ msgstr "netinkama objekto klasė į as_cholmod_dense"
 
 #, c-format
-#~ msgid ""
-#~ "chm_transpose_dense(ans, x) not yet implemented for %s different from %s"
-#~ msgstr ""
-#~ "chm_transpose_dense(ans, x) dar neįgyvendintas dėl %s skiriasi nuo %s"
+#~ msgid "chm_transpose_dense(ans, x) not yet implemented for %s different from %s"
+#~ msgstr "chm_transpose_dense(ans, x) dar neįgyvendintas dėl %s skiriasi nuo %s"
 
 #, c-format
 #~ msgid "Unable to initialize cholmod: error code %d"
@@ -1234,10 +1213,8 @@ msgstr ""
 #~ msgstr "dgCMatrix_qrsol(., tvarka) reikia tvarkos {0,..,3}"
 
 #, c-format
-#~ msgid ""
-#~ "dgCMatrix_qrsol(<%d x %d>-matrix) requires a 'tall' rectangular matrix"
-#~ msgstr ""
-#~ "dgCMatrix_qrsol(<%d x %d>-matrix) reikalauja 'tall' stačiakampės matricos"
+#~ msgid "dgCMatrix_qrsol(<%d x %d>-matrix) requires a 'tall' rectangular matrix"
+#~ msgstr "dgCMatrix_qrsol(<%d x %d>-matrix) reikalauja 'tall' stačiakampės matricos"
 
 #~ msgid "cs_qrsol() failed inside dgCMatrix_qrsol()"
 #~ msgstr "cs_qrsol() nepavyko viduje dgCMatrix_qrsol ()"
@@ -1254,8 +1231,7 @@ msgstr ""
 
 #, c-format
 #~ msgid "cholmod_solve (CHOLMOD_A) failed: status %d, minor %d from ncol %d"
-#~ msgstr ""
-#~ "cholmod_solve (CHOLMOD_A) nepavyko: būsena %d, nedideli %d iš ncol %d"
+#~ msgstr "cholmod_solve (CHOLMOD_A) nepavyko: būsena %d, nedideli %d iš ncol %d"
 
 #~ msgid "cholmod_sdmult error (resid)"
 #~ msgstr "cholmod_sdmult klaida (resid)"
@@ -1268,8 +1244,7 @@ msgstr ""
 #~ msgstr "Lapack programa dgetrs: sistema yra tiksliai singuliari"
 
 #, fuzzy, c-format
-#~ msgid ""
-#~ "LAPACK routine '%s': leading principal minor of order %d is not positive"
+#~ msgid "LAPACK routine '%s': leading principal minor of order %d is not positive"
 #~ msgstr "vadovaujantis minoras, kurio eilė yra %d, nėra teigiamai apibrėžtas"
 
 #, fuzzy
@@ -1281,8 +1256,7 @@ msgstr ""
 #~ msgstr "Matricos vardų sritis nustatyta neteisingai"
 
 #~ msgid "Csparse_sort(x): x is not a valid (apart from sorting) CsparseMatrix"
-#~ msgstr ""
-#~ "Csparse_sort(x): x nėra galiojantis (išskyrus rūšiavimą) CsparseMatrix"
+#~ msgstr "Csparse_sort(x): x nėra galiojantis (išskyrus rūšiavimą) CsparseMatrix"
 
 #, c-format
 #~ msgid "Impossible Rk_x/Rk_y in Csparse_%s(), please report"
@@ -1495,8 +1469,7 @@ msgstr ""
 
 #, c-format
 #~ msgid "argument type[1]='%s' must be one of 'M','1','O','I','F' or 'E'"
-#~ msgstr ""
-#~ "argumentas type[1]='%s' turi būti vienas iš 'M','1','O','I','F' arba 'E'"
+#~ msgstr "argumentas type[1]='%s' turi būti vienas iš 'M','1','O','I','F' arba 'E'"
 
 #, c-format
 #~ msgid "argument type[1]='%s' must be one of '1','O', or 'I'"
@@ -1541,18 +1514,11 @@ msgstr ""
 #~ msgid "slot Dim must have length 2"
 #~ msgstr "laukas Dim turi būti 2 ilgio"
 
-#~ msgid ""
-#~ "all row indices (slot 'i') must be between 0 and nrow-1 in a TsparseMatrix"
-#~ msgstr ""
-#~ "visi eilučių indeksai (laukas 'i') turi būti nuo 0 iki nrow-1, esančio "
-#~ "TsparseMatrix"
+#~ msgid "all row indices (slot 'i') must be between 0 and nrow-1 in a TsparseMatrix"
+#~ msgstr "visi eilučių indeksai (laukas 'i') turi būti nuo 0 iki nrow-1, esančio TsparseMatrix"
 
-#~ msgid ""
-#~ "all column indices (slot 'j') must be between 0 and ncol-1 in a "
-#~ "TsparseMatrix"
-#~ msgstr ""
-#~ "visi stulpelių indeksai (laukas 'j') turi būti nuo 0 iki ncol-1, esančio "
-#~ "TsparseMatrix"
+#~ msgid "all column indices (slot 'j') must be between 0 and ncol-1 in a TsparseMatrix"
+#~ msgstr "visi stulpelių indeksai (laukas 'j') turi būti nuo 0 iki ncol-1, esančio TsparseMatrix"
 
 #~ msgid "Supernodal LDL' decomposition not available"
 #~ msgstr "Supernodal LDL' skilimas negalimas"
@@ -1571,8 +1537,7 @@ msgstr ""
 
 #, c-format
 #~ msgid "First call to Lapack routine dgels returned error code %d"
-#~ msgstr ""
-#~ "Pirmasis iškvietimas į Lapack programą dgels grąžino klaidos kodą %d"
+#~ msgstr "Pirmasis iškvietimas į Lapack programą dgels grąžino klaidos kodą %d"
 
 #, c-format
 #~ msgid "Second call to Lapack routine dgels returned error code %d"
@@ -1587,18 +1552,12 @@ msgstr ""
 #~ msgstr "Antrasis iškvietimas į dgeqrf grąžino klaidos kodą %d"
 
 #, c-format
-#~ msgid ""
-#~ "dense_to_Csparse(<LARGE>): cholmod_l_dense_to_sparse failure status=%d"
-#~ msgstr ""
-#~ "dense_to_Csparse(<LARGE>): cholmod_l_dense_to_sparse klaida status=%d"
+#~ msgid "dense_to_Csparse(<LARGE>): cholmod_l_dense_to_sparse failure status=%d"
+#~ msgstr "dense_to_Csparse(<LARGE>): cholmod_l_dense_to_sparse klaida status=%d"
 
 #, c-format
-#~ msgid ""
-#~ "Matrix dimension %d x %d (= %g) too large [FIXME calling "
-#~ "cholmod_l_dense_to_sparse]"
-#~ msgstr ""
-#~ "Matricos dimensija %d x %d (= %g) per didelė [FIXME iškvietė "
-#~ "cholmod_l_dense_to_sparse]"
+#~ msgid "Matrix dimension %d x %d (= %g) too large [FIXME calling cholmod_l_dense_to_sparse]"
+#~ msgstr "Matricos dimensija %d x %d (= %g) per didelė [FIXME iškvietė cholmod_l_dense_to_sparse]"
 
 #, c-format
 #~ msgid "Lower band %d > upper band %d"
@@ -1690,12 +1649,8 @@ msgstr ""
 #~ msgstr "klaida [%d] iš Lapack 'dgecon()'"
 
 #, c-format
-#~ msgid ""
-#~ "Lapack dgecon(): system computationally singular, reciprocal condition "
-#~ "number = %g"
-#~ msgstr ""
-#~ "Lapack dgecon(): singuliariai apskaičiuota sistema, abipusės sąlygos "
-#~ "skaičius = %g"
+#~ msgid "Lapack dgecon(): system computationally singular, reciprocal condition number = %g"
+#~ msgstr "Lapack dgecon(): singuliariai apskaičiuota sistema, abipusės sąlygos skaičius = %g"
 
 #~ msgid "Lapack routine dgetri: system is exactly singular"
 #~ msgstr "Lapack programa dgetri: sistema yra tiksliai singuliari"
@@ -1712,11 +1667,8 @@ msgstr ""
 #~ msgid "chm_factor_name(): did not get string of length 11"
 #~ msgstr "chm_factor_name(): negavo 11 ilgio eilutės"
 
-#~ msgid ""
-#~ "Cholesky factorization failed; unusually, please report to Matrix-authors"
-#~ msgstr ""
-#~ "Cholesky faktoringas nepavyko; neįprastai, prašome pranešti Matrix "
-#~ "autoriams"
+#~ msgid "Cholesky factorization failed; unusually, please report to Matrix-authors"
+#~ msgstr "Cholesky faktoringas nepavyko; neįprastai, prašome pranešti Matrix autoriams"
 
 #~ msgid "internal_chm_factor: Cholesky factorization failed"
 #~ msgstr "internal_chm_factor: Cholesky faktoringas nepavyko"
@@ -1766,6 +1718,4 @@ msgstr ""
 #~ msgstr "sparseQR_Qmult(): nrow(y) = %d != %d = nrow(V)"
 
 #~ msgid "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
-#~ msgstr ""
-#~ "\"dtrMatrix\" objektai, esantys '%*%', turi turėti sutampantį "
-#~ "(kvadratinį) matmenį"
+#~ msgstr "\"dtrMatrix\" objektai, esantys '%*%', turi turėti sutampantį (kvadratinį) matmenį"

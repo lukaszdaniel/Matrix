@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-17 13:22-0400\n"
+"POT-Creation-Date: 2025-05-18 13:38+0200\n"
 "PO-Revision-Date: 2015-07-15 17:14-0600\n"
 "Last-Translator:Chel Hee Lee  <chl948@mail.usask.ca>\n"
 "Language-Team: Chel Hee Lee  <chl948@mail.usask.ca>\n"
@@ -81,15 +81,15 @@ msgstr "'%s' 인자는 유효하지 않습니다"
 msgid "attempt to set factor on %s without '%s' slot"
 msgstr ""
 
-#: bind.c:46 bind.c:153
+#: bind.c:47 bind.c:154
 msgid "number of rows of matrices must match"
 msgstr ""
 
-#: bind.c:48 bind.c:155
+#: bind.c:49 bind.c:156
 msgid "number of columns of matrices must match"
 msgstr ""
 
-#: bind.c:51 bind.c:158 bind.c:182 bind.c:206 cholmod-common.c:606
+#: bind.c:52 bind.c:159 bind.c:183 bind.c:207 cholmod-common.c:606
 #: cholmod-common.c:757 cholmod-common.c:872 cholmod-common.c:973
 #: cholmod-etc.c:183 cholmod-etc.c:283 cholmod-etc.c:330 coerce.c:215
 #: coerce.c:235 coerce.c:260 coerce.c:268 coerce.c:276 coerce.c:341
@@ -99,20 +99,20 @@ msgstr ""
 msgid "dimensions cannot exceed %s"
 msgstr ""
 
-#: bind.c:210
+#: bind.c:211
 msgid "number of rows of result is not a multiple of vector length"
 msgstr ""
 
-#: bind.c:212
+#: bind.c:213
 msgid "number of columns of result is not a multiple of vector length"
 msgstr ""
 
-#: bind.c:626 bind.c:691 sparse.c:913 sparse.c:994
+#: bind.c:628 bind.c:693 sparse.c:913 sparse.c:994
 #, c-format
 msgid "%s cannot exceed %s"
 msgstr ""
 
-#: bind.c:756 bind.c:853 cholmod-common.c:976 cholmod-etc.c:333 coerce.c:29
+#: bind.c:758 bind.c:855 cholmod-common.c:976 cholmod-etc.c:333 coerce.c:29
 #: coerce.c:515 coerce.c:808 coerce.c:942 coerce.c:2769 coerce.c:3038
 #: coerce.c:3143 dense.c:913 matmult.c:151 matmult.c:212 matmult.c:291
 #: matmult.c:379 matmult.c:456 matmult.c:550 matmult.c:868 subscript.c:1232
@@ -121,7 +121,7 @@ msgstr ""
 msgid "attempt to allocate vector of length exceeding %s"
 msgstr ""
 
-#: bind.c:858 matmult.c:1357
+#: bind.c:860 matmult.c:1357
 msgid "should never happen ..."
 msgstr ""
 
@@ -237,9 +237,7 @@ msgstr ""
 
 #: cholmod-common.c:1035
 #, c-format
-msgid ""
-"invalid simplicial Cholesky factorization: structural zero on main diagonal "
-"in column %d"
+msgid "invalid simplicial Cholesky factorization: structural zero on main diagonal in column %d"
 msgstr ""
 
 #: cholmod-common.c:1095
@@ -462,8 +460,7 @@ msgstr "dgeMatrix_exp: 에러코드 %d가 dgetrs로부터 반환되었습니다.
 
 #: factor.c:330
 msgid "dgeMatrix_Schur: argument x must be a non-null square matrix"
-msgstr ""
-"dgeMatrix_Schur: 인자 x는 반드시 null이 아닌 정방(square)행렬이어야 합니다."
+msgstr "dgeMatrix_Schur: 인자 x는 반드시 null이 아닌 정방(square)행렬이어야 합니다."
 
 #: factor.c:343
 msgid "dgeMatrix_Schur: first call to dgees failed"
@@ -526,9 +523,7 @@ msgstr "'%s'는 반드시 길이가 1인 문자열(string)이어야 합니다."
 
 #: kappa.c:41
 #, c-format
-msgid ""
-"argument '%s' (\"%s\") is not \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", or "
-"\"%s\""
+msgid "argument '%s' (\"%s\") is not \"%s\", \"%s\", \"%s\", \"%s\", \"%s\", or \"%s\""
 msgstr ""
 
 #: kappa.c:75
@@ -654,18 +649,12 @@ msgstr "x[] <- val: val is coerced to logical for \"%s\" x"
 
 #: t_subassign.c:191
 #, c-format
-msgid ""
-"x[] <- val: val should be integer or logical, is coerced to integer, for "
-"\"%s\" x"
-msgstr ""
-"x[] <- val: val should be integer or logical, is coerced to integer, for "
-"\"%s\" x"
+msgid "x[] <- val: val should be integer or logical, is coerced to integer, for \"%s\" x"
+msgstr "x[] <- val: val should be integer or logical, is coerced to integer, for \"%s\" x"
 
 #: t_subassign.c:198
 msgid "programming error in Csparse_subassign() should never happen"
-msgstr ""
-"Csparse_subassign()를 사용 중 발생하지 말아야 하는 프로그래밍 에러"
-"(programming error)가 발견되었습니다."
+msgstr "Csparse_subassign()를 사용 중 발생하지 말아야 하는 프로그래밍 에러(programming error)가 발견되었습니다."
 
 #: utils-R.c:30 utils-R.c:116
 #, c-format
@@ -707,16 +696,12 @@ msgstr "'ncol'의 값이 0보다 작으므로 올바르지 않습니다."
 
 #: utils-R.c:390
 #, fuzzy, c-format
-msgid ""
-"data length [%lld] is not a sub-multiple or multiple of the number of rows "
-"[%d]"
+msgid "data length [%lld] is not a sub-multiple or multiple of the number of rows [%d]"
 msgstr "데이터의 길이[%d]가 행의 개수[%d]의 약수 또는 배수가 아닙니다"
 
 #: utils-R.c:395
 #, fuzzy, c-format
-msgid ""
-"data length [%lld] is not a sub-multiple or multiple of the number of "
-"columns [%d]"
+msgid "data length [%lld] is not a sub-multiple or multiple of the number of columns [%d]"
 msgstr "데이터의 길이[%d]가 열의 개수[%d]의 약수 또는 배수가 아닙니다"
 
 #: utils-R.c:399
@@ -741,8 +726,7 @@ msgstr "첨자 'j'가 M[ij]내에 존재하지 않습니다."
 
 #: utils-R.c:625
 msgid "i and j must be integer vectors of the same length"
-msgstr ""
-"i와 j는 반드시 같은 길이를 가지는 정수형 벡터(integer vectors)이어야 합니다."
+msgstr "i와 j는 반드시 같은 길이를 가지는 정수형 벡터(integer vectors)이어야 합니다."
 
 #: validity.c:31 validity.c:52 validity.c:230 validity.c:249 validity.c:258
 #: validity.c:440 validity.c:466 validity.c:976 validity.c:1418 validity.c:1442
@@ -1095,9 +1079,7 @@ msgstr ""
 
 #: validity.c:1693
 #, c-format
-msgid ""
-"'%s' slot is wrong within diagonal blocks (row and column indices do not "
-"coincide)"
+msgid "'%s' slot is wrong within diagonal blocks (row and column indices do not coincide)"
 msgstr ""
 
 #: validity.c:1696
@@ -1218,9 +1200,7 @@ msgstr ""
 #~ msgstr "chm_diagN2U(x, uploT = %d): uploT은 반드시 1 또는 -1이어야 합니다"
 
 #~ msgid "dgCMatrix_lusol requires a square, non-empty matrix"
-#~ msgstr ""
-#~ "dgCMatrix_lusol은 정방(square)이며 비어있지 않은(non-empty) 행렬을 필요로 "
-#~ "합니다."
+#~ msgstr "dgCMatrix_lusol은 정방(square)이며 비어있지 않은(non-empty) 행렬을 필요로 합니다."
 
 #~ msgid "Dimensions of system to be solved are inconsistent"
 #~ msgstr "Dimensions of system to be solved are inconsistent"
@@ -1232,11 +1212,8 @@ msgstr ""
 #~ msgstr "dgCMatrix_qrsol(., order) needs order in {0,..,3}"
 
 #, c-format
-#~ msgid ""
-#~ "dgCMatrix_qrsol(<%d x %d>-matrix) requires a 'tall' rectangular matrix"
-#~ msgstr ""
-#~ "dgCMatrix_qrsol(<%d x %d>-matrix)은 'tall' 사각행렬(rectangular matrix)이 "
-#~ "필요합니다."
+#~ msgid "dgCMatrix_qrsol(<%d x %d>-matrix) requires a 'tall' rectangular matrix"
+#~ msgstr "dgCMatrix_qrsol(<%d x %d>-matrix)은 'tall' 사각행렬(rectangular matrix)이 필요합니다."
 
 #~ msgid "cs_qrsol() failed inside dgCMatrix_qrsol()"
 #~ msgstr "dgCMatrix_qrsol()의 내에서 cs_qrsol()이 실패했습니다"
@@ -1266,23 +1243,19 @@ msgstr ""
 #~ msgstr "Lapack 루틴 dgetrs: 시스템(system)이 정확하게 특이(singular)합니다."
 
 #, fuzzy, c-format
-#~ msgid ""
-#~ "LAPACK routine '%s': leading principal minor of order %d is not positive"
+#~ msgid "LAPACK routine '%s': leading principal minor of order %d is not positive"
 #~ msgstr "the leading minor of order %d is not positive definite"
 
 #, fuzzy
 #~ msgid "missing 'Matrix' namespace; should never happen"
-#~ msgstr ""
-#~ "'Matrix' 네임스페이스(namespace)를 찾을 수 없습니다.  반드시 존재해야 합니"
-#~ "다 "
+#~ msgstr "'Matrix' 네임스페이스(namespace)를 찾을 수 없습니다.  반드시 존재해야 합니다 "
 
 #, fuzzy
 #~ msgid "'Matrix' namespace not determined correctly"
 #~ msgstr "올바르게 정의된 Matrix 네임스페이스(namespace)가 아닙니다"
 
 #~ msgid "Csparse_sort(x): x is not a valid (apart from sorting) CsparseMatrix"
-#~ msgstr ""
-#~ "Csparse_sort(x): x is not a valid (apart from sorting) CsparseMatrix"
+#~ msgstr "Csparse_sort(x): x is not a valid (apart from sorting) CsparseMatrix"
 
 #~ msgid "csp_eye argument n must be positive"
 #~ msgstr "csp_eye의 인자 n은 반드시 양수이어야 합니다"
@@ -1300,13 +1273,11 @@ msgstr ""
 
 #, c-format
 #~ msgid "Inappropriate class cl='%s' in Matrix_css_to_SEXP(S, cl, ..)"
-#~ msgstr ""
-#~ "Matrix_css_to_SEXP(S, cl, ..)에 입력된 cl='%s'은 올바른 클래스가 아닙니다."
+#~ msgstr "Matrix_css_to_SEXP(S, cl, ..)에 입력된 cl='%s'은 올바른 클래스가 아닙니다."
 
 #, c-format
 #~ msgid "Inappropriate class cl='%s' in Matrix_csn_to_SEXP(S, cl, ..)"
-#~ msgstr ""
-#~ "Matrix_csn_to_SEXP(S, cl, ..)에 입력된 cl='%s'는 올바른 클래스가 아닙니다."
+#~ msgstr "Matrix_csn_to_SEXP(S, cl, ..)에 입력된 cl='%s'는 올바른 클래스가 아닙니다."
 
 #, c-format
 #~ msgid "Dimensions of x and y are not compatible for %s"
@@ -1478,15 +1449,11 @@ msgstr ""
 
 #, c-format
 #~ msgid "argument type[1]='%s' must be one of 'M','1','O','I','F' or 'E'"
-#~ msgstr ""
-#~ "인자 type[1]='%s'은 반드시 'M','1','O','I','F' 또는 'E' 중 하나의 값을 가"
-#~ "져야 합니다."
+#~ msgstr "인자 type[1]='%s'은 반드시 'M','1','O','I','F' 또는 'E' 중 하나의 값을 가져야 합니다."
 
 #, c-format
 #~ msgid "argument type[1]='%s' must be one of '1','O', or 'I'"
-#~ msgstr ""
-#~ "인자 type[1]='%s'은 반드시 '1', '0', 또는 'I' 중 하나의 값을 가져야 합니"
-#~ "다."
+#~ msgstr "인자 type[1]='%s'은 반드시 '1', '0', 또는 'I' 중 하나의 값을 가져야 합니다."
 
 #~ msgid "object must be a named, numeric vector"
 #~ msgstr "객체는 반드시 원소에 이름이 주어진 수치형 벡터이어야 합니다."
@@ -1513,8 +1480,7 @@ msgstr ""
 
 #, c-format
 #~ msgid "unexpected ctype = %d in dup_mMatrix_as_geMatrix"
-#~ msgstr ""
-#~ "dup_mMatrix_as_geMatrix에 사용할 수 없는 ctype = %d가 입력되었습니다."
+#~ msgstr "dup_mMatrix_as_geMatrix에 사용할 수 없는 ctype = %d가 입력되었습니다."
 
 #~ msgid "lengths of slots i and j must match"
 #~ msgstr "슬롯 i의 길이와 슬롯 j의 길이는 반드시 일치해야 합니다."
@@ -1522,18 +1488,11 @@ msgstr ""
 #~ msgid "slot Dim must have length 2"
 #~ msgstr "슬롯 Dim의 길이는 반드시 2이어야 합니다."
 
-#~ msgid ""
-#~ "all row indices (slot 'i') must be between 0 and nrow-1 in a TsparseMatrix"
-#~ msgstr ""
-#~ "TsparseMatrix에 사용되는 모든 행에 대한 인덱스 (슬롯 'i')는 반드시 0과 "
-#~ "nrow-1 사이에 존재하는 정수이어야 합니다."
+#~ msgid "all row indices (slot 'i') must be between 0 and nrow-1 in a TsparseMatrix"
+#~ msgstr "TsparseMatrix에 사용되는 모든 행에 대한 인덱스 (슬롯 'i')는 반드시 0과 nrow-1 사이에 존재하는 정수이어야 합니다."
 
-#~ msgid ""
-#~ "all column indices (slot 'j') must be between 0 and ncol-1 in a "
-#~ "TsparseMatrix"
-#~ msgstr ""
-#~ "TsparseMatrix에 사용되는 모든 열에 대한 인덱스 (슬롯 'j')는 반드시 0과 "
-#~ "ncol-1 사이에 존재하는 정수이어야 합니다."
+#~ msgid "all column indices (slot 'j') must be between 0 and ncol-1 in a TsparseMatrix"
+#~ msgstr "TsparseMatrix에 사용되는 모든 열에 대한 인덱스 (슬롯 'j')는 반드시 0과 ncol-1 사이에 존재하는 정수이어야 합니다."
 
 #~ msgid "Supernodal LDL' decomposition not available"
 #~ msgstr "Supernodal LDL' decomposition not available"
@@ -1542,8 +1501,7 @@ msgstr ""
 #~ msgstr "Supernodal/simplicial class inconsistent with type flags"
 
 #~ msgid "Number of supernodes must be positive when is_super is TRUE"
-#~ msgstr ""
-#~ "is_super가 TRUE인 경우에 supernodes의 개수는 반드시 양수이어야 합니다."
+#~ msgstr "is_super가 TRUE인 경우에 supernodes의 개수는 반드시 양수이어야 합니다."
 
 #~ msgid "Lengths of super and pi must be equal"
 #~ msgstr "super의 길이와 pi의 길이는 반드시 서로 같아야 합니다."
@@ -1553,15 +1511,11 @@ msgstr ""
 
 #, c-format
 #~ msgid "First call to Lapack routine dgels returned error code %d"
-#~ msgstr ""
-#~ "Lapack 루틴 dgels에 첫번째 호출로부터 다음과 같은 에러코드가 반환되었습니"
-#~ "다: %d"
+#~ msgstr "Lapack 루틴 dgels에 첫번째 호출로부터 다음과 같은 에러코드가 반환되었습니다: %d"
 
 #, c-format
 #~ msgid "Second call to Lapack routine dgels returned error code %d"
-#~ msgstr ""
-#~ "Lapack 루틴 dgels에 두번째 호출로부터 다음과 같은 에러코드가 반환되었습니"
-#~ "다: %d"
+#~ msgstr "Lapack 루틴 dgels에 두번째 호출로부터 다음과 같은 에러코드가 반환되었습니다: %d"
 
 #, c-format
 #~ msgid "tol, given as %g, must be non-negative"
@@ -1569,8 +1523,7 @@ msgstr ""
 
 #, c-format
 #~ msgid "Second call to dgeqrf returned error code %d"
-#~ msgstr ""
-#~ "dgeqrf에 두번째 호출로부터 다음과 같은 에러코드가 반환되었습니다: %d"
+#~ msgstr "dgeqrf에 두번째 호출로부터 다음과 같은 에러코드가 반환되었습니다: %d"
 
 #, c-format
 #~ msgid "Lower band %d > upper band %d"
@@ -1597,8 +1550,7 @@ msgstr ""
 
 #, c-format
 #~ msgid "invalid class(x) '%s' in compressed_to_TMatrix(x)"
-#~ msgstr ""
-#~ "compressed_to_TMatrix(x) 내에 유효하지 않은 class(x) '%s'가 존재합니다"
+#~ msgstr "compressed_to_TMatrix(x) 내에 유효하지 않은 class(x) '%s'가 존재합니다"
 
 #, c-format
 #~ msgid "invalid class(x) '%s' in R_to_CMatrix(x)"
@@ -1646,12 +1598,8 @@ msgstr ""
 #~ msgstr "Lapack 'dgecon()'으로부터 에러 [%d]가 발생하였습니다."
 
 #, c-format
-#~ msgid ""
-#~ "Lapack dgecon(): system computationally singular, reciprocal condition "
-#~ "number = %g"
-#~ msgstr ""
-#~ "Lapack dgecon():  시스템이 계산적으로 특이하며, 역상태수(reciprocal "
-#~ "condition number) %g를 가집니다"
+#~ msgid "Lapack dgecon(): system computationally singular, reciprocal condition number = %g"
+#~ msgstr "Lapack dgecon():  시스템이 계산적으로 특이하며, 역상태수(reciprocal condition number) %g를 가집니다"
 
 #~ msgid "Lapack routine dgetri: system is exactly singular"
 #~ msgstr "Lapack 루틴 dgetri: 시스템(system)이 정확하게 특이(singular)합니다."
@@ -1668,11 +1616,8 @@ msgstr ""
 #~ msgid "chm_factor_name(): did not get string of length 11"
 #~ msgstr "chm_factor_name(): 길이가 11인 문자열을 가지지 못했습니다"
 
-#~ msgid ""
-#~ "Cholesky factorization failed; unusually, please report to Matrix-authors"
-#~ msgstr ""
-#~ "콜레스키 분해에 실패했습니다.  Matrix 패키지의 저자에게 보고해 주시길 부탁"
-#~ "드립니다 "
+#~ msgid "Cholesky factorization failed; unusually, please report to Matrix-authors"
+#~ msgstr "콜레스키 분해에 실패했습니다.  Matrix 패키지의 저자에게 보고해 주시길 부탁드립니다 "
 
 #~ msgid "internal_chm_factor: Cholesky factorization failed"
 #~ msgstr "internal_chm_factor: 콜레스키 분해에 실패했습니다"
@@ -1718,8 +1663,7 @@ msgstr ""
 #~ msgstr "sparseQR_Qmult(): nrow(y) = %d != %d = nrow(V)"
 
 #~ msgid "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
-#~ msgstr ""
-#~ "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
+#~ msgstr "\"dtrMatrix\" objects in '%*%' must have matching (square) dimension"
 
 #~ msgid "not a CsparseMatrix"
 #~ msgstr "CsparseMatrix가 아닙니다."

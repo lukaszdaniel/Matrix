@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-2-2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-17 13:22-0400\n"
+"POT-Creation-Date: 2025-05-18 13:38+0200\n"
 "PO-Revision-Date: 2024-09-17 17:43+0200\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
@@ -110,15 +110,15 @@ msgstr "niepoprawna nazwa czynnika"
 msgid "attempt to set factor on %s without '%s' slot"
 msgstr "próba ustawienia czynnika na %s bez gniazda '%s'"
 
-#: bind.c:46 bind.c:153
+#: bind.c:47 bind.c:154
 msgid "number of rows of matrices must match"
 msgstr "liczba wierszy macierzy musi być taka sama"
 
-#: bind.c:48 bind.c:155
+#: bind.c:49 bind.c:156
 msgid "number of columns of matrices must match"
 msgstr "liczba kolumn macierzy musi być taka sama"
 
-#: bind.c:51 bind.c:158 bind.c:182 bind.c:206 cholmod-common.c:606
+#: bind.c:52 bind.c:159 bind.c:183 bind.c:207 cholmod-common.c:606
 #: cholmod-common.c:757 cholmod-common.c:872 cholmod-common.c:973
 #: cholmod-etc.c:183 cholmod-etc.c:283 cholmod-etc.c:330 coerce.c:215
 #: coerce.c:235 coerce.c:260 coerce.c:268 coerce.c:276 coerce.c:341
@@ -128,20 +128,20 @@ msgstr "liczba kolumn macierzy musi być taka sama"
 msgid "dimensions cannot exceed %s"
 msgstr "wymiary nie mogą przekroczyć %s"
 
-#: bind.c:210
+#: bind.c:211
 msgid "number of rows of result is not a multiple of vector length"
 msgstr "liczba wierszy wyniku nie jest wielokrotnością długości wektora"
 
-#: bind.c:212
+#: bind.c:213
 msgid "number of columns of result is not a multiple of vector length"
 msgstr "liczba kolumn wyniku nie jest wielokrotnością długości wektora"
 
-#: bind.c:626 bind.c:691 sparse.c:913 sparse.c:994
+#: bind.c:628 bind.c:693 sparse.c:913 sparse.c:994
 #, c-format
 msgid "%s cannot exceed %s"
 msgstr "%s nie może być większe niż %s"
 
-#: bind.c:756 bind.c:853 cholmod-common.c:976 cholmod-etc.c:333 coerce.c:29
+#: bind.c:758 bind.c:855 cholmod-common.c:976 cholmod-etc.c:333 coerce.c:29
 #: coerce.c:515 coerce.c:808 coerce.c:942 coerce.c:2769 coerce.c:3038
 #: coerce.c:3143 dense.c:913 matmult.c:151 matmult.c:212 matmult.c:291
 #: matmult.c:379 matmult.c:456 matmult.c:550 matmult.c:868 subscript.c:1232
@@ -150,7 +150,7 @@ msgstr "%s nie może być większe niż %s"
 msgid "attempt to allocate vector of length exceeding %s"
 msgstr "próba przydzielenia pamięci dla wektora, którego długość przekracza %s"
 
-#: bind.c:858 matmult.c:1357
+#: bind.c:860 matmult.c:1357
 msgid "should never happen ..."
 msgstr "to nie powinno się nigdy zdarzyć..."
 
