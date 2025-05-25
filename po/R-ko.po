@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-3\n"
-"POT-Creation-Date: 2024-10-05 20:29\n"
+"POT-Creation-Date: 2025-05-25 12:56\n"
 "PO-Revision-Date: 2015-07-15 17:14-0600\n"
 "Last-Translator:Chel Hee Lee  <chl948@mail.usask.ca>\n"
 "Language-Team: Chel Hee Lee  <chl948@mail.usask.ca>\n"
@@ -30,6 +30,12 @@ msgstr ""
 #, fuzzy
 msgid "%1$s(%2$s) is undefined: '%2$s' is not positive semidefinite"
 msgstr "chol()은 음의 값을 가진 대각행렬에 대하여 정의되지 않았습니다."
+
+#. R/construct.R: gettextf("%s is not an integer multiple of length(x)", if (m.i) "p[length(p)] " else "length(i) ",     domain = "R-Matrix")
+#: R/construct.R:0
+#, fuzzy
+msgid "%s is not an integer multiple of length(x)"
+msgstr "length(i)는 length(x)의 배수가 아닙니다."
 
 #. R/coerce.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
 #. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
@@ -317,10 +323,17 @@ msgstr ""
 msgid "'giveCsparse' is deprecated; using 'repr' instead"
 msgstr ""
 
-#. R/construct.R: stop("'i' and 'j' must be ", if (index1) "positive" else "non-negative")
+#. R/construct.R: if (index1) "'i' and 'j' must be positive" else "'i' and 'j' must be non-negative"
 #: R/construct.R:0
-msgid "'i' and 'j' must be"
-msgstr ""
+#, fuzzy
+msgid "'i' and 'j' must be non-negative"
+msgstr "길이(length)는 반드시 음이 아닌 수이어야 합니다."
+
+#. R/construct.R: if (index1) "'i' and 'j' must be positive" else "'i' and 'j' must be non-negative"
+#: R/construct.R:0
+#, fuzzy
+msgid "'i' and 'j' must be positive"
+msgstr "길이(length)는 반드시 음이 아닌 수이어야 합니다."
 
 #. R/construct.R: stop("'i' and 'j' must not contain NA")
 #: R/construct.R:0
@@ -843,9 +856,9 @@ msgstr "내부버그 발견: replTmat()내에서 'i'를 찾을 수 없습니다.
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
+#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
+#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
+#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
 #: R/kappa.R:0
 #, fuzzy
 msgid "invalid %s=\"%s\""
@@ -982,12 +995,6 @@ msgstr "올바르지 않은 'type'입니다."
 msgid "invalid type \"%s\" in '%s' method"
 msgstr ""
 
-#. R/construct.R: warning(if (m.i) "p[length(p)] " else "length(i) ", "is not an integer multiple of length(x)")
-#: R/construct.R:0
-#, fuzzy
-msgid "is not an integer multiple of length(x)"
-msgstr "length(i)는 length(x)의 배수가 아닙니다."
-
 #. R/abstract.R: stop("length must be non-negative number")
 #: R/abstract.R:0
 msgid "length must be non-negative number"
@@ -1017,16 +1024,11 @@ msgstr "첫번째 인자(arg)의 길이는 두번째 인자의 차원(dimension)
 msgid "length of 2nd arg does not match dimension of first"
 msgstr "두번째 인자(arg)의 길이가 첫번째 인자의 차원(dimension)과 일치하지 않습니다."
 
-#. R/construct.R: if (m.i) "p[length(p)] " else "length(i) "
-#. R/construct.R: if (m.i) "p[length(p)]" else "length(i)"
+#. R/construct.R: gettextf("length(x) must not exceed %s", if (m.i) "p[length(p)]" else "length(i)",     domain = "R-Matrix")
 #: R/construct.R:0
-msgid "length(i)"
-msgstr ""
-
-#. R/construct.R: stop("length(x) must not exceed ", if (m.i) "p[length(p)]" else "length(i)")
-#: R/construct.R:0
-msgid "length(x) must not exceed"
-msgstr ""
+#, fuzzy
+msgid "length(x) must not exceed %s"
+msgstr "length(x)는 반드시 1 또는 #{cols} 이어야 합니다. "
 
 #. R/show.R: stop("logic programming error in printSpMatrix2(), please report")
 #: R/show.R:0
@@ -1247,23 +1249,11 @@ msgstr "%s에 입력된 행렬의 차원이 정합(conformable)하지 않습니�
 msgid "non-list contrasts argument ignored"
 msgstr "'contrasts.arg' 인자가 올바르지 않습니다."
 
-#. R/construct.R: if (index1) "positive" else "non-negative"
-#: R/construct.R:0
-msgid "non-negative"
-msgstr ""
-
 #. R/Auxiliaries.R: gettextf("non0.i() not yet implemented for class %s", dQuote(cM))
 #: R/Auxiliaries.R:0
 #, fuzzy
 msgid "non0.i() not yet implemented for class %s"
 msgstr "클래스 %s의 경우에 아직 구현되지 않았습니다."
-
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#: R/kappa.R:0
-msgid "norm"
-msgstr ""
 
 #. R/posdef.R: stop("not a positive definite matrix (and positive semidefiniteness is not checked)")
 #: R/posdef.R:0
@@ -1339,17 +1329,6 @@ msgstr "오로지 정방(square) 행렬만이 그래프를 위한 접속행렬(i
 #. R/subscript.R: stop("only zeros may be mixed with negative subscripts")
 #: R/subscript.R:0
 msgid "only zeros may be mixed with negative subscripts"
-msgstr ""
-
-#. R/construct.R: if (m.i) "p[length(p)] " else "length(i) "
-#. R/construct.R: if (m.i) "p[length(p)]" else "length(i)"
-#: R/construct.R:0
-msgid "p[length(p)]"
-msgstr ""
-
-#. R/construct.R: if (index1) "positive" else "non-negative"
-#: R/construct.R:0
-msgid "positive"
 msgstr ""
 
 #. R/abstract.R: stop("prod(<abIndex>) is not yet implemented")
@@ -1875,9 +1854,6 @@ msgstr "인덱스에 음수와 양수를 혼용하여 사용할 수 없습니다
 
 #~ msgid "'x' has invalid data type"
 #~ msgstr "'x'의 데이터형(data type)은 사용가능하지 않습니다."
-
-#~ msgid "length(x) must be either 1 or #{cols}"
-#~ msgstr "length(x)는 반드시 1 또는 #{cols} 이어야 합니다. "
 
 #~ msgid "some arguments are not matrices"
 #~ msgstr "일부 인자가 행렬이 아닙니다."

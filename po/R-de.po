@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 4.0.0 / matrix 1.3-0\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
-"POT-Creation-Date: 2024-10-05 20:29\n"
+"POT-Creation-Date: 2025-05-25 12:56\n"
 "PO-Revision-Date: 2020-04-01 16:01+0200\n"
 "Last-Translator: Detlef Steuer <steuer@hsu-hh.de>\n"
 "Language-Team: R-Core <r-core@r-project.org>\n"
@@ -23,6 +23,12 @@ msgstr ""
 #, fuzzy
 msgid "%1$s(%2$s) is undefined: '%2$s' is not positive semidefinite"
 msgstr "chol() ist undefiniert für diagonale Matrix mit negativen Einträgen"
+
+#. R/construct.R: gettextf("%s is not an integer multiple of length(x)", if (m.i) "p[length(p)] " else "length(i) ",     domain = "R-Matrix")
+#: R/construct.R:0
+#, fuzzy
+msgid "%s is not an integer multiple of length(x)"
+msgstr "length(i) ist kein Vielfaches von length(x)"
 
 #. R/coerce.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
 #. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
@@ -310,10 +316,17 @@ msgstr ""
 msgid "'giveCsparse' is deprecated; using 'repr' instead"
 msgstr ""
 
-#. R/construct.R: stop("'i' and 'j' must be ", if (index1) "positive" else "non-negative")
+#. R/construct.R: if (index1) "'i' and 'j' must be positive" else "'i' and 'j' must be non-negative"
 #: R/construct.R:0
-msgid "'i' and 'j' must be"
-msgstr ""
+#, fuzzy
+msgid "'i' and 'j' must be non-negative"
+msgstr "Länge muss eine nicht negative Zahl sein"
+
+#. R/construct.R: if (index1) "'i' and 'j' must be positive" else "'i' and 'j' must be non-negative"
+#: R/construct.R:0
+#, fuzzy
+msgid "'i' and 'j' must be positive"
+msgstr "Länge muss eine nicht negative Zahl sein"
 
 #. R/construct.R: stop("'i' and 'j' must not contain NA")
 #: R/construct.R:0
@@ -837,9 +850,9 @@ msgstr "interner Fehler: Fehlendes 'i' in replTmat(): Bitte berichten"
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
+#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
+#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
+#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
 #: R/kappa.R:0
 #, fuzzy
 msgid "invalid %s=\"%s\""
@@ -976,12 +989,6 @@ msgstr "ungültiger 'type'"
 msgid "invalid type \"%s\" in '%s' method"
 msgstr ""
 
-#. R/construct.R: warning(if (m.i) "p[length(p)] " else "length(i) ", "is not an integer multiple of length(x)")
-#: R/construct.R:0
-#, fuzzy
-msgid "is not an integer multiple of length(x)"
-msgstr "length(i) ist kein Vielfaches von length(x)"
-
 #. R/abstract.R: stop("length must be non-negative number")
 #: R/abstract.R:0
 msgid "length must be non-negative number"
@@ -1009,16 +1016,11 @@ msgstr "Länge des ersten arg passt nicht zur Dimension des zweiten"
 msgid "length of 2nd arg does not match dimension of first"
 msgstr "Länge des zweiten Arguments passt nicht zur Dimension des ersten"
 
-#. R/construct.R: if (m.i) "p[length(p)] " else "length(i) "
-#. R/construct.R: if (m.i) "p[length(p)]" else "length(i)"
+#. R/construct.R: gettextf("length(x) must not exceed %s", if (m.i) "p[length(p)]" else "length(i)",     domain = "R-Matrix")
 #: R/construct.R:0
-msgid "length(i)"
-msgstr ""
-
-#. R/construct.R: stop("length(x) must not exceed ", if (m.i) "p[length(p)]" else "length(i)")
-#: R/construct.R:0
-msgid "length(x) must not exceed"
-msgstr ""
+#, fuzzy
+msgid "length(x) must not exceed %s"
+msgstr "length(x) muss 1 oder #{cols} sein"
 
 #. R/show.R: stop("logic programming error in printSpMatrix2(), please report")
 #: R/show.R:0
@@ -1239,23 +1241,11 @@ msgstr "nicht konforme Matrixdimensionen in %s"
 msgid "non-list contrasts argument ignored"
 msgstr "unzulässiges 'contrasts.arg' Argument"
 
-#. R/construct.R: if (index1) "positive" else "non-negative"
-#: R/construct.R:0
-msgid "non-negative"
-msgstr ""
-
 #. R/Auxiliaries.R: gettextf("non0.i() not yet implemented for class %s", dQuote(cM))
 #: R/Auxiliaries.R:0
 #, fuzzy
 msgid "non0.i() not yet implemented for class %s"
 msgstr "noch nicht implementiert für Klasse %s"
-
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettext("invalid %s=\"%s\"", "norm", norm[1L])
-#: R/kappa.R:0
-msgid "norm"
-msgstr ""
 
 #. R/posdef.R: stop("not a positive definite matrix (and positive semidefiniteness is not checked)")
 #: R/posdef.R:0
@@ -1331,17 +1321,6 @@ msgstr "nur quadratische Matrizen können als Inzidenzmatrizen für Graphen benu
 #. R/subscript.R: stop("only zeros may be mixed with negative subscripts")
 #: R/subscript.R:0
 msgid "only zeros may be mixed with negative subscripts"
-msgstr ""
-
-#. R/construct.R: if (m.i) "p[length(p)] " else "length(i) "
-#. R/construct.R: if (m.i) "p[length(p)]" else "length(i)"
-#: R/construct.R:0
-msgid "p[length(p)]"
-msgstr ""
-
-#. R/construct.R: if (index1) "positive" else "non-negative"
-#: R/construct.R:0
-msgid "positive"
 msgstr ""
 
 #. R/abstract.R: stop("prod(<abIndex>) is not yet implemented")
@@ -1885,9 +1864,6 @@ msgstr "Sie können positive und negative Indizes nicht mischen"
 
 #~ msgid "'x' has invalid data type"
 #~ msgstr "'x' hat ungültigen Datentyp"
-
-#~ msgid "length(x) must be either 1 or #{cols}"
-#~ msgstr "length(x) muss 1 oder #{cols} sein"
 
 #~ msgid "some arguments are not matrices"
 #~ msgstr "einige Argumente sind keine Matrizen"

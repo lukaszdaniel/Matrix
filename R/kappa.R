@@ -234,7 +234,7 @@ setMethod("rcond", c(x = "diagonalMatrix", norm = "character"),
                              yy <- y * y
                              1 / sqrt(sum(yy) * sum(1 / yy))
                          } else 1 / n,
-                     stop(gettext("invalid %s=\"%s\"", "norm", norm[1L]),
+                     stop(gettextf("invalid %s=\"%s\"", "norm", norm[1L]),
                           domain = NA))
           })
 
@@ -254,7 +254,7 @@ setMethod("rcond", c(x = "indMatrix", norm = "character"),
                              1,
                          "F" = , "f" = , "E" = , "e" =
                              1 / n,
-                         stop(gettext("invalid %s=\"%s\"", "norm", norm[1L]),
+                         stop(gettextf("invalid %s=\"%s\"", "norm", norm[1L]),
                               domain = NA))
               } else {
                   if(m < n) {
@@ -278,6 +278,6 @@ setMethod("rcond", c(x = "pMatrix", norm = "character"),
                          1,
                      "F" = , "f" = , "E" = , "e" =
                          1 / n,
-                     stop(gettext("invalid %s=\"%s\"", "norm", norm[1L]),
+                     stop(gettextf("invalid %s=\"%s\"", "norm", norm[1L]),
                           domain = NA))
           })

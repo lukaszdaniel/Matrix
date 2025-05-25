@@ -192,7 +192,7 @@ sparseMatrix <- function(i, j, p, x, dims, dimnames,
     if(anyNA(rij))
         stop("'i' and 'j' must not contain NA") # and not overflow
     if(any(rij[1L, ] < 0L))
-        stop("'i' and 'j' must be ", if(index1) "positive" else "non-negative")
+        stop(if(index1) "'i' and 'j' must be positive" else "'i' and 'j' must be non-negative")
     dims <-
         if(!missing(dims)) {
             if(length(dims) != 2L ||
@@ -232,13 +232,15 @@ sparseMatrix <- function(i, j, p, x, dims, dimnames,
         if((n.x <- length(x)) > 0L && n.x != n.i) {
             if(n.x < n.i) {
                 if(n.i %% n.x != 0L)
-                    warning(if(m.i) "p[length(p)] " else "length(i) ",
-                            "is not an integer multiple of length(x)")
+                    warning(gettextf("%s is not an integer multiple of length(x)",
+                            if(m.i) "p[length(p)] " else "length(i) ", domain = "R-Matrix"),
+                            domain = NA)
                 x <- rep_len(x, n.i) # recycle
             } else if(n.x == 1L)
                 x <- x[0L] # tolerate length(i) = 0, length(x) = 1
-            else stop("length(x) must not exceed ",
-                      if(m.i) "p[length(p)]" else "length(i)")
+            else stop(gettextf("length(x) must not exceed %s",
+                      if(m.i) "p[length(p)]" else "length(i)", domain = "R-Matrix"),
+                      domain = NA)
         }
         if(use.last.ij && n.i == n.j &&
            anyDuplicated.matrix(ij <- cbind(i, j, deparse.level = 0L),
