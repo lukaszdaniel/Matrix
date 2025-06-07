@@ -67,12 +67,20 @@ emptyColnames <- function(x, msg.if.not.empty = FALSE) {
     else if(msg.if.not.empty &&
             is.character(cn <- dn[[2L]]) &&
             any(nzchar(cn)))
-        message(gettextf("  [[ suppressing %d column name%s %s ... ]]",
+            {
+                if (nc == 1L)
+                message(gettextf("  [[ suppressing %d column name %s ... ]]",
                          nc,
-                         if(nc == 1L) "" else "s",
                          paste0(sQuote(if(nc <= 3L) cn else cn[1:3]),
                                 collapse = ", ")),
                 domain = NA)
+                else
+                message(gettextf("  [[ suppressing %d column names %s ... ]]",
+                         nc,
+                         paste0(sQuote(if(nc <= 3L) cn else cn[1:3]),
+                                collapse = ", ")),
+                domain = NA)
+            }
     dn[[2L]] <- character(nc)
     dimnames(x) <- dn
     x

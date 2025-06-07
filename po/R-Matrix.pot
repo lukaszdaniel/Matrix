@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.7-3\n"
-"POT-Creation-Date: 2025-05-25 12:56\n"
+"POT-Creation-Date: 2025-06-05 16:22\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 
@@ -28,11 +28,7 @@ msgstr ""
 
 #: R/coerce.R: 0
 #: R/vector.R: 0
-#: R/vector.R: 0
-#: R/vector.R: 0
 #. R/coerce.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
-#. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
-#. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
 #. R/vector.R: gettextf("%s length cannot exceed %s", "sparseVector", "2^53")
 
 msgid "%s length cannot exceed %s"
@@ -54,7 +50,6 @@ msgstr ""
 
 
 #: R/BunchKaufman.R: 0
-#. R/BunchKaufman.R: gettextf("%s=\"%s\" invalid for %s@uplo=\"%s\"", "which", which,     "x", x@uplo)
 #. R/BunchKaufman.R: gettextf("%s=\"%s\" invalid for %s@uplo=\"%s\"", "which", which,     "x", x@uplo)
 
 msgid "%s=\"%s\" invalid for %s@uplo=\"%s\""
@@ -90,8 +85,6 @@ msgstr ""
 
 
 #: R/Cholesky.R: 0
-#. R/Cholesky.R: gettextf("'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", or \"%4$s\"",     "which", "P", "L", "D")
-#. R/Cholesky.R: gettextf("'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", or \"%4$s\"",     "which", "P", "L", "D")
 #. R/Cholesky.R: gettextf("'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", or \"%4$s\"",     "which", "P", "L", "D")
 
 msgid "'%1$s' is not \"%2$s1\", \"%2$s1.\", \"%3$s\", \"%3$s.\", \"%3$s1\", \"%3$s1.\", or \"%4$s\""
@@ -160,9 +153,6 @@ msgstr ""
 
 #: R/Schur.R: 0
 #. R/Schur.R: gettextf("'%s' has non-finite values", "x")
-#. R/Schur.R: gettextf("'%s' has non-finite values", "x")
-#. R/Schur.R: gettextf("'%s' has non-finite values", "x")
-#. R/Schur.R: gettextf("'%s' has non-finite values", "x")
 
 msgid "'%s' has non-finite values"
 msgstr ""
@@ -226,8 +216,6 @@ msgstr ""
 
 #: R/posdef.R: 0
 #. R/posdef.R: gettextf("'%s' is not a square numeric matrix", "V")
-#. R/posdef.R: gettextf("'%s' is not a square numeric matrix", "V")
-#. R/posdef.R: gettextf("'%s' is not a square numeric matrix", "V")
 
 msgid "'%s' is not a square numeric matrix"
 msgstr ""
@@ -248,16 +236,6 @@ msgstr ""
 
 
 #: R/kronecker.R: 0
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
-#. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
 #. R/kronecker.R: gettextf("'%s' method must use default %s=\"%s\"", "kronecker",     "FUN", "*")
 
 msgid "'%s' method must use default %s=\"%s\""
@@ -288,14 +266,12 @@ msgstr ""
 
 #: R/condest.R: 0
 #. R/condest.R: stop("'A' must be a square matrix")
-#. R/condest.R: stop("'A' must be a square matrix")
 
 msgid "'A' must be a square matrix"
 msgstr ""
 
 
 #: R/subassign.R: 0
-#. R/subassign.R: stop("'NA' indices are not (yet?) supported for sparse Matrices")
 #. R/subassign.R: stop("'NA' indices are not (yet?) supported for sparse Matrices")
 
 msgid "'NA' indices are not (yet?) supported for sparse Matrices"
@@ -359,7 +335,6 @@ msgstr ""
 
 
 #: R/HBMM.R: 0
-#. R/HBMM.R: stop("'file' must be a character string or connection")
 #. R/HBMM.R: stop("'file' must be a character string or connection")
 
 msgid "'file' must be a character string or connection"
@@ -445,7 +420,6 @@ msgstr ""
 
 #: R/construct.R: 0
 #. R/construct.R: stop("'n' must be a non-negative integer")
-#. R/construct.R: stop("'n' must be a non-negative integer")
 
 msgid "'n' must be a non-negative integer"
 msgstr ""
@@ -523,14 +497,12 @@ msgstr ""
 
 #: R/construct.R: 0
 #. R/construct.R: gettextf("'x' has unsupported class \"%s\"", class(x)[1L])
-#. R/construct.R: gettextf("'x' has unsupported class \"%s\"", class(x)[1L])
 
 msgid "'x' has unsupported class \"%s\""
 msgstr ""
 
 
 #: R/construct.R: 0
-#. R/construct.R: gettextf("'x' has unsupported type \"%s\"", typeof(x))
 #. R/construct.R: gettextf("'x' has unsupported type \"%s\"", typeof(x))
 
 msgid "'x' has unsupported type \"%s\""
@@ -681,7 +653,6 @@ msgstr ""
 
 #: R/subassign.R: 0
 #. R/subassign.R: stop("NAs are not allowed in subscripted assignments")
-#. R/subassign.R: stop("NAs are not allowed in subscripted assignments")
 
 msgid "NAs are not allowed in subscripted assignments"
 msgstr ""
@@ -716,9 +687,16 @@ msgstr ""
 
 
 #: R/show.R: 0
-#. R/show.R: gettextf("  [[ suppressing %d column name%s %s ... ]]", nc, if (nc ==     1L) "" else "s", paste0(sQuote(if (nc <= 3L) cn else cn[1:3]),     collapse = ", "))
+#. R/show.R: gettextf("  [[ suppressing %d column name %s ... ]]", nc, paste0(sQuote(if (nc <=     3L) cn else cn[1:3]), collapse = ", "))
 
-msgid "[[ suppressing %d column name%s %s ... ]]"
+msgid "[[ suppressing %d column name %s ... ]]"
+msgstr ""
+
+
+#: R/show.R: 0
+#. R/show.R: gettextf("  [[ suppressing %d column names %s ... ]]", nc, paste0(sQuote(if (nc <=     3L) cn else cn[1:3]), collapse = ", "))
+
+msgid "[[ suppressing %d column names %s ... ]]"
 msgstr ""
 
 
@@ -780,7 +758,6 @@ msgstr ""
 
 #: R/zzz.R: 0
 #. R/zzz.R: gettextf("attempt to coerce matrix with NA to %s", "ngCMatrix")
-#. R/zzz.R: gettextf("attempt to coerce matrix with NA to %s", "ngCMatrix")
 #. R/zzz.R: gettextf("attempt to coerce matrix with NA to %s", "ngTMatrix")
 
 msgid "attempt to coerce matrix with NA to %s"
@@ -796,7 +773,6 @@ msgstr ""
 
 #: R/construct.R: 0
 #. R/construct.R: stop("attempt to recycle 'x' of length 0 to length 'n' (n > 0)")
-#. R/construct.R: stop("attempt to recycle 'x' of length 0 to length 'n' (n > 0)")
 
 msgid "attempt to recycle 'x' of length 0 to length 'n' (n > 0)"
 msgstr ""
@@ -810,7 +786,6 @@ msgstr ""
 
 
 #: R/solve.R: 0
-#. R/solve.R: gettextf("cannot coerce from %s to %s", "zsparseVector", "dgCMatrix")
 #. R/solve.R: gettextf("cannot coerce from %s to %s", "zsparseVector", "dgCMatrix")
 
 msgid "cannot coerce from %s to %s"
@@ -840,15 +815,12 @@ msgstr ""
 
 #: R/construct.R: 0
 #. R/construct.R: stop("data is too long")
-#. R/construct.R: stop("data is too long")
 
 msgid "data is too long"
 msgstr ""
 
 
 #: R/determinant.R: 0
-#. R/determinant.R: stop("determinant of non-square matrix is undefined")
-#. R/determinant.R: stop("determinant of non-square matrix is undefined")
 #. R/determinant.R: stop("determinant of non-square matrix is undefined")
 
 msgid "determinant of non-square matrix is undefined"
@@ -865,7 +837,6 @@ msgstr ""
 #: R/Ops.R: 0
 #. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, l2)
 #. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, le)
-#. R/Ops.R: gettextf("dim [product %d] do not match the length of object [%d]",     n1, l2)
 #. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n1, n2)
 #. R/Ops.R: sprintf("dim [product %d] do not match the length of object [%d]",     n2, n1)
 
@@ -875,42 +846,13 @@ msgstr ""
 
 #: R/coerce.R: 0
 #: R/index.R: 0
-#: R/index.R: 0
 #: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/kronecker.R: 0
-#: R/solve.R: 0
 #: R/solve.R: 0
 #: R/subscript.R: 0
 #: R/vector.R: 0
 #. R/coerce.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/coerce.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/coerce.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/coerce.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/coerce.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/coerce.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/index.R: gettextf("dimensions cannot exceed %s", "2^31-1")
 #. R/index.R: gettextf("dimensions cannot exceed %s", "2^31-1")
 #. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("dimensions cannot exceed %s", "2^31-1")
-#. R/solve.R: gettextf("dimensions cannot exceed %s", "2^31-1")
 #. R/solve.R: gettextf("dimensions cannot exceed %s", "2^31-1")
 #. R/subscript.R: gettextf("dimensions cannot exceed %s", "2^31-1")
 #. R/vector.R: gettextf("dimensions cannot exceed %s", "2^31-1")
@@ -920,8 +862,6 @@ msgstr ""
 
 
 #: R/construct.R: 0
-#. R/construct.R: stop("dimensions cannot exceed 2^31-1")
-#. R/construct.R: stop("dimensions cannot exceed 2^31-1")
 #. R/construct.R: stop("dimensions cannot exceed 2^31-1")
 
 msgid "dimensions cannot exceed 2^31-1"
@@ -1016,39 +956,7 @@ msgstr ""
 
 #: R/subassign.R: 0
 #: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
-#: R/subscript.R: 0
 #. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subassign.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
-#. R/subscript.R: stop("incorrect number of dimensions")
 #. R/subscript.R: stop("incorrect number of dimensions")
 
 msgid "incorrect number of dimensions"
@@ -1056,7 +964,6 @@ msgstr ""
 
 
 #: R/subassign.R: 0
-#. R/subassign.R: gettextf("index larger than maximal %d", n)
 #. R/subassign.R: gettextf("index larger than maximal %d", n)
 
 msgid "index larger than maximal %d"
@@ -1114,11 +1021,6 @@ msgstr ""
 
 #: R/kappa.R: 0
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
-#. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
-#. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
-#. R/kappa.R: gettextf("invalid %s=\"%s\"", "type", type[1L])
-#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
-#. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
 #. R/kappa.R: gettextf("invalid %s=\"%s\"", "norm", norm[1L])
 
 msgid "invalid %s=\"%s\""
@@ -1178,13 +1080,6 @@ msgstr ""
 
 
 #: R/construct.R: 0
-#. R/construct.R: stop("invalid 'repr'; must be \"C\", \"R\", or \"T\"")
-
-msgid "invalid 'repr'; must be \"C\", \"R\", or \"T\""
-msgstr ""
-
-
-#: R/construct.R: 0
 #. R/construct.R: stop("invalid 'repr'; must be \"C\", \"T\", or \"R\"")
 
 msgid "invalid 'repr'; must be \"C\", \"T\", or \"R\""
@@ -1228,7 +1123,6 @@ msgstr ""
 
 
 #: R/Auxiliaries.R: 0
-#. R/Auxiliaries.R: gettextf("invalid mode \"%s\"", mode.)
 #. R/Auxiliaries.R: gettextf("invalid mode \"%s\"", mode.)
 
 msgid "invalid mode \"%s\""
@@ -1309,14 +1203,12 @@ msgstr ""
 
 #: R/Ops.R: 0
 #. R/Ops.R: stop("length of 1st arg does not match dimension of 2nd")
-#. R/Ops.R: stop("length of 1st arg does not match dimension of 2nd")
 
 msgid "length of 1st arg does not match dimension of 2nd"
 msgstr ""
 
 
 #: R/Ops.R: 0
-#. R/Ops.R: stop("length of 2nd arg does not match dimension of first")
 #. R/Ops.R: stop("length of 2nd arg does not match dimension of first")
 
 msgid "length of 2nd arg does not match dimension of first"
@@ -1361,8 +1253,6 @@ msgstr ""
 
 
 #: R/Ops.R: 0
-#. R/Ops.R: warning("longer object length is not a multiple of shorter object length")
-#. R/Ops.R: warning("longer object length is not a multiple of shorter object length")
 #. R/Ops.R: warning("longer object length is not a multiple of shorter object length")
 
 msgid "longer object length is not a multiple of shorter object length"
@@ -1413,11 +1303,7 @@ msgstr ""
 
 #: R/Cholesky.R: 0
 #: R/expm.R: 0
-#: R/expm.R: 0
-#: R/expm.R: 0
 #. R/Cholesky.R: stop("matrix is not square")
-#. R/expm.R: stop("matrix is not square")
-#. R/expm.R: stop("matrix is not square")
 #. R/expm.R: stop("matrix is not square")
 
 msgid "matrix is not square"
@@ -1439,7 +1325,6 @@ msgstr ""
 
 
 #: R/coerce.R: 0
-#. R/coerce.R: stop("matrix is not symmetric; consider forceSymmetric(.) or symmpart(.)")
 #. R/coerce.R: stop("matrix is not symmetric; consider forceSymmetric(.) or symmpart(.)")
 
 msgid "matrix is not symmetric; consider forceSymmetric(.) or symmpart(.)"
@@ -1490,14 +1375,6 @@ msgstr ""
 
 #: R/subassign.R: 0
 #. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
-#. R/subassign.R: stop("missing subassignment value")
 
 msgid "missing subassignment value"
 msgstr ""
@@ -1541,7 +1418,6 @@ msgstr ""
 #: R/subassign.R: 0
 #: R/subscript.R: 0
 #. R/subassign.R: stop("negative values are not allowed in a matrix subscript")
-#. R/subassign.R: stop("negative values are not allowed in a matrix subscript")
 #. R/subscript.R: stop("negative values are not allowed in a matrix subscript")
 
 msgid "negative values are not allowed in a matrix subscript"
@@ -1556,33 +1432,6 @@ msgstr ""
 
 
 #: R/matmult.R: 0
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
-#. R/matmult.R: stop("non-conformable arguments")
 #. R/matmult.R: stop("non-conformable arguments")
 
 msgid "non-conformable arguments"
@@ -1654,20 +1503,12 @@ msgstr ""
 
 #: R/subassign.R: 0
 #. R/subassign.R: stop("nothing to replace with")
-#. R/subassign.R: stop("nothing to replace with")
-#. R/subassign.R: stop("nothing to replace with")
-#. R/subassign.R: stop("nothing to replace with")
 
 msgid "nothing to replace with"
 msgstr ""
 
 
 #: R/subassign.R: 0
-#. R/subassign.R: warning("number of items to replace is not a multiple of replacement length")
-#. R/subassign.R: warning("number of items to replace is not a multiple of replacement length")
-#. R/subassign.R: stop("number of items to replace is not a multiple of replacement length")
-#. R/subassign.R: warning("number of items to replace is not a multiple of replacement length")
-#. R/subassign.R: stop("number of items to replace is not a multiple of replacement length")
 #. R/subassign.R: warning("number of items to replace is not a multiple of replacement length")
 #. R/subassign.R: stop("number of items to replace is not a multiple of replacement length")
 
@@ -1676,10 +1517,6 @@ msgstr ""
 
 
 #: R/kronecker.R: 0
-#. R/kronecker.R: gettextf("number of nonzero entries cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("number of nonzero entries cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("number of nonzero entries cannot exceed %s", "2^31-1")
-#. R/kronecker.R: gettextf("number of nonzero entries cannot exceed %s", "2^31-1")
 #. R/kronecker.R: gettextf("number of nonzero entries cannot exceed %s", "2^31-1")
 
 msgid "number of nonzero entries cannot exceed %s"
@@ -1701,7 +1538,6 @@ msgstr ""
 
 
 #: R/subscript.R: 0
-#. R/subscript.R: stop("only zeros may be mixed with negative subscripts")
 #. R/subscript.R: stop("only zeros may be mixed with negative subscripts")
 
 msgid "only zeros may be mixed with negative subscripts"
@@ -1766,7 +1602,6 @@ msgstr ""
 
 #: R/diagonal.R: 0
 #. R/diagonal.R: gettextf("replacement diagonal has incompatible type \"%s\"",     typeof(value))
-#. R/diagonal.R: gettextf("replacement diagonal has incompatible type \"%s\"",     typeof(value))
 
 msgid "replacement diagonal has incompatible type \"%s\""
 msgstr ""
@@ -1824,11 +1659,6 @@ msgstr ""
 
 #: R/subscript.R: 0
 #. R/subscript.R: stop("subscript out of bounds")
-#. R/subscript.R: stop("subscript out of bounds")
-#. R/subscript.R: stop("subscript out of bounds")
-#. R/subscript.R: stop("subscript out of bounds")
-#. R/subscript.R: stop("subscript out of bounds")
-#. R/subscript.R: stop("subscript out of bounds")
 
 msgid "subscript out of bounds"
 msgstr ""
@@ -1842,8 +1672,6 @@ msgstr ""
 
 
 #: R/subassign.R: 0
-#. R/subassign.R: stop("such indexing must be by logical or 2-column numeric matrix")
-#. R/subassign.R: stop("such indexing must be by logical or 2-column numeric matrix")
 #. R/subassign.R: stop("such indexing must be by logical or 2-column numeric matrix")
 
 msgid "such indexing must be by logical or 2-column numeric matrix"
@@ -1887,7 +1715,6 @@ msgstr ""
 
 #: R/HBMM.R: 0
 #. R/HBMM.R: gettextf("symmetry form '%s' is not yet implemented", sym)
-#. R/HBMM.R: gettextf("symmetry form '%s' is not yet implemented", sym)
 
 msgid "symmetry form '%s' is not yet implemented"
 msgstr ""
@@ -1902,14 +1729,12 @@ msgstr ""
 
 #: R/HBMM.R: 0
 #. R/HBMM.R: stop("symmetry form 'hermitian' not yet implemented for reading")
-#. R/HBMM.R: stop("symmetry form 'hermitian' not yet implemented for reading")
 
 msgid "symmetry form 'hermitian' not yet implemented for reading"
 msgstr ""
 
 
 #: R/HBMM.R: 0
-#. R/HBMM.R: stop("symmetry form 'skew-symmetric' not yet implemented for reading")
 #. R/HBMM.R: stop("symmetry form 'skew-symmetric' not yet implemented for reading")
 
 msgid "symmetry form 'skew-symmetric' not yet implemented for reading"
@@ -1938,8 +1763,6 @@ msgstr ""
 
 
 #: R/subassign.R: 0
-#. R/subassign.R: stop("too many replacement values")
-#. R/subassign.R: stop("too many replacement values")
 #. R/subassign.R: stop("too many replacement values")
 
 msgid "too many replacement values"
@@ -2073,7 +1896,6 @@ msgstr ""
 
 
 #: R/subassign.R: 0
-#. R/subassign.R: stop("you cannot mix negative and positive indices")
 #. R/subassign.R: stop("you cannot mix negative and positive indices")
 
 msgid "you cannot mix negative and positive indices"
