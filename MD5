@@ -52,7 +52,7 @@ c0f2e987fab19d1aa27b3694d1fd9ffa *inst/include/Matrix/stubs.c
 7d96680b80f7792dda638a3900abab51 *inst/include/Matrix_stubs.c
 c54af18acaf2a18fad0cfe5f4fe54e83 *inst/test-tools.R
 9ab5543921eb32009418013fb9fe4732 *inst/po/pl/LC_MESSAGES/Matrix.mo
-de6790bef9bfa9cdf20b1d86f8fc9fc9 *inst/po/pl/LC_MESSAGES/R-Matrix.mo
+a055e49d4d5cf5c0b4d529055621ef11 *inst/po/pl/LC_MESSAGES/R-Matrix.mo
 1a06a3263a69b9bdba7da729f74ce679 *inst/po/ko/LC_MESSAGES/Matrix.mo
 a8c17c070b4d67a2cce18b7bd5c7a2e0 *inst/po/ko/LC_MESSAGES/R-Matrix.mo
 a4f45a0c66a82f35c7b077bc8c0df84a *inst/po/de/LC_MESSAGES/Matrix.mo
@@ -1006,7 +1006,7 @@ ffe85c58a3ff60c53ae1d66b4720764e *tests/bind.R
 9cf13c0fb22d926e8ead0beac44bc52e *.Rinstignore
 3b21c668919b3170f52ceff76cdd93d9 *po/de.po
 078c5e2c44d5b9ff657fd71808c8aa41 *po/Matrix.pot
-8c69773f91cd4d0c9f4e1e9985a95bb5 *po/R-pl.po
+a60ebac770611e205f270758b25412d4 *po/R-pl.po
 328ea63ca8901e65fc3b59f4b049668d *po/R-de.po
 a9dcf2ac0519f668e44b2e7b0671ff54 *po/ko.po
 06d1a9460f9fda8c1b8d75665d541d1a *po/lt.po

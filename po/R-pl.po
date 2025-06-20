@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Matrix 1.1-2-2\n"
 "Report-Msgid-Bugs-To: bugs.r-project.org\n"
 "POT-Creation-Date: 2025-06-05 16:22\n"
-"PO-Revision-Date: 2025-06-05 16:25+0200\n"
+"PO-Revision-Date: 2025-06-07 11:52+0200\n"
 "Last-Translator: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language-Team: Łukasz Daniel <lukasz.daniel@gmail.com>\n"
 "Language: pl_PL\n"
@@ -421,7 +421,7 @@ msgstr "'Cmp.Mat.atomic()' nie powinien być wywołany dla 'diagonalMatrix'"
 #. R/Ops.R: gettextf("Compare <Csparse> -- \"%s\" %s \"%s\" :\n", cD1@className,     .Generic, cD2@className)
 #: R/Ops.R:0
 msgid "Compare <Csparse> -- \"%s\" %s \"%s\" :"
-msgstr ""
+msgstr "Porównaj <Csparse> -- \"%s\" %s \"%s\" :"
 
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(r.ii)))
 #. R/Cholesky.R: gettextf("D[i,i] is NA, i=%d", which.max(is.na(L.ii)))
@@ -1201,7 +1201,7 @@ msgstr "konwersja sparse na dense (%s) w '%s' -> %s"
 #. R/Ops.R: gettext("suboptimal 'Arith' implementation of  'dsC*  o  dsC*'")
 #: R/Ops.R:0
 msgid "suboptimal 'Arith' implementation of  'dsC*  o  dsC*'"
-msgstr ""
+msgstr "nieoptymalna implementacja 'Arith' 'dsC* o dsC*'"
 
 #. R/subscript.R: stop("subscript out of bounds")
 #: R/subscript.R:0
