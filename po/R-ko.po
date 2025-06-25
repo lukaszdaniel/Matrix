@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.1-3\n"
-"POT-Creation-Date: 2025-06-05 16:22\n"
+"POT-Creation-Date: 2025-06-24 19:02\n"
 "PO-Revision-Date: 2015-07-15 17:14-0600\n"
 "Last-Translator:Chel Hee Lee  <chl948@mail.usask.ca>\n"
 "Language-Team: Chel Hee Lee  <chl948@mail.usask.ca>\n"
@@ -255,11 +255,6 @@ msgstr "'ncol'은 반드시 >= 0 이어야 합니다. "
 msgid "'contrasts.arg' argument must be named"
 msgstr "'contrasts.arg' 인자가 올바르지 않습니다."
 
-#. R/construct.R: gettextf("'diagonals' matrix must have %d columns (= length(k) )",     len.k)
-#: R/construct.R:0
-msgid "'diagonals' matrix must have %d columns (= length(k) )"
-msgstr "'diagonals' 행렬은 반드시 %d (=length(k))개의 열을 가지고 있어야 합니다."
-
 #. R/construct.R: gettextf("'diagonals' must have the same length (%d) as 'k'",     len.k)
 #: R/construct.R:0
 msgid "'diagonals' must have the same length (%d) as 'k'"
@@ -425,19 +420,22 @@ msgstr ""
 msgid ".M.repl.i.2col(): drop 'matrix' case ..."
 msgstr ".M.repl.i.2col(): drop 'matrix' case ..."
 
-#. R/abstract.R: stop("<abIndex>  -->  <seqMat>  is not yet implemented")
+#. R/abstract.R: stop("<abIndex>  -->  <seqMat> is not yet implemented")
 #: R/abstract.R:0
-msgid "<abIndex>  -->  <seqMat>  is not yet implemented"
+#, fuzzy
+msgid "<abIndex>  -->  <seqMat> is not yet implemented"
 msgstr "<abIndex>  -->  <seqMat>은 아직 구현되지 않았습니다."
 
-#. R/abstract.R: stop("<abIndex>[i]  is not yet implemented")
+#. R/abstract.R: stop("<abIndex>[i] is not yet implemented")
 #: R/abstract.R:0
-msgid "<abIndex>[i]  is not yet implemented"
+#, fuzzy
+msgid "<abIndex>[i] is not yet implemented"
 msgstr "<abIndex>[i]는 아직 구현되지 않았습니다."
 
-#. R/abstract.R: stop("<seqMat>  -->  <abIndex>  is not yet implemented")
+#. R/abstract.R: stop("<seqMat>  -->  <abIndex> is not yet implemented")
 #: R/abstract.R:0
-msgid "<seqMat>  -->  <abIndex>  is not yet implemented"
+#, fuzzy
+msgid "<seqMat>  -->  <abIndex> is not yet implemented"
 msgstr "<seqMat>  -->  <abIndex>은 아직 구현되지 않았습니다."
 
 #. R/construct.R: gettextf("Class %s is not yet implemented", dQuote(cNam))
@@ -531,18 +529,6 @@ msgstr "클래스 %s를 가지는 우변의 'value'는 'ANY'에 매치되지만,
 #: R/subassign.R:0
 msgid "[ <character> ] indexing not allowed: forgot a \",\" ?"
 msgstr "[ <character> ]와 같은 인덱싱은 사용할 수 없습니다.  \",\"의 사용을 잊었나요?"
-
-#. R/show.R: gettextf("  [[ suppressing %d column name %s ... ]]", nc, paste0(sQuote(if (nc <=     3L) cn else cn[1:3]), collapse = ", "))
-#: R/show.R:0
-#, fuzzy
-msgid "[[ suppressing %d column name %s ... ]]"
-msgstr "[[ %d개의 열이름 %s ...를 제거합니다 ]]"
-
-#. R/show.R: gettextf("  [[ suppressing %d column names %s ... ]]", nc, paste0(sQuote(if (nc <=     3L) cn else cn[1:3]), collapse = ", "))
-#: R/show.R:0
-#, fuzzy
-msgid "[[ suppressing %d column names %s ... ]]"
-msgstr "[[ %d개의 열이름 %s ...를 제거합니다 ]]"
 
 #. R/sparse.R: warning("a sparseMatrix should rarely be centered: will not be sparse anymore")
 #: R/sparse.R:0
@@ -965,18 +951,9 @@ msgstr "길이가 너무 긴 논리형 첨자(subscript)입니다 (%2$d이어야
 msgid "logical subscript too long (%d, should be %d)"
 msgstr "길이가 너무 긴 논리형 첨자(subscript)입니다 (%2$d이어야 하는데 %1$d입니다)."
 
-#. R/Ops.R: warning("longer object length\n\tis not a multiple of shorter object length")
-#. R/abstract.R: warning("longer object length\n\tis not a multiple of shorter object length")
-#: R/Ops.R:0 R/abstract.R:0
-msgid ""
-"longer object length\n"
-"\tis not a multiple of shorter object length"
-msgstr ""
-"객체의 길이(긴 것)가\n"
-"\t 다른 객체가 가지는 길이(짧은 것)의 배수가 아닙니다."
-
 #. R/Ops.R: warning("longer object length is not a multiple of shorter object length")
-#: R/Ops.R:0
+#. R/abstract.R: warning("longer object length is not a multiple of shorter object length")
+#: R/Ops.R:0 R/abstract.R:0
 msgid "longer object length is not a multiple of shorter object length"
 msgstr "객체의 길이(긴 것)이 다른 객체의 길이(짧은 것)의 배수가 아닙니다."
 
@@ -1222,11 +1199,6 @@ msgstr "rankMatrix(x, method='qr'): nrow(x) < ncol(x)이므로 t(x)를 계산합
 msgid "readMM(): column indices 'j' are not in 1:ncol[=%d]"
 msgstr "readMM(): 열(column) 'j'는 1:nc 내에 존재하지 않습니다."
 
-#. R/HBMM.R: gettextf("readMM(): expected %d entries but found only %d", nz,     nz.)
-#: R/HBMM.R:0
-msgid "readMM(): expected %d entries but found only %d"
-msgstr ""
-
 #. R/HBMM.R: gettextf("readMM(): row indices 'i' are not in 1:nrow[=%d]",     nr)
 #: R/HBMM.R:0
 #, fuzzy
@@ -1393,15 +1365,17 @@ msgstr ""
 msgid "use Diagonal() to construct diagonal (symmetric && triangular) sparse matrices"
 msgstr ""
 
-#. R/subassign.R: stop("using\t \"old code\" part in  Csparse subassignment")
+#. R/subassign.R: stop("using \"old code\" part in Csparse subassignment")
 #: R/subassign.R:0
-msgid "using\t \"old code\" part in  Csparse subassignment"
+#, fuzzy
+msgid "using \"old code\" part in Csparse subassignment"
 msgstr "using\t \"old code\" part in  Csparse subassignment"
 
-#. R/subassign.R: warning("using\"old code\" part in Csparse subassignment\n >>> please report to Matrix-authors@r-project.org",     immediate. = TRUE)
+#. R/subassign.R: warning("using \"old code\" part in Csparse subassignment\n >>> please report to Matrix-authors@r-project.org",     immediate. = TRUE)
 #: R/subassign.R:0
+#, fuzzy
 msgid ""
-"using\"old code\" part in Csparse subassignment\n"
+"using \"old code\" part in Csparse subassignment\n"
 " >>> please report to Matrix-authors@r-project.org"
 msgstr ""
 "using\"old code\" part in Csparse subassignment\n"
@@ -1427,11 +1401,10 @@ msgstr "'A'가 주어진 경우에 입력된 'A.x'와 'At.x'는 사용되지 않
 msgid "wrong sign in 'by' argument"
 msgstr "'by' 인자에 사용된 부호(sign)가 올바르지 않습니다."
 
-#. R/abstract.R: warning("x / 0 for an <abIndex> x with sign-change\n no longer representable as 'rleDiff'")
+#. R/abstract.R: warning("x / 0 for an <abIndex> x with sign-change no longer representable as 'rleDiff'")
 #: R/abstract.R:0
-msgid ""
-"x / 0 for an <abIndex> x with sign-change\n"
-" no longer representable as 'rleDiff'"
+#, fuzzy
+msgid "x / 0 for an <abIndex> x with sign-change no longer representable as 'rleDiff'"
 msgstr ""
 "x / 0 for an <abIndex> x with sign-change\n"
 " no longer representable as 'rleDiff'"
@@ -1465,6 +1438,37 @@ msgstr "x[.] <- val: x의 클래스는 %s입니다.  {TRUE, FALSE}에 해당하�
 #: R/subassign.R:0
 msgid "you cannot mix negative and positive indices"
 msgstr "인덱스에 음수와 양수를 혼용하여 사용할 수 없습니다."
+
+#. R/show.R: ngettext(nc, "  [[ suppressing %d column name %s ... ]]", "  [[ suppressing %d column names %s ... ]]")
+#: R/show.R:0
+#, fuzzy
+msgid "  [[ suppressing %d column name %s ... ]]"
+msgid_plural "  [[ suppressing %d column names %s ... ]]"
+msgstr[0] "[[ %d개의 열이름 %s ...를 제거합니다 ]]"
+
+#. R/construct.R: ngettext(len.k, "'diagonals' matrix must have %d column (= length(k) )",     "'diagonals' matrix must have %d columns (= length(k) )")
+#: R/construct.R:0
+#, fuzzy
+msgid "'diagonals' matrix must have %d column (= length(k) )"
+msgid_plural "'diagonals' matrix must have %d columns (= length(k) )"
+msgstr[0] "'diagonals' 행렬은 반드시 %d (=length(k))개의 열을 가지고 있어야 합니다."
+
+#. R/HBMM.R: ngettext(nz, "readMM(): expected %d entries but found only %d",     "readMM(): expected %d entries but found only %d", domain = "R-Matrix")
+#: R/HBMM.R:0
+msgid "readMM(): expected %d entries but found only %d"
+msgid_plural "readMM(): expected %d entries but found only %d"
+msgstr[0] ""
+
+#, fuzzy
+#~ msgid "[[ suppressing %d column names %s ... ]]"
+#~ msgstr "[[ %d개의 열이름 %s ...를 제거합니다 ]]"
+
+#~ msgid ""
+#~ "longer object length\n"
+#~ "\tis not a multiple of shorter object length"
+#~ msgstr ""
+#~ "객체의 길이(긴 것)가\n"
+#~ "\t 다른 객체가 가지는 길이(짧은 것)의 배수가 아닙니다."
 
 #, fuzzy
 #~ msgid "invalid 'each' argument"

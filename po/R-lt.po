@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Matrix 1.3-3\n"
-"POT-Creation-Date: 2025-06-05 16:22\n"
+"POT-Creation-Date: 2025-06-24 19:02\n"
 "PO-Revision-Date: 2021-03-01 20:55+0200\n"
 "Last-Translator: Gabrielė Stupurienė <gabriele.stupuriene@mif.vu.lt>\n"
 "Language-Team: none\n"
@@ -245,11 +245,6 @@ msgstr "'ncol' turi būti >= 0"
 msgid "'contrasts.arg' argument must be named"
 msgstr "neleistinas argumentas 'contrasts.arg'"
 
-#. R/construct.R: gettextf("'diagonals' matrix must have %d columns (= length(k) )",     len.k)
-#: R/construct.R:0
-msgid "'diagonals' matrix must have %d columns (= length(k) )"
-msgstr "'diagonals' matricoje turi būti %d stulpeliai (= length(k) )"
-
 #. R/construct.R: gettextf("'diagonals' must have the same length (%d) as 'k'",     len.k)
 #: R/construct.R:0
 msgid "'diagonals' must have the same length (%d) as 'k'"
@@ -419,19 +414,22 @@ msgstr ""
 msgid ".M.repl.i.2col(): drop 'matrix' case ..."
 msgstr ".M.repl.i.2col(): išmetė 'matrix' atveją ..."
 
-#. R/abstract.R: stop("<abIndex>  -->  <seqMat>  is not yet implemented")
+#. R/abstract.R: stop("<abIndex>  -->  <seqMat> is not yet implemented")
 #: R/abstract.R:0
-msgid "<abIndex>  -->  <seqMat>  is not yet implemented"
+#, fuzzy
+msgid "<abIndex>  -->  <seqMat> is not yet implemented"
 msgstr "<abIndex>  --><seqMat>  dar neįgyvendinta"
 
-#. R/abstract.R: stop("<abIndex>[i]  is not yet implemented")
+#. R/abstract.R: stop("<abIndex>[i] is not yet implemented")
 #: R/abstract.R:0
-msgid "<abIndex>[i]  is not yet implemented"
+#, fuzzy
+msgid "<abIndex>[i] is not yet implemented"
 msgstr "<abIndex>[i] dar neįgyvendinta"
 
-#. R/abstract.R: stop("<seqMat>  -->  <abIndex>  is not yet implemented")
+#. R/abstract.R: stop("<seqMat>  -->  <abIndex> is not yet implemented")
 #: R/abstract.R:0
-msgid "<seqMat>  -->  <abIndex>  is not yet implemented"
+#, fuzzy
+msgid "<seqMat>  -->  <abIndex> is not yet implemented"
 msgstr "<seqMat>  --> <abIndex> dar neįgyvendintas"
 
 #. R/construct.R: gettextf("Class %s is not yet implemented", dQuote(cNam))
@@ -525,18 +523,6 @@ msgstr "RHS 'value' (%s klasė) atitinka 'ANY', tačiau turi atitikti matricos k
 #: R/subassign.R:0
 msgid "[ <character> ] indexing not allowed: forgot a \",\" ?"
 msgstr "[ <character> ] indeksavimas neleidžiamas: pamiršote \",\" ?"
-
-#. R/show.R: gettextf("  [[ suppressing %d column name %s ... ]]", nc, paste0(sQuote(if (nc <=     3L) cn else cn[1:3]), collapse = ", "))
-#: R/show.R:0
-#, fuzzy
-msgid "[[ suppressing %d column name %s ... ]]"
-msgstr "[[ nerodyti %d stulpelių pavadinimų %s ... ]]"
-
-#. R/show.R: gettextf("  [[ suppressing %d column names %s ... ]]", nc, paste0(sQuote(if (nc <=     3L) cn else cn[1:3]), collapse = ", "))
-#: R/show.R:0
-#, fuzzy
-msgid "[[ suppressing %d column names %s ... ]]"
-msgstr "[[ nerodyti %d stulpelių pavadinimų %s ... ]]"
 
 #. R/sparse.R: warning("a sparseMatrix should rarely be centered: will not be sparse anymore")
 #: R/sparse.R:0
@@ -958,18 +944,9 @@ msgstr "loginis apatinis indeksas per ilgas (%d, turėtų būti %d)"
 msgid "logical subscript too long (%d, should be %d)"
 msgstr "loginis apatinis indeksas per ilgas (%d, turėtų būti %d)"
 
-#. R/Ops.R: warning("longer object length\n\tis not a multiple of shorter object length")
-#. R/abstract.R: warning("longer object length\n\tis not a multiple of shorter object length")
-#: R/Ops.R:0 R/abstract.R:0
-msgid ""
-"longer object length\n"
-"\tis not a multiple of shorter object length"
-msgstr ""
-"ilgesnis objekto ilgis\n"
-"\tnėra trumpesnio objekto ilgio kartotinis"
-
 #. R/Ops.R: warning("longer object length is not a multiple of shorter object length")
-#: R/Ops.R:0
+#. R/abstract.R: warning("longer object length is not a multiple of shorter object length")
+#: R/Ops.R:0 R/abstract.R:0
 msgid "longer object length is not a multiple of shorter object length"
 msgstr "ilgesnis objekto ilgis nėra trumpesnio objekto ilgio kartotinis"
 
@@ -1218,11 +1195,6 @@ msgstr "rankMatrix(x, method='qr'): skaičiavimas t(x) kaip nrow(x) < ncol(x)"
 msgid "readMM(): column indices 'j' are not in 1:ncol[=%d]"
 msgstr "readMM(): stulpelių reikšmės 'j' nėra 1:nc"
 
-#. R/HBMM.R: gettextf("readMM(): expected %d entries but found only %d", nz,     nz.)
-#: R/HBMM.R:0
-msgid "readMM(): expected %d entries but found only %d"
-msgstr ""
-
 #. R/HBMM.R: gettextf("readMM(): row indices 'i' are not in 1:nrow[=%d]",     nr)
 #: R/HBMM.R:0
 #, fuzzy
@@ -1385,15 +1357,17 @@ msgstr "uniDiag=TRUE, ne visi įstrižainės įrašai, koduoti kaip 1"
 msgid "use Diagonal() to construct diagonal (symmetric && triangular) sparse matrices"
 msgstr ""
 
-#. R/subassign.R: stop("using\t \"old code\" part in  Csparse subassignment")
+#. R/subassign.R: stop("using \"old code\" part in Csparse subassignment")
 #: R/subassign.R:0
-msgid "using\t \"old code\" part in  Csparse subassignment"
+#, fuzzy
+msgid "using \"old code\" part in Csparse subassignment"
 msgstr "naudojant\t \"senojo kodo\" dalį Csparse antriniame priskyrime"
 
-#. R/subassign.R: warning("using\"old code\" part in Csparse subassignment\n >>> please report to Matrix-authors@r-project.org",     immediate. = TRUE)
+#. R/subassign.R: warning("using \"old code\" part in Csparse subassignment\n >>> please report to Matrix-authors@r-project.org",     immediate. = TRUE)
 #: R/subassign.R:0
+#, fuzzy
 msgid ""
-"using\"old code\" part in Csparse subassignment\n"
+"using \"old code\" part in Csparse subassignment\n"
 " >>> please report to Matrix-authors@r-project.org"
 msgstr ""
 "naudojant \"senojo kodo\" dalį Csparse antriniame priskyrime\n"
@@ -1419,11 +1393,10 @@ msgstr "kai nurodyta 'A', į 'A.x' and 'At.x' neatsižvelgiama"
 msgid "wrong sign in 'by' argument"
 msgstr "neteisingas ženklas 'by' argumente"
 
-#. R/abstract.R: warning("x / 0 for an <abIndex> x with sign-change\n no longer representable as 'rleDiff'")
+#. R/abstract.R: warning("x / 0 for an <abIndex> x with sign-change no longer representable as 'rleDiff'")
 #: R/abstract.R:0
-msgid ""
-"x / 0 for an <abIndex> x with sign-change\n"
-" no longer representable as 'rleDiff'"
+#, fuzzy
+msgid "x / 0 for an <abIndex> x with sign-change no longer representable as 'rleDiff'"
 msgstr ""
 "x / 0 dėl <abIndex> x su ženklo pakeitimu\n"
 " nebeatitinkamas kaip 'rleDiff'"
@@ -1457,6 +1430,43 @@ msgstr "x[.] <- val: x yra %s, val, kurio nėra {TRUE, FALSE} yra paverčiamas; 
 #: R/subassign.R:0
 msgid "you cannot mix negative and positive indices"
 msgstr "negalite maišyti neigiamų ir teigiamų indeksų"
+
+#. R/show.R: ngettext(nc, "  [[ suppressing %d column name %s ... ]]", "  [[ suppressing %d column names %s ... ]]")
+#: R/show.R:0
+#, fuzzy
+msgid "  [[ suppressing %d column name %s ... ]]"
+msgid_plural "  [[ suppressing %d column names %s ... ]]"
+msgstr[0] "[[ nerodyti %d stulpelių pavadinimų %s ... ]]"
+msgstr[1] "[[ nerodyti %d stulpelių pavadinimų %s ... ]]"
+msgstr[2] "[[ nerodyti %d stulpelių pavadinimų %s ... ]]"
+
+#. R/construct.R: ngettext(len.k, "'diagonals' matrix must have %d column (= length(k) )",     "'diagonals' matrix must have %d columns (= length(k) )")
+#: R/construct.R:0
+#, fuzzy
+msgid "'diagonals' matrix must have %d column (= length(k) )"
+msgid_plural "'diagonals' matrix must have %d columns (= length(k) )"
+msgstr[0] "'diagonals' matricoje turi būti %d stulpeliai (= length(k) )"
+msgstr[1] "'diagonals' matricoje turi būti %d stulpeliai (= length(k) )"
+msgstr[2] "'diagonals' matricoje turi būti %d stulpeliai (= length(k) )"
+
+#. R/HBMM.R: ngettext(nz, "readMM(): expected %d entries but found only %d",     "readMM(): expected %d entries but found only %d", domain = "R-Matrix")
+#: R/HBMM.R:0
+msgid "readMM(): expected %d entries but found only %d"
+msgid_plural "readMM(): expected %d entries but found only %d"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#, fuzzy
+#~ msgid "[[ suppressing %d column names %s ... ]]"
+#~ msgstr "[[ nerodyti %d stulpelių pavadinimų %s ... ]]"
+
+#~ msgid ""
+#~ "longer object length\n"
+#~ "\tis not a multiple of shorter object length"
+#~ msgstr ""
+#~ "ilgesnis objekto ilgis\n"
+#~ "\tnėra trumpesnio objekto ilgio kartotinis"
 
 #, fuzzy
 #~ msgid "invalid 'repr'; must be \"C\", \"R\", or \"T\""

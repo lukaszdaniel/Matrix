@@ -162,7 +162,7 @@ msgstr "gniazdo '%s' musi zawierać wartości, które są niemalejące"
 #: cholmod-common.c:29 validity.c:311 validity.c:362
 #, c-format
 msgid "first differences of '%s' slot exceed %s"
-msgstr "pierwsze różnica gniazda '%s' przekraczają %s"
+msgstr "pierwsza różnica gniazda '%s' przekraczają %s"
 
 #: cholmod-common.c:37 validity.c:317 validity.c:368
 #, c-format
@@ -650,7 +650,7 @@ msgstr "Argument musi być atomowym wektorem liczbowym"
 
 #: utils-R.c:345
 msgid "'data' must be of a vector type"
-msgstr "'data' musi być type wektor"
+msgstr "'data' musi być typu wektorowego"
 
 #: utils-R.c:352
 #, c-format
@@ -1038,7 +1038,7 @@ msgstr "gniazdo '%s' ma długość mniejszą niż %d"
 #: validity.c:1630
 #, c-format
 msgid "'%s' slot has length greater than %s"
-msgstr "gniazdo '%s'' ma długość większą niż %s"
+msgstr "gniazdo '%s' ma długość większą niż %s"
 
 #: validity.c:1635
 #, c-format

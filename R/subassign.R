@@ -604,9 +604,9 @@ replCmat4 <- function(x, i1, i2, iMi, jMi, value,
     else { ## use "old" code ...
         ## does this happen ? ==>
 	if(identical(Sys.getenv("USER"),"maechler"))## does it still happen? __ FIXME __
-	    stop("using	 \"old code\" part in  Csparse subassignment")
+	    stop("using \"old code\" part in Csparse subassignment")
         ## else
-	warning("using\"old code\" part in Csparse subassignment\n >>> please report to Matrix-authors@r-project.org",
+	warning("using \"old code\" part in Csparse subassignment\n >>> please report to Matrix-authors@r-project.org",
 		immediate. = TRUE)
 
 	xj <- .Call(Matrix_expand_pointers, x@p)

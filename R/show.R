@@ -68,14 +68,8 @@ emptyColnames <- function(x, msg.if.not.empty = FALSE) {
             is.character(cn <- dn[[2L]]) &&
             any(nzchar(cn)))
             {
-                if (nc == 1L)
-                message(gettextf("  [[ suppressing %d column name %s ... ]]",
-                         nc,
-                         paste0(sQuote(if(nc <= 3L) cn else cn[1:3]),
-                                collapse = ", ")),
-                domain = NA)
-                else
-                message(gettextf("  [[ suppressing %d column names %s ... ]]",
+                message(sprintf(ngettext(nc, "  [[ suppressing %d column name %s ... ]]",
+                         "  [[ suppressing %d column names %s ... ]]"),
                          nc,
                          paste0(sQuote(if(nc <= 3L) cn else cn[1:3]),
                                 collapse = ", ")),

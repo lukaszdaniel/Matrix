@@ -349,7 +349,7 @@ setMethod("[", c(x = "abIndex", i = "index"),
 		     ## Now work with the equivalent of
 		     ##   cumsum(c(d@first, rep.int(d@rle$values, d@rle$lengths)))
 
-                     stop("<abIndex>[i]  is not yet implemented")
+                     stop("<abIndex>[i] is not yet implemented")
                  },
                  "int32" =, "double" =
                  ## as it's not rle-packed, can remain simple:
@@ -469,7 +469,7 @@ setMethod("Arith", c(e1 = "abIndex", e2 = "abIndex"),
 
           if(mM[1] != mM[2]) { ## lengths differ
               if(mM[1] %% mM[2] != 0) ## identical warning as in main/arithmetic.c
-                  warning("longer object length\n\tis not a multiple of shorter object length")
+                  warning("longer object length is not a multiple of shorter object length")
               if(l1 < l2) {
 
               } else { ## l1 > l2
@@ -522,7 +522,7 @@ setMethod("Arith", c(e1 = "abIndex", e2 = "numLike"),
                          if(is0(e2) ## division by 0
                             && length(unique(sign(ends.rleD(e1@rleD)))) > 1) {
                              ## at least one subsequence contains 0, i.e., changes sign:
-			     warning("x / 0 for an <abIndex> x with sign-change\n no longer representable as 'rleDiff'")
+			     warning("x / 0 for an <abIndex> x with sign-change no longer representable as 'rleDiff'")
                              return(vec2abI(abI2num(e1) / 0))
                          }
                          e1@rleD@first <- e1@rleD@first / e2
@@ -699,10 +699,10 @@ setAs("abIndex", "seqMat", function(from)
       }
       ## use ~/R/MM/Pkg-ex/Matrix/abIndex-experi.R for trying things ...
 
-      stop("<abIndex>  -->  <seqMat>  is not yet implemented")
+      stop("<abIndex>  -->  <seqMat> is not yet implemented")
   })
 
 setAs("seqMat", "abIndex", function(from)
   {
-      stop("<seqMat>  -->  <abIndex>  is not yet implemented")
+      stop("<seqMat>  -->  <abIndex> is not yet implemented")
   })

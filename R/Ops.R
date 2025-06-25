@@ -1365,7 +1365,7 @@ setMethod("Arith", c(e1 = "numeric", e2 = "CsparseMatrix"),
     n <- prod(d <- dim(spM))
     if(n && n < len) stop("vector too long in Matrix - vector operation")
     if(n %% len != 0) ## identical warning as in main/arithmetic.c
-        warning("longer object length\n\tis not a multiple of shorter object length")
+        warning("longer object length is not a multiple of shorter object length")
     ## TODO(speedup!): construction of [1L + in0 %%len] via one .Call()
     in0 <- .Call(m_encodeInd, .Call(compressed_non_0_ij, spM, TRUE),
                  d, FALSE, FALSE)

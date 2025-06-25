@@ -529,7 +529,8 @@ bandSparse <- function(n, m = n, k, diagonals,
     if(use.x) {
         if(diag.isMat) {
             if(ncol(diagonals) != len.k)
-                stop(gettextf("'diagonals' matrix must have %d columns (= length(k) )",
+                stop(sprintf(ngettext(len.k, "'diagonals' matrix must have %d column (= length(k) )",
+                              "'diagonals' matrix must have %d columns (= length(k) )"),
                               len.k), domain=NA)
             getD <- function(j) diagonals[,j]
 

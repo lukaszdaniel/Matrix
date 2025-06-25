@@ -103,8 +103,10 @@ readMM <- function(file)
     nz <- scan1(integer())
     checkIJ <- function(els) {
         if((nz. <- length(els$i)) < nz)
-            warning(gettextf("readMM(): expected %d entries but found only %d",
-                             nz, nz.), call. = FALSE, domain = "R-Matrix")
+            warning(sprintf(ngettext(nz, "readMM(): expected %d entries but found only %d",
+                             "readMM(): expected %d entries but found only %d",
+                             domain = "R-Matrix"),
+                             nz, nz.), call. = FALSE)
         if(any(is.na(els$i) | els$i < 1L | els$i > nr))
             stop(gettextf("readMM(): row indices 'i' are not in 1:nrow[=%d]",
                           nr), call. = FALSE, domain = "R-Matrix")
