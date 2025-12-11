@@ -266,6 +266,8 @@ SEXP R_all0(SEXP x) {
 			if (xx[i] != 0) return FALSE_;
 		return TRUE_;
 	}
+	default:
+		break;
 	}
 	error(_("Argument must be numeric-like atomic vector"));
 	return R_NilValue; // -Wall
@@ -308,6 +310,8 @@ SEXP R_any0(SEXP x) {
 		for (i = 0; i < n; i++) if (xx[i] == 0) return TRUE_;
 		return FALSE_;
 	}
+	default:
+		break;
 	}
 	error(_("Argument must be numeric-like atomic vector"));
 	return R_NilValue; // -Wall
