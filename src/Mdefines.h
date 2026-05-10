@@ -11,7 +11,9 @@
 
 #ifdef __GLIBC__
 /* ensure that strdup() and others are declared when string.h is included : */
+#ifndef _POSIX_C_SOURCE
 # define _POSIX_C_SOURCE 200809L
+#endif
 #endif
 
 #include <string.h>
