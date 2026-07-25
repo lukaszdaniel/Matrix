@@ -55,5 +55,3 @@ m <- as(M, "matrix")
 ### code chunk number 8: sessionInfo
 ###################################################
 toLatex(sessionInfo())
-
-

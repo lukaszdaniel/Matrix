@@ -162,5 +162,3 @@ if(identical(1L, grep("linux", R.version[["os"]]))) { ## Linux - only ---
  print(Scpu[c("model name", "cpu MHz", "cache size", "bogomips")])
  print(Smem[c("MemTotal", "SwapTotal")])
 }
-
-

@@ -156,5 +156,3 @@ identical(as.matrix(y), y.) ## TRUE
 ### code chunk number 17: sessionInfo
 ###################################################
 toLatex(sessionInfo())
-
-
