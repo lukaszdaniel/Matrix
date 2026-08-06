@@ -5,6 +5,31 @@
 \encoding{UTF-8}
 \newcommand{\MPR}{\pkg{Matrix} \href{https://R-forge.R-project.org/tracker/index.php?func=detail&aid=#1&group_id=61&atid=294}{PR##1}}
 
+\section{Changes in version 1.7-6 (2026-07-24)}{
+  \subsection{Description}{
+    \itemize{
+      \item \file{DESCRIPTION} fields \code{URL} and \code{BugReports}
+      are updated to reflect a migration of the \pkg{Matrix} package
+      sources from a Subversion repository hosted by R-Forge to a Git
+      repository hosted by Codeberg.
+    }
+  }
+  \subsection{Memory}{
+    \itemize{
+      \item Warnings newly reported by \command{rchk} are squashed.
+    }
+  }
+  \subsection{Bug Fixes}{
+    \itemize{
+      \item \pkg{Matrix} version 1.7-3 renamed four macros defined in
+      \file{inst/include/Matrix/version.h}, stripping the \samp{R_}
+      prefix of the original names \samp{R_MATRIX_PACKAGE_*}.  This
+      change was accidental and is reverted.
+      \item Ported typo fix in \file{Intro2Matrix.Rnw} from trunk.
+    }
+  }
+}
+
 \section{Changes in version 1.7-5 (2026-03-20, svn r5198)}{
   \subsection{Misc}{
     \itemize{

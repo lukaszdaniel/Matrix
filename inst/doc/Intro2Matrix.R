@@ -96,5 +96,3 @@ getClass("dgTMatrix")
 ### code chunk number 13: sessionInfo
 ###################################################
 toLatex(sessionInfo())
-
-

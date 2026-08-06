@@ -1023,8 +1023,10 @@ int dense_is_symmetric(SEXP obj, const char *class, int checkDN)
 		return 1;
 
 	if (checkDN) {
-		SEXP dimnames = GET_SLOT(obj, Matrix_DimNamesSym);
-		if (!DimNames_is_symmetric(dimnames))
+		SEXP dimnames = PROTECT(GET_SLOT(obj, Matrix_DimNamesSym));
+		checkDN = !DimNames_is_symmetric(dimnames);
+		UNPROTECT(1);
+		if (checkDN)
 			return 0;
 	}
 
